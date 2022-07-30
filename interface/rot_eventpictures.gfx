@@ -1,0 +1,40 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_news_event_wirmer"
+		texturefile = "gfx/event_pictures/news_event_wirmer.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_thalmann"
+		texturefile = "gfx/event_pictures/report_event_thalmann.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_wo_thalmann"
+		texturefile = "gfx/event_pictures/report_event_wo_thalmann.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_kpd_on_rise"
+		texturefile = "gfx/event_pictures/report_event_kpd_on_rise.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ger_strike"
+		texturefile = "gfx/event_pictures/report_event_ger_strike.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ger_big_strike"
+		texturefile = "gfx/event_pictures/report_event_ger_big_strike.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ger_proletariat"
+		texturefile = "gfx/event_pictures/report_event_ger_proletariat.dds"
+	}	
+	spriteType = {
+		name = "GFX_report_event_wirmer_flag"
+		texturefile = "gfx/event_pictures/report_event_wirmer_flag.dds"
+	}	
+}

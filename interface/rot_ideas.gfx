@@ -1,0 +1,35 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_idea_ger_five_year"
+		texturefile = "gfx/interface/ideas/GER_five_year_plan.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_GER_NVA_general_staff"
+		texturefile = "gfx/interface/ideas/idea_NVA_general_staff.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wilhelm_pieck"
+		texturefile = "gfx/interface/ideas/idea_wilhelm_pieck.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_walter_ulbricht"
+		texturefile = "gfx/interface/ideas/idea_walter_ulbricht.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_erich_mielke"
+		texturefile = "gfx/interface/ideas/idea_erich_mielke.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_karl_artelt"
+		texturefile = "gfx/interface/ideas/idea_karl_artelt.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_erich_weinert"
+		texturefile = "gfx/interface/ideas/idea_erich_weinert.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_felix_scheffler"
+		texturefile = "gfx/interface/ideas/idea_GER_generic_navy_2.dds"
+	}
+}

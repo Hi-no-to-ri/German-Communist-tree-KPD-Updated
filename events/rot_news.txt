@@ -1,0 +1,869 @@
+﻿###########################
+# News Events
+###########################
+
+add_namespace = rot_news
+
+
+news_event = { #Thalmann killed
+	id = rot_news.1
+	title = rot_news.1.t
+	desc = rot_news.1.d
+	picture = GFX_news_event_heinrich_himmler
+
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rot_news.1.a
+		trigger = {
+			OR = {
+				tag = GER
+				is_in_faction_with = GER
+			}
+		}
+	}
+	option = {
+		name = rot_news.1.b
+		trigger = {
+			has_government = communism
+		}
+	}
+	option = {
+		name = rot_news.1.c
+		trigger = {
+			has_war_with = GER
+			NOT = {
+				has_government = communism
+			}
+		}
+	}
+	option = {
+		name = rot_news.1.e
+		trigger = {
+			NOT = {
+				has_war_with = GER
+				has_government = communism
+				tag = GER
+				is_in_faction_with = GER
+			}
+		}
+	}
+}
+
+news_event = { #Thalmann killed shakes
+	id = rot_news.2
+	title = rot_news.2.t
+	desc = rot_news.2.d
+	picture = GFX_news_event_worker_protests
+
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rot_news.2.a
+		trigger = {
+			OR = {
+				tag = GER
+				is_in_faction_with = GER
+				has_government = fascism
+			}
+		}
+	}
+	option = {
+		name = rot_news.2.b
+		trigger = {
+			has_government = communism
+		}
+	}
+	option = {
+		name = rot_news.2.c
+		trigger = {
+			has_war_with = GER
+		}
+	}
+	option = {
+		name = rot_news.2.e
+		trigger = {
+			NOT = {
+				has_war_with = GER
+				has_government = communism
+				tag = GER
+				is_in_faction_with = GER
+			}
+		}
+	}
+}
+
+news_event = { #Thalmann killed revolt
+	id = rot_news.3
+	title = rot_news.3.t
+	desc = rot_news.3.d
+	picture = GFX_news_event_generic_riot
+
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rot_news.3.a
+		trigger = {
+			OR = {
+				tag = GER
+				is_in_faction_with = GER
+				has_government = fascism
+			}
+		}
+	}
+	option = {
+		name = rot_news.3.b
+		trigger = {
+			has_government = communism
+			NOT = {
+				tag = GER
+			}
+		}
+	}
+	option = {
+		name = rot_news.3.c
+		trigger = {
+			has_war_with = GER
+		}
+	}
+	option = {
+		name = rot_news.3.e
+		trigger = {
+			NOT = {
+				has_war_with = GER
+				has_government = communism
+				tag = GER
+				is_in_faction_with = GER
+			}
+		}
+	}
+}
+
+news_event = { #Revolution in Germany
+	id = rot_news.4
+	title = rot_news.4.t
+	desc = rot_news.4.d
+	picture = GFX_news_event_german_reichstag_ruins
+
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rot_news.4.a
+		trigger = {
+				tag = GER
+		}
+	}
+	option = {
+		name = rot_news.4.b
+		trigger = {
+			has_government = communism
+			NOT = {	tag = GER }
+		}
+	}
+	option = {
+		name = rot_news.4.c
+		trigger = {
+			has_government = fascism
+		}
+	}
+	option = {
+		name = rot_news.4.e
+		trigger = {
+			NOT = {
+				has_government = fascism
+				has_government = communism
+				tag = GER
+			}
+		}
+	}
+}
+
+news_event = { #Germany joins Comintern
+	id = rot_news.5
+	title = rot_news.5.t
+	desc = rot_news.5.d
+	picture = GFX_news_event_stalin_meeting
+
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rot_news.5.a
+		trigger = {
+			NOT = {	has_war_with = GER }
+			OR = {
+				has_government = communism
+				is_in_faction_with = SOV
+			}
+		}
+	}
+	option = {
+		name = rot_news.5.b
+		trigger = {
+			NOT = {
+				has_government = communism
+				has_government = fascism
+				has_war_with = GER
+			}	
+		}
+	}
+	option = {
+		name = rot_news.5.c
+		trigger = {
+			OR = {
+				has_war_with = GER
+				has_government = fascism
+			}
+		}
+	}
+}
+
+news_event = { #Germany Forms European bloc
+	id = rot_news.6
+	title = rot_news.6.t
+	desc = rot_news.6.d
+	picture = GFX_news_event_006
+
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rot_news.6.a
+		trigger = {
+			OR = {
+				tag = GER
+			}
+		}
+	}
+	option = {
+		name = rot_news.6.b
+		trigger = {
+			tag = SOV
+		}
+	}
+	option = {
+		name = rot_news.6.c
+		trigger = {
+			OR = {
+				has_government = fascism
+				has_war_with = GER
+			}
+		}
+	}
+	option = {
+		name = rot_news.6.e
+		trigger = {
+			NOT = {
+				has_war_with = GER
+				has_government = fascism
+				tag = GER
+				tag = SOV
+				is_in_faction_with = GER
+			}
+		}
+	}
+}
+
+news_event = { #Germany pressed on Austria
+	id = rot_news.7
+	title = rot_news.7.t
+	desc = rot_news.7.d
+	picture = GFX_news_event_generic_sign_treaty1
+
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rot_news.7.a
+		trigger = {
+			tag = GER
+		}
+	}
+	option = {
+		name = rot_news.7.b
+		trigger = {
+			has_government = communism
+			NOT = {
+				tag = GER
+			}
+		}
+	}
+	option = {
+		name = rot_news.7.с
+		trigger = {
+			NOT = {
+				has_government = communism
+				tag = GER
+			}
+		}
+	}
+}
+
+news_event = { #Germany pressed on Austria NO
+	id = rot_news.8
+	title = rot_news.8.t
+	desc = rot_news.8.d
+	picture = GFX_news_event_generic_riot
+
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rot_news.8.a
+		trigger = {
+			OR = {
+				tag = GER
+				is_in_faction_with = GER
+			}
+		}
+	}
+	option = {
+		name = rot_news.8.b
+		trigger = {
+			has_government = communism
+			NOT = {
+				tag = GER
+			}
+		}
+	}
+	option = {
+		name = rot_news.8.c
+		trigger = {
+			has_war_with = GER
+		}
+	}
+	option = {
+		name = rot_news.8.e
+		trigger = {
+			NOT = {
+				has_war_with = GER
+				has_government = communism
+				tag = GER
+				is_in_faction_with = GER
+			}
+		}
+	}
+}
+
+news_event = { #Germany pressed on Poland
+	id = rot_news.9
+	title = rot_news.9.t
+	desc = rot_news.9.d
+	picture = GFX_news_event_generic_panzer_attack
+
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rot_news.9.a
+		trigger = {
+			OR = {
+				tag = GER
+				tag = SOV
+			}
+		}
+	}
+	option = {
+		name = rot_news.9.b
+		trigger = {
+			has_government = communism
+			NOT = {
+				tag = GER
+				tag = SOV
+			}
+		}
+	}
+	option = {
+		name = rot_news.9.c
+		trigger = {
+			has_government = fascism
+		}
+	}
+	option = {
+		name = rot_news.9.e
+		trigger = {
+			NOT = {
+				has_government = fascism
+				has_government = communism
+				tag = GER
+				tag = SOV
+			}
+		}
+	}
+}
+
+news_event = { #Germany pressed on Poland NO
+	id = rot_news.10
+	title = rot_news.10.t
+	desc = rot_news.10.d
+	picture = GFX_news_event_gathering_protest
+
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rot_news.10.a
+		trigger = {
+			OR = {
+				tag = GER
+				tag = SOV
+			}
+		}
+	}
+	option = {
+		name = rot_news.10.b
+		trigger = {
+			has_government = communism
+			NOT = {
+				tag = GER
+				tag = SOV
+			}
+		}
+	}
+	option = {
+		name = rot_news.10.c
+		trigger = {
+			has_government = fascism
+		}
+	}
+	option = {
+		name = rot_news.10.e
+		trigger = {
+			NOT = {
+				has_government = fascism
+				has_government = communism
+				tag = GER
+				tag = SOV
+			}
+		}
+	}
+}
+
+news_event = { #Radical left wing won
+	id = rot_news.11
+	title = rot_news.11.t
+	desc = rot_news.11.d
+	picture = GFX_news_event_generic_rally_3
+
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rot_news.11.a
+		trigger = {
+				tag = GER
+		}
+	}
+	option = {
+		name = rot_news.11.b
+		trigger = {
+			OR = {
+				tag = SOV
+				is_in_faction_with = SOV
+			}
+		}
+	}
+	option = {
+		name = rot_news.11.c
+		trigger = {
+			has_government = communism
+			NOT = {
+				is_in_faction_with = SOV
+				tag = GER
+			}
+		}
+	}
+	option = {
+		name = rot_news.11.e
+		trigger = {
+			NOT = {
+				is_in_faction_with = SOV
+				has_government = communism
+				tag = GER
+			}
+		}
+	}
+}
+
+news_event = { #Right wing won
+	id = rot_news.12
+	title = rot_news.12.t
+	desc = rot_news.12.d
+	picture = GFX_news_event_journalists_speech
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rot_news.12.a
+		trigger = {
+				tag = GER
+		}
+	}
+	option = {
+		name = rot_news.12.b
+		trigger = {
+			OR = {
+				tag = SOV
+				is_in_faction_with = SOV
+			}
+		}
+	}
+	option = {
+		name = rot_news.12.c
+		trigger = {
+			has_government = democratic
+		}
+	}
+	option = {
+		name = rot_news.12.e
+		trigger = {
+			NOT = {
+				has_government = democratic
+				has_government = fascism
+				tag = GER
+				is_in_faction_with = SOV
+			}
+		}
+	}
+	option = {
+		name = rot_news.12.f
+		trigger = {
+			has_government = fascism
+		}
+	}
+}
+
+news_event = { #Fourth Internationale Established
+	id = rot_news.13
+	title = rot_news.13.t
+	desc = rot_news.13.d
+	picture = GFX_news_event_023
+
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rot_news.13.a
+		trigger = {
+			OR = {
+				tag = GER
+				tag = SOV
+				is_in_faction_with = SOV
+			}
+		}
+	}
+	option = {
+		name = rot_news.13.b
+		trigger = {
+			NOT = {
+				is_in_faction_with = SOV
+			}
+			has_government = communism
+		}
+	}
+	option = {
+		name = rot_news.13.c
+		trigger = {
+			NOT = {
+				is_in_faction_with = SOV
+				has_government = communism
+			}
+		}
+	}
+}
+
+news_event = { #Germany criticise USSR
+	id = rot_news.14
+	title = rot_news.14.t
+	desc = rot_news.14.d
+	picture = GFX_news_event_aid_pact
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rot_news.14.a
+		trigger = {
+				tag = GER
+		}
+	}
+	option = {
+		name = rot_news.14.b
+		trigger = {
+			OR = {
+				is_in_faction_with = SOV
+				tag = SOV
+			}
+		}
+	}
+	option = {
+		name = rot_news.14.c
+		trigger = {
+			has_government = democratic
+		}
+	}
+	option = {
+		name = rot_news.14.e
+		trigger = {
+			NOT = {
+				has_government = democratic
+				has_government = fascism
+				tag = GER
+				is_in_faction_with = SOV
+				tag = SOV
+			}
+		}
+	}
+	option = {
+		name = rot_news.14.f
+		trigger = {
+			has_government = fascism
+		}
+	}
+}
+
+news_event = { # Fifth Internationale
+	id = rot_news.15
+	title = rot_news.15.t
+	desc = rot_news.15.d
+	picture = GFX_news_event_german_speech
+
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rot_news.15.a
+		trigger = {
+				tag = GER
+		}
+	}
+	option = {
+		name = rot_news.15.b
+		trigger = {
+			OR = {
+				tag = SOV
+				is_in_faction_with = SOV
+			}
+		}
+	}
+	option = {
+		name = rot_news.15.c
+		trigger = {
+			NOT = {
+				tag = GER
+				is_in_faction_with = SOV
+			}
+		}
+	}
+}
+
+news_event = { # Revolution in Britain
+	id = rot_news.16
+	title = rot_news.16.t
+	desc = rot_news.16.d
+	picture = GFX_news_event_ger_civil_war
+
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rot_news.16.a
+		trigger = {
+			OR = {
+				tag = GER
+				is_in_faction_with = GER
+			}
+		}
+	}
+	option = {
+		name = rot_news.16.b
+		trigger = {
+			NOT = {
+				tag = GER
+				is_in_faction_with = GER
+			}
+		}
+	}
+}
+
+news_event = { # Socialist World Republic
+	id = rot_news.17
+	title = rot_news.17.t
+	desc = rot_news.17.d
+	picture = GFX_news_event_generic_sign_treaty2
+
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rot_news.17.a
+		trigger = {
+				tag = GER
+		}
+	}
+	option = {
+		name = rot_news.17.b
+		trigger = {
+			is_in_faction_with = GER
+			NOT = {
+				tag = GER
+			}
+		}
+	}
+	option = {
+		name = rot_news.17.c
+		trigger = {
+			has_government = democratic
+		}
+	}
+	option = {
+		name = rot_news.17.e
+		trigger = {
+			NOT = {
+				has_government = democratic
+				has_government = fascism
+				tag = GER
+				is_in_faction_with = GER
+			}
+		}
+	}
+	option = {
+		name = rot_news.17.f
+		trigger = {
+			has_government = fascism
+		}
+	}
+}
+news_event = { # Wirmer flag
+	id = rot_news.18
+	title = rot_news.18.t
+	desc = rot_news.18.d
+	picture = GFX_news_event_wirmer
+
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rot_news.18.a
+		trigger = {
+				tag = GER
+		}
+	}
+	option = {
+		name = rot_news.18.b
+		trigger = {
+			NOT = {
+				tag = GER
+			}
+		}
+	}
+}
+news_event = { # Socialist Anschluss
+	id = rot_news.19
+	title = rot_news.19.t
+	desc = rot_news.19.d
+	picture = GFX_news_event_generic_sign_treaty2
+
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rot_news.19.a
+		trigger = {
+			OR = {
+				tag = GER
+				is_in_faction_with = GER
+			}
+		}
+	}
+	option = {
+		name = rot_news.19.b
+		trigger = {
+			has_government = fascism
+		}
+	}
+	option = {
+		name = rot_news.19.c
+		trigger = {
+			has_government = democratic
+		}
+	}
+	option = {
+		name = rot_news.19.e
+		trigger = {
+			NOT = {
+				has_government = democratic
+				has_government = fascism
+				tag = GER
+				is_in_faction_with = GER
+			}
+		}
+	}
+}
+news_event = { # Trial the fascism
+	id = rot_news.20
+	title = rot_news.20.t
+	desc = rot_news.20.d
+	picture = GFX_news_event_generic_sign_treaty2
+
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rot_news.20.a
+		trigger = {
+			OR = {
+				tag = GER
+				is_in_faction_with = GER
+				has_government = communism
+			}
+		}
+	}
+	option = {
+		name = rot_news.20.b
+		trigger = {
+			has_government = fascism
+		}
+	}
+	option = {
+		name = rot_news.20.c
+		trigger = {
+			has_government = democratic
+		}
+	}
+	option = {
+		name = rot_news.20.e
+		trigger = {
+			NOT = {
+				has_government = democratic
+				has_government = fascism
+				tag = GER
+				is_in_faction_with = GER
+				has_government = communism
+			}
+		}
+	}
+}

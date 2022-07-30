@@ -1,0 +1,121 @@
+SOV_left_opposition_plan_kpdmod = {
+	name = "SOV left opposition plan for kpd mod"
+	desc = ""
+
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		has_global_flag = flag_trotsky_coup_kpdmod
+	}
+	abort = {
+		is_subject = yes
+	}
+
+	ai_national_focuses = {
+		#Things to do ASAP
+		SOV_desperate_measures # 35
+		SOV_lessons_of_war # 35
+		SOV_an_adaptable_army
+		SOV_the_fourth_international
+		SOV_shift_to_armaments_production # (FYP)
+		SOV_fourth_five_year_plan # (FYP)
+		SOV_the_vanguard_of_the_true_revolution # 35
+
+		# 1936  
+		SOV_the_path_of_marxism_leninism # 35
+		SOV_the_left_opposition #35
+		SOV_integrate_smirnovs_bloc
+		SOV_bring_old_trotskyists_back # 35 
+		SOV_committee_in_exile
+		SOV_left_eliminate_right # 35
+		
+
+		#1937
+		SOV_military_support
+		SOV_approach_tukhachevsky 
+		SOV_sway_the_railway_workers # 35
+		SOV_funds_for_the_cause # 35 
+		SOV_organize_the_wreckers
+		SOV_left_opposition_coup # 35 
+		SOV_long_live_the_workers_government 
+		
+
+		# 1938 
+		SOV_left_purges
+		SOV_infrastructure_effort_nsb #35
+		SOV_heavy_industry #35
+		SOV_finish_the_five_year_plan
+		SOV_third_five_year_plan
+		SOV_national_specialists # 35
+		
+
+		# 1939
+		SOV_strengthen_the_mobilization_plan # 35
+		SOV_cohesion_first # 35
+		SOV_the_builder_of_the_red_army # If Trotsky
+		SOV_reigniting_the_revolutionary_spirit # if not Trotsky
+		SOV_depoliticize_the_military
+		SOV_addressing_internal_affairs # 35
+		SOV_expand_the_agitprop # 35
+
+		# 1940 
+		SOV_system_decentralization
+		SOV_all_power_to_the_soviets
+		SOV_rehabilitated_military
+		SOV_the_comintern # 35
+		SOV_the_threat_from_the_land_of_the_rising_sun # 35
+		SOV_two_red_flags #35
+		SOV_the_permanent_revolution
+
+		# 1941
+		SOV_anti_capitalist_policies
+		SOV_a_global_class_struggle
+		SOV_collectivist_propaganda
+		SOV_middle_east_diplomacy
+		SOV_support_afghan_ideology
+		
+	
+		# 1942
+		SOV_military_reorganization
+		SOV_regional_development
+		SOV_autonomous_soviet_republics
+		SOV_smersh
+		SOV_barrier_troops # 35
+		
+
+		# 1943
+		SOV_international_union_of_soviet_republics
+		SOV_carry_revolution_east
+		SOV_the_glory_of_the_red_army
+		SOV_experts_in_camouflage
+
+		#1944
+		SOV_the_onslaught_on_colonialism
+		SOV_the_end_of_the_imperialist_era
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+	traits = {
+		
+	}
+
+	
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+

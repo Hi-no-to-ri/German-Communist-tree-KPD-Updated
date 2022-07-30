@@ -1,0 +1,8 @@
+﻿l_russian:
+# person_of_phoenix:0 "Человек Феникса"
+# man_of_phoenix:0 "Человек Феникса" # or Мужчина Феникса 
+# woman_of_phoenix:0 "Женщина Феникса"
+# phoenix:0 "Феникс" #Reviewed translation
+ tough:0 "$operative_tough$"
+# tough:0 "Крутой" #from operative_tough:0 in vanilla
+ mobilization_staff:0 "Руководителя Мобилизационной Группы" # Referenced from Wikipedia

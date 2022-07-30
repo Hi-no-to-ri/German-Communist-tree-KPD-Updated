@@ -1,0 +1,103 @@
+﻿division_template = {
+	name = "Militia Brigade"		
+	division_names_group = ENG_INF_01
+	is_locked = yes
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+        	infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	support = {
+
+	}
+}
+
+units = {
+	division= {
+		name = "1. Brigade"
+		location = 351
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "2. Brigade"
+		location = 6384
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "3. Brigade"
+		location = 9315
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "4. Brigade"
+		location = 351
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "5. Brigade"
+		location = 351
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "6. Brigade"
+		location = 9297
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "7. Brigade"
+		location = 9379
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "8. Brigade"
+		location = 6384
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "9. Brigade"
+		location = 9297
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "10. Brigade"
+		location = 377
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "11. Brigade"
+		location = 377
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "12. Brigade"
+		location = 11297
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "13. Brigade"
+		location = 9315
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "14. Brigade"
+		location = 11297
+		division_template = "Militia Brigade"
+		start_experience_factor = 0.2
+	}
+}
+

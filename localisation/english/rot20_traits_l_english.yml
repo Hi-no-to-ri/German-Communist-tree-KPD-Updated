@@ -1,0 +1,8 @@
+﻿l_english:
+# person_of_phoenix:0 "Person of Phoenix"
+# man_of_phoenix:0 "Man of Phoenix"
+# woman_of_phoenix:0 "Woman of Phoenix"
+# phoenix:0 "Phoenix"
+ tough:0 "$operative_tough$"
+# tough:0 "Tough"
+ mobilization_staff:0 "Head of the Mobilization Group"

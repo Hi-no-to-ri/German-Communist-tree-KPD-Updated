@@ -1,0 +1,8 @@
+﻿l_german:
+# person_of_phoenix:0 "Phönixpersönlichkeit"  # I'll translate this word by word. Doesn't mean that I know what it actually means!
+# man_of_phoenix:0 "Phönixmann"
+# woman_of_phoenix:0 "Phönixfrau"
+# phoenix:0 "Phönix"
+ tough:0 "$operative_tough$" #<-- Nice! Takes it from the base game.
+# tough:0 "Zäh"
+ mobilization_staff:0 "Leiter der Gruppe Mobilmachung" # KPD2.0alpha8 update # Referenced from Wikipedia

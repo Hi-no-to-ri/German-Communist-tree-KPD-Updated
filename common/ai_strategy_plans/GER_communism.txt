@@ -1,0 +1,99 @@
+German_alternate_communism = {
+	name = "German Alternate plan to establish socialism"
+	desc = "Rot Front, Genossen!"
+
+	enable = {
+		original_tag = GER
+		OR = {
+			has_country_flag = GER_AI_RANDOM_COMMUNISM
+			has_game_rule = {
+				rule = GER_ai_behavior
+				option = COMMUNISM
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		GER_oppose_hitler
+		GER_reds_amnesty
+		GER_rot_front
+		GER_second_civil_war
+		GER_rot_front_exp
+		GER_rot_front_army
+		GER_fight_with_counterrevolutionary
+		GER_nationalisation
+		GER_new_workers_culture
+		GER_NVA
+		GER_expand_the_revolution
+		GER_enter_comintern
+		GER_accept_stalinism
+		GER_stalin_industrialisation
+		GER_collectivisation
+		GER_countinue_industrialisation
+		GER_four_year_plan
+		GER_grosraumwirtschaft
+		GER_autarky
+		GER_hermann_goring_werke
+		GER_kdf_wagen
+		GER_extra_tech_slot
+		GER_tech_cooperation
+		GER_invite_soviet_specialists
+		GER_autobahn
+		GER_press_austria
+		GER_fate_of_poland
+		GER_socialist_anschluss
+		GER_exile_fascists
+		GER_support_dimitrov
+		GER_trial_fascism
+		GER_german_war_economy
+		GER_west_wall
+		GER_air_innovation
+		GER_ostwall
+		GER_coal_liquidization
+		GER_tactical_air_effort
+		GER_air_innovation_2
+		GER_army_innovation_2
+		GER_rocketry_focus
+		GER_wunderwaffe
+		GER_prepare_for_war
+		GER_pre_war_plan
+		GER_our_last_battle
+	}
+
+	research = {
+		infantry_weapons = 50.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+	}
+
+	ideas = {
+		hjalmar_schacht = 0
+		heinrich_himmler = 0
+		martin_bormann = 0
+		ernst_thalmann = 10
+		wilhelm_pieck = 5
+		walter_ulbriht = 5
+	}
+
+	traits = {
+		communist_revolutionary = 5
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}

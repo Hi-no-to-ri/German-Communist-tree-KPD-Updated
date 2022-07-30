@@ -1,0 +1,219 @@
+focus_tree = {
+	id = german_anarchist_focus
+	
+	country = {
+		factor = 0
+	}
+	
+	default = no
+	focus = {
+		id = BAY_communes_confederation
+		icon = GFX_goal_generic_construction
+		x = 4
+		y = 0
+		cost = 10
+		mutually_exclusive = { focus = BAY_ein_commune }
+		ai_will_do = {
+			factor = 15
+		}
+		
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BAY_ein_commune
+		icon = GFX_goal_generic_construction
+		x = 2
+		y = 0
+		cost = 10
+		mutually_exclusive = { focus = BAY_communes_confederation }
+		ai_will_do = {
+			factor = 0
+		}
+		
+		completion_reward = {
+
+		}
+	}	
+
+	focus = {
+		id = BAY_red_army
+		icon = GFX_goal_generic_construction
+		x = 2
+		y = 2
+		cost = 10
+		prerequisite = { focus = BAY_communes_confederation }
+		ai_will_do = {
+			factor = 15
+		}
+		
+		completion_reward = {
+
+		}
+	}	
+	
+	focus = {
+		id = BAY_help_from_Soviets
+		icon = GFX_goal_generic_construction
+		x = 2
+		y = 4
+		cost = 10
+		prerequisite = { focus = BAY_ein_commune }
+		ai_will_do = {
+			factor = 15
+		}
+		
+		completion_reward = {
+
+		}
+	}
+		
+	focus = {
+		id = BAY_volonteer_army
+		icon = GFX_goal_generic_construction
+		x = 4
+		y = 2
+		cost = 10
+		prerequisite = { focus = BAY_red_army }
+		ai_will_do = {
+			factor = 0
+		}
+		
+		completion_reward = {
+
+		}
+	}
+		
+	focus = {
+		id = BAY_our_own_forces
+		icon = GFX_goal_generic_construction
+		x = 4
+		y = 4
+		cost = 10
+		prerequisite = { focus = BAY_volonteer_army }
+		ai_will_do = {
+			factor = 0
+		}
+		
+		completion_reward = {
+
+		}
+	}
+		
+	focus = {
+		id = BAY_conquer_Wurtenberg
+		icon = GFX_goal_generic_construction
+		x = 3
+		y = 3
+		cost = 10
+		prerequisite = { focus = BAY_communes_confederation focus = BAY_ein_commune }
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BAY_war_with_prov_gvt
+		icon = GFX_goal_generic_construction
+		x = 3
+		y = 5
+		cost = 10
+		prerequisite = { focus = BAY_conquer_Wurtenberg }
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BAY_conquer_cliques
+		icon = GFX_goal_generic_construction
+		x = 3
+		y = 6
+		cost = 10
+		prerequisite = { focus = BAY_war_with_prov_gvt }
+		prerequisite = { focus = BAY_help_from_Soviets focus = BAY_our_own_forces }
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BAY_reborn_the_revolution
+		icon = GFX_goal_generic_construction
+		x = 2
+		y = 7
+		cost = 10
+		mutually_exclusive = { focus = BAY_anarchism }
+		prerequisite = { focus = BAY_conquer_cliques }
+		prerequisite = { focus = BAY_help_from_Soviets }
+		ai_will_do = {
+			factor = 15
+		}
+		
+		completion_reward = {
+
+		}
+	}
+		
+	focus = {
+		id = BAY_anarchism
+		icon = GFX_goal_generic_construction
+		x = 4
+		y = 7
+		cost = 10
+		mutually_exclusive = { focus = BAY_reborn_the_revolution }
+		prerequisite = { focus = BAY_conquer_cliques }
+		ai_will_do = {
+			factor = 0
+		}
+		
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BAY_anarchism_doesnt_know_the_borders
+		icon = GFX_goal_generic_construction
+		x = 2
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
+		prerequisite = { focus = BAY_anarchism }
+		completion_reward = {
+
+		}
+	}
+		
+	focus = {
+		id = BAY_world_commune
+		icon = GFX_goal_generic_construction
+		x = 2
+		y = 9
+		cost = 10
+		prerequisite = { focus = BAY_anarchism_doesnt_know_the_borders }
+		ai_will_do = {
+			factor = 0
+		}
+		
+		completion_reward = {
+
+		}
+	}
+}	

@@ -1,0 +1,3147 @@
+﻿###########################
+# German Events
+###########################
+
+add_namespace = rot_germany
+
+country_event = {
+	id = rot_germany.1
+	title = rot_germany.1.t
+	desc = rot_germany.1.desc
+	picture = GFX_report_event_german_reichstag_gathering
+
+	trigger = {
+		NOT = {
+			has_country_flag = GER_civil_war_fired
+			}
+		tag = GER
+		has_completed_focus = GER_second_civil_war
+		NOT = { is_subject = yes }
+		}
+
+	mean_time_to_happen = { days = 2 }	
+
+	option = { #revolt
+		name = rot_germany.1.a
+		ai_chance = {
+			base = 100
+		}
+		hidden_effect = {
+		remove_ideas = strikes_1
+		remove_ideas = strikes_3
+		}
+		start_civil_war = {
+			ruling_party = communism
+			ideology = neutrality
+			size = 0.2
+			states = { 56 58 59 61 5 67 }
+			keep_unit_leaders = { 2 3 4 5 35 21 1000 }
+		}
+		hidden_effect = {
+			every_other_country = {
+				limit = {
+					original_tag = GER
+					has_government = neutrality
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.15
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.30
+				}
+				set_cosmetic_tag = GER_provisional_gvt 
+				add_war_support = 0.9
+				add_manpower = 700000
+				add_ideas = GER_fight_till_the_end1 
+				add_ideas = GER_low_support
+				add_ideas = GER_communist_partisans
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					amount = 5000
+					producer = "ENG"
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = 500
+					producer = "ENG"
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					amount = 5000
+					producer = "FRA"
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = 500
+					producer = "FRA"
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					amount = 3000
+					producer = "USA"
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = 100
+					producer = "USA"
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					amount = 6000
+					producer = "POL"
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = 600
+					producer = "POL"
+				}
+				add_country_leader_role = {
+					character = GER_albert_kesselring
+					country_leader = {
+						expire = "1965.1.1" #Changed from 1956.1.1 at KPD2.0 update
+						ideology = despotism
+						traits = {
+							great_war_hero
+						}
+					}
+					promote_leader = yes
+				}
+			}
+			remove_ideas = sour_loser
+			set_cosmetic_tag = GER_revolution
+		}
+				
+		add_timed_idea = { idea = reign_of_terror days = 365 }
+		add_stability = -0.1
+		add_ideas = GER_unknown_general_loyality_idea
+		add_ideas = GER_industry_wo_owner_idea
+		add_ideas = GER_dissidents_idea
+		add_ideas = GER_fight_till_the_end2
+		remove_ideas = general_staff
+		hidden_effect = {
+			load_oob = GER_German_Civil_War_2_communism
+			every_country = {
+				limit = {
+					original_tag = GER
+					has_government = neutrality
+				}
+				POL = {
+					give_military_access = PREV
+				}
+				set_country_flag = GER_civil_war_fired
+				load_oob = GER_German_Civil_War_2_neutrality
+			}
+
+			set_country_flag = GER_civil_war_fired
+			news_event = { hours = 6 id = rot_news.4 }
+		}
+	}
+}
+
+country_event = { #Pressure on Austria
+	id = rot_germany.2
+	title = rot_germany.2.t
+	desc = rot_germany.2.desc
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+
+	option = { 
+		name = rot_germany.2.a
+		ai_chance = {
+			base = 70
+			modifier = {
+				add = -40
+				GER = { has_army_size = { size < 40 } }
+			}
+			modifier = {
+				add = 100
+				GER = { has_army_size = { size > 39 } }
+			}
+		}
+		GER = { 
+			puppet = ROOT
+			country_event = rot_germany.3 
+		}
+		news_event = { hours = 24 id = rot_news.7 }
+	}
+	option = { 
+		name = rot_germany.2.b
+		ai_chance = {
+			base = 30
+			modifier = {
+				add = -20
+				GER = { has_army_size = { size > 39 } }
+			}
+			modifier = {
+				add = 40
+				GER = { has_army_size = { size < 40 } }
+			}
+			modifier = {
+				add = 30
+				any_other_country = {
+					has_guaranteed = AUS
+				}
+			}
+		}
+		GER = { country_event = rot_germany.4 }
+		start_civil_war = {
+			ideology = communism
+			size = 0.1
+		}
+		news_event = { hours = 24 id = rot_news.8 }
+	}
+}
+country_event = { #Accept
+	id = rot_germany.3
+	title = rot_germany.3.t
+	desc = rot_germany.3.desc
+	picture = GFX_report_event_german_reichstag_gathering
+
+	is_triggered_only = yes
+
+	option = { #Great
+		name = rot_germany.3.a
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+country_event = { #Denied
+	id = rot_germany.4
+	title = rot_germany.4.t
+	desc = rot_germany.4.desc
+	picture = GFX_report_event_czech_soldiers_02
+
+	is_triggered_only = yes
+
+	option = { #They will pay for it
+		name = rot_germany.4.a
+		ai_chance = {
+			base = 100
+		}
+		random_other_country = {
+			limit = {
+				original_tag = AUS
+				NOT = {
+					has_government = communism
+				}
+			}
+			GER = {
+				declare_war_on = {
+					target = PREV
+					type = puppet_wargoal_focus
+				}
+			}
+		}
+		random_other_country = {
+			limit = {
+				original_tag = AUS
+				has_government = communism
+			}
+			GER = { puppet = PREV }
+		}
+	}
+}
+
+country_event = { #Pressure on Poland
+	id = rot_germany.5
+	title = rot_germany.5.t
+	desc = rot_germany.5.desc
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+
+	option = { 
+		name = rot_germany.5.a
+		ai_chance = {
+			base = 30
+			modifier = {
+				add = 40
+				GER = { has_army_size = { size > 49 } }
+			}
+			modifier = {
+				add = -20
+				GER = { has_army_size = { size < 50 } }
+			}
+		}
+		GER = { puppet = POL }
+		GER = { country_event = rot_germany.6 }
+		news_event = { hours = 24 id = rot_news.9 }
+	}
+	option = { 
+		name = rot_germany.5.b
+		ai_chance = {
+			base = 70
+			modifier = {
+				add = 100
+				GER = { has_army_size = { size < 50 } }
+			}
+			modifier = {
+				add = -40
+				GER = { has_army_size = { size > 49 } }
+			}
+			modifier = {
+				add = 100
+				any_other_country = {
+					has_guaranteed = POL
+				}
+			}
+		}
+		GER = { country_event = rot_germany.7 }
+		start_civil_war = {
+			ideology = communism
+			size = 0.1
+		}
+		news_event = { hours = 24 id = rot_news.10 }
+	}
+}
+country_event = { #Accept
+	id = rot_germany.6
+	title = rot_germany.6.t
+	desc = rot_germany.6.desc
+	picture = GFX_report_event_german_reichstag_gathering
+
+	is_triggered_only = yes
+
+	option = { #Great
+		name = rot_germany.6.a
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+country_event = { #Denied
+	id = rot_germany.7
+	title = rot_germany.7.t
+	desc = rot_germany.7.desc
+	picture = GFX_report_event_german_polish_border
+
+	is_triggered_only = yes
+
+	option = { #They will pay for it
+		name = rot_germany.7.a
+		ai_chance = {
+			base = 100
+		}
+		declare_war_on = {
+			type = puppet_wargoal_focus
+			target = POL
+		}
+		random_other_country = {
+			limit = {
+				original_tag = POL
+				has_government = communism
+			}
+			GER = { puppet = PREV }
+		}
+	}
+}
+country_event = { #Junta won. The collapse of Germany
+	id = rot_germany.8
+	title = rot_germany.8.t
+	desc = rot_germany.8.desc
+	picture = GFX_report_event_german_polish_border
+
+	trigger = {
+		original_tag = GER
+		has_country_flag = GER_civil_war_fired
+		has_civil_war = no
+		has_government = neutrality
+	}
+	mean_time_to_happen = { days = 60 }
+	fire_only_once = yes
+	option = { 
+		name = rot_germany.8.a
+		ai_chance = {
+			base = 100
+		}
+		set_capital = {state = 64}
+		remove_ideas = GER_fight_till_the_end1 
+		remove_ideas = GER_low_support
+		remove_ideas = GER_communist_partisans
+		add_timed_idea = { idea = GER_capital_outflows days = 730 }
+		delete_unit_template_and_units = { division_template = "Landsturmregiment" }	
+		delete_unit_template_and_units = { division_template = "Intervent's division" }	
+		hidden_effect = {
+			58 = { add_core_of = SHL }
+			61 = { add_core_of = MEK }
+			62 = { add_core_of = MEK }
+			59 = { add_core_of = HAN }
+			56 = { add_core_of = HAN }
+			57 = { add_core_of = HAN }
+			50 = { add_core_of = WUR }
+			65 = { add_core_of = SAX }
+			60 = { add_core_of = SAX }
+			86 = { add_core_of = PRE }
+			85 = { add_core_of = PRE }
+			762 = { add_core_of = PRE }
+			every_state = {
+				limit = {
+					is_core_of = GER
+				}
+				add_core_of = BAY
+			}
+			every_state = {
+				limit = {
+					is_core_of = GER
+				}
+				add_core_of = PRE
+			}
+		}
+		PRE = { 
+			transfer_state = 763
+			transfer_state = 5
+			transfer_state = 63
+			transfer_state = 68
+			transfer_state = 66
+			transfer_state = 67
+			hidden_effect = {
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.2
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.10
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.55
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.1
+				}
+				load_oob = PRE
+#				recruit_character = GER_wilhelm_iii
+				PRE_wilhelm_iii = {
+					add_country_leader_role = {
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = despotism
+						traits = {
+							popular_figurehead2
+						}
+					}
+					promote_leader = yes
+					}
+				}
+			}
+		}
+		HAN = { 
+			transfer_state = 59
+			transfer_state = 57
+			hidden_effect = {
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.2
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.10
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.55
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.1
+				}
+				load_oob = HAN
+				set_cosmetic_tag = HAN_junta
+			}	
+		}
+		SHL = { 
+			transfer_state = 58
+			hidden_effect = {
+				set_politics = {
+					ruling_party = democratic
+					elections_allowed = yes
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.2
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.40
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.2
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.2
+				}
+				load_oob = SHL
+			}	
+		}
+		MEK = { 
+			transfer_state = 61
+			hidden_effect = {
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.2
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.10
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.55
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.1
+				}
+				load_oob = MEK
+				set_cosmetic_tag = MEK_junta
+			}	
+		}
+		SAX = { 
+			transfer_state = 65
+			hidden_effect = {
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.2
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.10
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.55
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.1
+				}
+				load_oob = SAX
+				set_cosmetic_tag = SAX_junta
+			}	
+		}
+		BAY = { 
+			transfer_state = 54
+			transfer_state = 53
+			transfer_state = 52
+			hidden_effect = {
+				set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.40
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.40
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.15
+				}
+				load_oob = BAY
+				set_cosmetic_tag = GER_anarchy
+			}	
+			create_country_leader = { #Remained as old create_country_leader effect because vanilla Anarchist Commune is in the same situation
+				name = "Anarchist Commune"
+				desc = "POLITICS_ANARCHIST_COMMUNE_DESC"
+				picture = "GFX_portrait_SPR_anarchist_commune"
+				expire = "1965.1.1"
+				ideology = anarchism # Neutrality Anarchism
+				traits = {
+					our_right_to_survive
+				}
+			}
+			create_country_leader = { #Remained as old create_country_leader effect because vanilla Anarchist Commune is in the same situation
+				name = "Anarchist Commune"
+				desc = "POLITICS_ANARCHIST_COMMUNE_DESC"
+				picture = "GFX_portrait_SPR_anarchist_commune"
+				expire = "1965.1.1"
+				ideology = anarchist_communism 
+				traits = {
+					our_right_to_survive
+				}
+			}
+		}
+		WUR = { 
+			transfer_state = 50
+			hidden_effect = {
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.2
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.10
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.55
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.1
+				}
+				load_oob = WUR
+				set_cosmetic_tag = WUR_junta
+			}	
+		}
+	}
+	option = { 
+		name = rot_germany.8.b
+		ai_chance = {
+			base = 100
+		}
+		set_capital = {state = 64}
+		remove_ideas = GER_fight_till_the_end1 
+		remove_ideas = GER_low_support
+		remove_ideas = GER_communist_partisans
+		add_timed_idea = { idea = GER_capital_outflows days = 730 }
+		delete_unit_template_and_units = { division_template = "Landsturmregiment" }	
+		delete_unit_template_and_units = { division_template = "Intervent's division" }	
+		hidden_effect = {
+			58 = { add_core_of = SHL }
+			61 = { add_core_of = MEK }
+			62 = { add_core_of = MEK }
+			59 = { add_core_of = HAN }
+			56 = { add_core_of = HAN }
+			57 = { add_core_of = HAN }
+			50 = { add_core_of = WUR }
+			65 = { add_core_of = SAX }
+			60 = { add_core_of = SAX }
+			86 = { add_core_of = PRE }
+			85 = { add_core_of = PRE }
+			762 = { add_core_of = PRE }
+			every_state = {
+				limit = {
+					is_core_of = GER
+				}
+				add_core_of = BAY
+			}
+			every_state = {
+				limit = {
+					is_core_of = GER
+				}
+				add_core_of = PRE
+			}
+		}
+		PRE = { 
+			transfer_state = 763
+			transfer_state = 5
+			transfer_state = 63
+			transfer_state = 68
+			transfer_state = 66
+			transfer_state = 67
+			hidden_effect = {
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.2
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.10
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.55
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.1
+				}
+				load_oob = PRE
+#				recruit_character = GER_wilhelm_iii
+				PRE_wilhelm_iii = {
+					add_country_leader_role = {
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = despotism
+						traits = {
+							popular_figurehead2
+						}
+					}
+					promote_leader = yes
+					}
+				}
+			}
+		}
+		HAN = { 
+			transfer_state = 59
+			transfer_state = 57
+			hidden_effect = {
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.2
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.10
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.55
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.1
+				}
+				load_oob = HAN
+				set_cosmetic_tag = HAN_junta
+			}	
+		}
+		SHL = { 
+			transfer_state = 58
+			hidden_effect = {
+				set_politics = {
+					ruling_party = democratic
+					elections_allowed = yes
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.2
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.4
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.2
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.2
+				}
+				load_oob = SHL
+			}	
+		}
+		MEK = { 
+			transfer_state = 61
+			hidden_effect = {
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.2
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.10
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.55
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.1
+				}
+				load_oob = MEK
+				set_cosmetic_tag = MEK_junta
+			}	
+		}
+		SAX = { 
+			transfer_state = 65
+			hidden_effect = {
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.2
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.10
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.55
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.1
+				}
+				load_oob = SAX
+				set_cosmetic_tag = SAX_junta
+			}	
+		}
+		BAY = { 
+			transfer_state = 54
+			transfer_state = 53
+			transfer_state = 52
+			hidden_effect = {
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.40
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.40
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.15
+				}
+				load_oob = BAY
+				set_cosmetic_tag = GER_anarchy
+			}	
+			create_country_leader = { #Remained as old create_country_leader effect because vanilla Anarchist Commune is in the same situation
+				name = "Anarchist Commune"
+				desc = "POLITICS_ANARCHIST_COMMUNE_DESC"
+				picture = "GFX_portrait_SPR_anarchist_commune"
+				expire = "1965.1.1"
+				ideology = anarchism # Neutrality Anarchism
+				traits = {
+					our_right_to_survive
+				}
+			}
+			create_country_leader = { #Remained as old create_country_leader effect because vanilla Anarchist Commune is in the same situation
+				name = "Anarchist Commune"
+				desc = "POLITICS_ANARCHIST_COMMUNE_DESC"
+				picture = "GFX_portrait_SPR_anarchist_commune"
+				expire = "1965.1.1"
+				ideology = anarchist_communism 
+				traits = {
+					our_right_to_survive
+				}
+			}
+		}
+		WUR = { 
+			transfer_state = 50
+			hidden_effect = {
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.2
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.10
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.55
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.1
+				}
+				load_oob = WUR
+				set_cosmetic_tag = WUR_junta
+			}	
+		}
+		BAY = { change_tag_from = ROOT }
+	}
+	option = { 
+		name = rot_germany.8.c
+		ai_chance = {
+			base = 100
+		}
+		set_capital = {state = 64}
+		remove_ideas = GER_fight_till_the_end1 
+		remove_ideas = GER_low_support
+		remove_ideas = GER_communist_partisans
+		add_timed_idea = { idea = GER_capital_outflows days = 730 }
+		delete_unit_template_and_units = { division_template = "Landsturmregiment" }	
+		delete_unit_template_and_units = { division_template = "Intervent's division" }	
+		hidden_effect = {
+			58 = { add_core_of = SHL }
+			61 = { add_core_of = MEK }
+			62 = { add_core_of = MEK }
+			59 = { add_core_of = HAN }
+			56 = { add_core_of = HAN }
+			57 = { add_core_of = HAN }
+			50 = { add_core_of = WUR }
+			65 = { add_core_of = SAX }
+			60 = { add_core_of = SAX }
+			86 = { add_core_of = PRE }
+			85 = { add_core_of = PRE }
+			762 = { add_core_of = PRE }
+			every_state = {
+				limit = {
+					is_core_of = GER
+				}
+				add_core_of = BAY
+			}
+			every_state = {
+				limit = {
+					is_core_of = GER
+				}
+				add_core_of = PRE
+			}
+		}
+		PRE = { 
+			transfer_state = 763
+			transfer_state = 5
+			transfer_state = 63
+			transfer_state = 68
+			transfer_state = 66
+			transfer_state = 67
+			hidden_effect = {
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.2
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.10
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.55
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.1
+				}
+				load_oob = PRE
+#				recruit_character = GER_wilhelm_iii
+				PRE_wilhelm_iii = {
+					add_country_leader_role = {
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = despotism
+						traits = {
+							popular_figurehead2
+						}
+					}
+					promote_leader = yes
+					}
+				}
+			}
+		}
+		HAN = { 
+			transfer_state = 59
+			transfer_state = 57
+			hidden_effect = {
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.2
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.10
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.55
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.1
+				}
+				load_oob = HAN
+				set_cosmetic_tag = HAN_junta
+			}	
+		}
+		SHL = { 
+			transfer_state = 58
+			hidden_effect = {
+				set_politics = {
+					ruling_party = democratic
+					elections_allowed = yes
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.2
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.4
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.2
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.2
+				}
+				load_oob = SHL
+			}	
+		}
+		MEK = { 
+			transfer_state = 61
+			hidden_effect = {
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.2
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.10
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.55
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.1
+				}
+				load_oob = MEK
+				set_cosmetic_tag = MEK_junta
+			}	
+		}
+		SAX = { 
+			transfer_state = 65
+			hidden_effect = {
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.2
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.10
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.55
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.1
+				}
+				load_oob = SAX
+				set_cosmetic_tag = SAX_junta
+			}	
+		}
+		BAY = { 
+			transfer_state = 54
+			transfer_state = 53
+			transfer_state = 52
+			hidden_effect = {
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.40
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.40
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.15
+				}
+				load_oob = BAY
+				set_cosmetic_tag = GER_anarchy
+			}	
+			create_country_leader = { #Remained as old create_country_leader effect because vanilla Anarchist Commune is in the same situation
+				name = "Anarchist Commune"
+				desc = "POLITICS_ANARCHIST_COMMUNE_DESC"
+				picture = "GFX_portrait_SPR_anarchist_commune"
+				expire = "1965.1.1"
+				ideology = anarchism # Neutrality Anarchism
+				traits = {
+					our_right_to_survive
+				}
+			}
+			create_country_leader = { #Remained as old create_country_leader effect because vanilla Anarchist Commune is in the same situation
+				name = "Anarchist Commune"
+				desc = "POLITICS_ANARCHIST_COMMUNE_DESC"
+				picture = "GFX_portrait_SPR_anarchist_commune"
+				expire = "1965.1.1"
+				ideology = anarchist_communism 
+				traits = {
+					our_right_to_survive
+				}
+			}
+		}
+		WUR = { 
+			transfer_state = 50
+			hidden_effect = {
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.2
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.10
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.55
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.1
+				}
+				load_oob = WUR
+				set_cosmetic_tag = WUR_junta
+			}	
+		}
+		PRE = { change_tag_from = ROOT }
+	}
+}
+country_event = { 
+	id = rot_germany.9
+	title = rot_germany.9.t
+	desc = rot_germany.9.desc
+	picture = GFX_report_event_german_polish_border
+
+	hidden = yes
+
+	trigger = {
+		GER = {
+			has_country_flag = GER_civil_war_fired
+			has_civil_war = no
+			has_government = communism
+			}
+		}
+
+	fire_only_once = yes
+
+	option = { 
+		name = rot_germany.9.a
+		ai_chance = {
+			base = 100
+		}
+		GER = {
+			delete_unit_template_and_units = { division_template = "'Rot Front' regiment" }	
+			remove_ideas = GER_fight_till_the_end2 
+		}	
+	}
+}
+
+country_event = { 
+	id = rot_germany.10
+	title = rot_germany.9.t
+	desc = rot_germany.9.desc
+	picture = GFX_report_event_german_polish_border
+
+	hidden = yes
+
+	trigger = {
+			original_tag = GER
+			has_government = communism
+			NOT = {
+				has_completed_focus = GER_second_civil_war
+			}
+		}
+
+	fire_only_once = yes
+
+	option = { 
+		name = rot_germany.9.a
+		ai_chance = {
+			base = 100
+		}
+				set_cosmetic_tag = GER_ddr
+	}
+}
+
+country_event = { 
+	id = rot_germany.11
+	title = rot_germany.11.t
+	desc = rot_germany.11.desc
+	picture = GFX_report_event_german_polish_border
+
+	is_triggered_only = yes
+
+
+	option = { 
+		name = rot_germany.11.a
+		ai_chance = {
+			base = 0
+		}
+		set_country_flag = ENG_cw_fired
+		dismantle_faction = yes
+		start_civil_war = {
+			ruling_party = democratic
+			ideology = communism
+			size = 0.5
+			states = { 131 130 132 128 129 }
+		}		
+		SCO = {
+			transfer_state = 121
+			transfer_state = 133
+			transfer_state = 136
+			transfer_state = 120
+		}	
+		WLS = { 
+			transfer_state = 122
+			declare_war_on = {
+				target = ENG
+				type = take_state
+				generator = { 128 }	
+			}
+		}	
+		every_other_country = { 
+			limit = {
+				original_tag = ENG
+				has_government = communism
+				}
+			set_cosmetic_tag = ENG_england
+			puppet = SCO
+			set_autonomy = { target = SCO autonomy_state = autonomy_integrated_puppet }
+			hidden_effect = { load_oob = ENG_CW }
+			}
+		every_other_country = { 
+			limit = {
+				original_tag = ENG
+				has_government = communism
+				}
+			puppet = WLS
+		set_autonomy = { target = WLS autonomy_state = autonomy_integrated_puppet }
+			}
+		random_other_country = { 
+			limit = {
+				original_tag = IRE
+				}
+			transfer_state = 119
+		}	
+		SCO = {
+		declare_war_on = {
+			target = ENG
+			type = take_state
+			generator = { 128 }			
+			}
+			hidden_effect = {
+				load_oob = SCO_CW
+			}
+		}
+		WLS = {
+			hidden_effect = {
+				load_oob = WLS_CW
+			}
+		declare_war_on = {
+			target = ENG
+			type = take_state
+			generator = { 128 }			
+			}
+		}
+		hidden_effect = {
+			release = EGY
+			EGY = {
+				add_timed_idea = { idea = communist_influence days = 1825 }
+			}
+			release = SUD
+			SUD = {
+				add_timed_idea = { idea = communist_influence days = 1825 }
+			}
+			release = SOM
+			SOM = {
+				add_timed_idea = { idea = communist_influence days = 1825 }
+			}
+			release = UGA
+			UGA = {
+				add_timed_idea = { idea = communist_influence days = 1825 }
+			}
+			release = TZN
+			TZN = {
+				add_timed_idea = { idea = communist_influence days = 1825 }
+			}
+			release = MLW
+			MLW = {
+				add_timed_idea = { idea = communist_influence days = 1825 }
+			}
+			release = ZAM
+			ZAM = {
+				add_timed_idea = { idea = communist_influence days = 1825 }
+			}
+			release = ZIM
+			ZIM = {
+				add_timed_idea = { idea = communist_influence days = 1825 }
+			}
+			release = KEN
+			KEN = {
+				add_timed_idea = { idea = communist_influence days = 1825 }
+			}
+			release = BOT
+			BOT = {
+				add_timed_idea = { idea = communist_influence days = 1825 }
+			}
+			release = PAL
+			PAL = {
+				add_timed_idea = { idea = communist_influence days = 1825 }
+			}
+			release = JOR
+			JOR = {
+				add_timed_idea = { idea = communist_influence days = 1825 }
+			}
+			release = SRL
+			SRL = {
+					add_timed_idea = { idea = communist_influence days = 1825 }
+				}
+			release = NGA
+			NGA = {
+				add_timed_idea = { idea = communist_influence days = 1825 }
+			}
+			release = GHA
+			GHA = {
+				add_timed_idea = { idea = communist_influence days = 1825 }
+			}
+			release = SIE
+			SIE = {
+				add_timed_idea = { idea = communist_influence days = 1825 }
+			}
+			release = GAM
+			GAM = {
+					add_timed_idea = { idea = communist_influence days = 1825 }
+				}
+			}
+			every_other_country = {
+				limit = {
+					original_tag = ENG
+					has_government = communism
+				}
+				create_country_leader = { #Remained as old create_country_leader effect because Rajani Palme Dutt in vanilla is in the same situation
+							name = "Rajani Palme Dutt"
+							desc = "POLITICS_PALME_DUTT_DESC"
+							picture = "Portrait_Britain_Palme_Dutt.dds"
+							expire = "1965.1.1"
+							ideology = leninism
+							traits = {
+								
+							}
+						}
+					}
+	}
+	option = { 
+		name = rot_germany.11.b
+		ai_chance = {
+			base = 100
+		}
+		dismantle_faction = yes
+		set_capital = {state = 131}
+		set_country_flag = ENG_cw_fired
+		start_civil_war = {
+			ruling_party = communism
+			ideology = democratic
+			size = 0.5
+			capital = 126
+			states = { 126 125 338 123 127 }
+		}
+		set_cosmetic_tag = ENG_england
+		add_ai_strategy = {
+				type = alliance
+				id = "ENG"
+				value = 300
+					}
+		create_country_leader = { #Remained as old create_country_leader effect because Rajani Palme Dutt in vanilla is in the same situation
+					name = "Rajani Palme Dutt"
+					desc = "POLITICS_PALME_DUTT_DESC"
+					picture = "Portrait_Britain_Palme_Dutt.dds"
+					expire = "1965.1.1"
+					ideology = leninism
+					traits = {
+						
+					}
+				}
+		SCO = { 
+			transfer_state = 121
+			transfer_state = 133
+			transfer_state = 136
+			transfer_state = 120
+		}	
+			puppet = SCO
+			set_autonomy = { target = SCO autonomy_state = autonomy_integrated_puppet }
+		WLS = { 
+			transfer_state = 122
+			}	
+		puppet = WLS
+		set_autonomy = { target = WLS autonomy_state = autonomy_integrated_puppet }
+		random_other_country = { 
+			limit = {
+				original_tag = IRE
+				}
+			transfer_state = 119
+		}	
+			hidden_effect = { load_oob = ENG_CW }
+		 	every_other_country = {
+					limit = {
+						original_tag = ENG
+						has_government = democratic
+					}	
+				declare_war_on = { 
+					target = SCO
+					type = take_state
+					generator = { 128 }	 
+				} 
+			}
+		 	every_other_country = {
+					limit = {
+						original_tag = ENG
+						has_government = democratic
+					}	
+				declare_war_on = { 
+					target = WLS
+					type = take_state
+					generator = { 128 }	 
+				} 
+			}
+		hidden_effect = {
+			WLS = {
+				load_oob = WLS_CW
+			}
+			SCO = {
+				load_oob = SCO_CW
+			}
+			release = EGY
+			EGY = {
+				add_timed_idea = { idea = communist_influence days = 1825 }
+			}
+			release = SUD
+			SUD = {
+				add_timed_idea = { idea = communist_influence days = 1825 }
+			}
+			release = SOM
+			SOM = {
+				add_timed_idea = { idea = communist_influence days = 1825 }
+			}
+			release = UGA
+			UGA = {
+				add_timed_idea = { idea = communist_influence days = 1825 }
+			}
+			release = TZN
+			TZN = {
+				add_timed_idea = { idea = communist_influence days = 1825 }
+			}
+			release = MLW
+			MLW = {
+				add_timed_idea = { idea = communist_influence days = 1825 }
+			}
+			release = ZAM
+			ZAM = {
+				add_timed_idea = { idea = communist_influence days = 1825 }
+			}
+			release = ZIM
+			ZIM = {
+				add_timed_idea = { idea = communist_influence days = 1825 }
+			}
+			release = KEN
+			KEN = {
+				add_timed_idea = { idea = communist_influence days = 1825 }
+			}
+			release = BOT
+			BOT = {
+				add_timed_idea = { idea = communist_influence days = 1825 }
+			}
+			release = PAL
+			PAL = {
+				add_timed_idea = { idea = communist_influence days = 1825 }
+			}
+			release = JOR
+			JOR = {
+				add_timed_idea = { idea = communist_influence days = 1825 }
+			}
+			release = SRL
+			SRL = {
+					add_timed_idea = { idea = communist_influence days = 1825 }
+				}
+			release = NGA
+			NGA = {
+				add_timed_idea = { idea = communist_influence days = 1825 }
+			}
+			release = GHA
+			GHA = {
+				add_timed_idea = { idea = communist_influence days = 1825 }
+			}
+			release = SIE
+			SIE = {
+				add_timed_idea = { idea = communist_influence days = 1825 }
+			}
+			release = GAM
+			GAM = {
+					add_timed_idea = { idea = communist_influence days = 1825 }
+			}
+		}	
+	}
+}
+#ENGLAND
+country_event = { 
+	id = rot_germany.12
+	title = rot_germany.12.t
+	desc = rot_germany.12.desc
+	picture = GFX_report_event_chamberlain_announce
+
+	is_triggered_only = yes
+
+	option = { 
+		name = rot_germany.12.a
+		trigger = { 
+			NOT = {
+				OR = {
+					has_government = fascism 
+					is_in_faction_with = ITA 
+				}
+			}
+		}
+		ai_chance = {
+			base = 60
+			modifier = {
+				add = 100
+				has_government = communism
+			}
+			modifier = {
+				add = -1000
+				has_government = fascism
+			}
+			modifier = {
+				add = 10
+				has_opinion = { target = GER value > 19 }
+			}
+			modifier = {
+				add = 10
+				has_opinion = { target = GER value > 29 }
+			}
+			modifier = {
+				add = 10
+				has_opinion = { target = GER value > 39 }
+			}
+			modifier = {
+				add = 10
+				has_opinion = { target = GER value > 49 }
+			}
+			modifier = {
+				add = 10
+				has_opinion = { target = GER value > 59 }
+			}
+			modifier = {
+				add = 10
+				has_opinion = { target = GER value > 69 }
+			}
+			modifier = {
+				add = 10
+				has_opinion = { target = GER value > 79 }
+			}
+		}
+		set_country_flag = GER_country_accepted_alliance
+		GER = { 
+			country_event = rot_germany.13 
+		}
+	}			
+	option = { 
+		name = rot_germany.12.b
+
+		ai_chance = {
+			base = 40
+			modifier = {
+				add = -1000
+				has_government = communism
+			}
+			modifier = {
+				add = 10
+				has_opinion = { target = GER value < 0 }
+			}
+			modifier = {
+				add = 10
+				has_opinion = { target = GER value < -9 }
+			}
+			modifier = {
+				add = 10
+				has_opinion = { target = GER value < -19 }
+			}
+			modifier = {
+				add = 10
+				has_opinion = { target = GER value < -29 }
+			}
+			modifier = {
+				add = 10
+				has_opinion = { target = GER value < -39 }
+			}
+			modifier = {
+				add = 10
+				has_opinion = { target = GER value < -49 }
+			}
+			modifier = {
+				add = 10
+				has_opinion = { target = GER value < -59 }
+			}
+			modifier = {
+				add = 10
+				has_opinion = { target = GER value < -69 }
+			}
+		}
+		GER = { 
+			country_event = rot_germany.14 
+		}		
+	}
+}
+
+country_event = { 
+	id = rot_germany.13
+	title = rot_germany.13.t
+	desc = rot_germany.13.desc
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { 
+		name = rot_germany.13.a
+		ai_chance = {
+			base = 100
+		}
+		set_global_flag = ENG_accepted						
+	}
+}
+
+country_event = { 
+	id = rot_germany.14
+	title = rot_germany.14.t
+	desc = rot_germany.14.desc
+	picture = GFX_report_event_german_troops
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { 
+		name = rot_germany.14.a
+		ai_chance = {
+			base = 100
+		}	
+	}
+}
+
+country_event = { 
+	id = rot_germany.15
+	title = rot_germany.15.t
+	desc = rot_germany.15.desc
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+
+	}
+}
+# WELTREPUBLIK
+country_event = { 
+	id = rot_germany.16
+	title = rot_germany.16.t
+	desc = rot_germany.16.desc
+	picture = GFX_report_event_chamberlain_announce
+
+	is_triggered_only = yes
+
+	option = { 
+		name = rot_germany.16.a
+		ai_chance = {
+			base = 95
+		}
+		custom_effect_tooltip = GAME_OVER_TT
+		set_country_flag = GER_country_accepted_annexation
+		GER = {	
+			country_event = rot_germany.17 
+			annex_country = { target = ROOT transfer_troops = yes }	
+		}
+	}			
+
+	option = { 
+		name = rot_germany.16.b
+		trigger = { 
+			NOT = { is_puppet_of = GER }
+		}
+		ai_chance = {
+			base = 5
+		}
+		GER = { 
+		country_event = rot_germany.18	
+		remove_from_faction = ROOT
+		create_wargoal = {
+			type = annex_everything
+			target = ROOT
+			}			
+		}
+	}
+}
+
+country_event = { 
+	id = rot_germany.17
+	title = rot_germany.17.t
+	desc = rot_germany.17.desc
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = { 
+		name = rot_germany.17.a
+		ai_chance = {
+			base = 100
+		}				
+	}
+}
+
+country_event = { 
+	id = rot_germany.18
+	title = rot_germany.18.t
+	desc = rot_germany.18.desc
+	picture = GFX_report_event_german_troops
+	is_triggered_only = yes
+
+	option = { 
+		name = rot_germany.18.a
+		ai_chance = {
+			base = 100
+		}
+					
+	}
+}
+
+#FRANCE
+country_event = { 
+	id = rot_germany.19
+	title = rot_germany.12.t
+	desc = rot_germany.12.desc
+	picture = GFX_report_event_chamberlain_announce
+
+	is_triggered_only = yes
+
+	option = { 
+		name = rot_germany.12.a
+		trigger = { 
+			NOT = {
+				OR = {
+					has_government = fascism 
+					is_in_faction_with = ITA 
+				}
+			}
+		}
+		ai_chance = {
+			base = 80
+			modifier = {
+				add = 100
+				has_government = communism
+			}
+			modifier = {
+				add = -1000
+				has_government = fascism
+			}
+			modifier = {
+				add = 10
+				has_opinion = { target = GER value > 19 }
+			}
+			modifier = {
+				add = 10
+				has_opinion = { target = GER value > 29 }
+			}
+			modifier = {
+				add = 10
+				has_opinion = { target = GER value > 39 }
+			}
+			modifier = {
+				add = 10
+				has_opinion = { target = GER value > 49 }
+			}
+			modifier = {
+				add = 10
+				has_opinion = { target = GER value > 59 }
+			}
+			modifier = {
+				add = 10
+				has_opinion = { target = GER value > 69 }
+			}
+			modifier = {
+				add = 10
+				has_opinion = { target = GER value > 79 }
+			}
+		}
+		set_country_flag = GER_country_accepted_alliance
+		GER = { 
+			country_event = rot_germany.20 
+		}
+	}			
+
+	option = { 
+		name = rot_germany.12.b
+		ai_chance = {
+			base = 20
+			modifier = {
+				add = -1000
+				has_government = communism
+			}
+			modifier = {
+				add = 10
+				has_opinion = { target = GER value < 0 }
+			}
+			modifier = {
+				add = 10
+				has_opinion = { target = GER value < -9 }
+			}
+			modifier = {
+				add = 10
+				has_opinion = { target = GER value < -19 }
+			}
+			modifier = {
+				add = 10
+				has_opinion = { target = GER value < -29 }
+			}
+			modifier = {
+				add = 10
+				has_opinion = { target = GER value < -39 }
+			}
+			modifier = {
+				add = -10
+				has_opinion = { target = GER value < -49 }
+			}
+			modifier = {
+				add = 10
+				has_opinion = { target = GER value < -59 }
+			}
+			modifier = {
+				add = 10
+				has_opinion = { target = GER value < -69 }
+			}
+		}
+		GER = { 
+			country_event = rot_germany.21 
+		}		
+	}
+}
+
+country_event = { 
+	id = rot_germany.20
+	title = rot_germany.20.t
+	desc = rot_germany.20.desc
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { 
+		name = rot_germany.20.a
+		ai_chance = {
+			base = 100
+		}
+		set_global_flag = FRA_accepted					
+	}
+}
+
+#New leader of USSR
+country_event = { 
+	id = rot_germany.22
+	title = rot_germany.22.t
+	desc = rot_germany.22.desc
+	picture = GFX_report_event_stalin_01
+	fire_only_once = yes
+	trigger = {
+		GER = {
+			has_completed_focus = GER_betrayed_october
+		}
+		SOV = {
+			is_puppet_of = GER
+		}
+	}
+
+	option = {  #Kalinin
+		name = rot_germany.22.a
+		ai_chance = {
+			base = 100
+		}
+		SOV = {
+			kill_country_leader = yes
+			add_country_leader_role = {
+				character = SOV_mikhail_kalinin
+				country_leader = {
+					expire = "1965.1.1"
+					ideology = leninism
+					traits = {
+						popular_figurehead
+					}
+				}
+				promote_leader = yes
+			}
+		}
+	}
+	option = {  #Trotsky
+		name = rot_germany.22.b
+		trigger = { 
+			NOT = { has_global_flag = flag_trotsky_dead }
+		}
+		ai_chance = {
+			base = 100
+		}
+		SOV = {	
+			kill_country_leader = yes
+			add_country_leader_role = { #Temporary #TODO: Consider changing traits, etc. to match NSB's Trotsky
+				character = SOV_lev_trotsky
+				country_leader = {
+					expire = "1965.1.1"
+					ideology = leninism
+					traits = {
+						permanent_revolutionary
+					}
+				}
+				promote_leader = yes
+			}
+		}
+	}
+	option = {  #Trotky's wife
+		name = rot_germany.22.c
+		trigger = { 
+			has_global_flag = flag_trotsky_dead
+		}
+		ai_chance = {
+			base = 100
+		}	
+		SOV = {	
+			kill_country_leader = yes
+			add_country_leader_role = { 
+				character = SOV_natalia_sedova
+				country_leader = {
+					ideology = leninism
+					traits = {
+						devoted_trotskyist
+					}
+					expire = "1965.1.1"
+					id = -1
+				}
+				promote_leader = yes
+			}
+		}
+	}
+}
+
+
+country_event = { 
+	id = rot_germany.23
+	title = rot_germany.23.t
+	desc = rot_germany.23.desc
+	picture = GFX_report_event_german_troops
+	fire_only_once = yes
+	trigger = {
+		original_tag = GER
+		has_completed_focus = GER_betrayed_october
+		has_war_with = SOV
+		SOV = {
+			surrender_progress > 0.5
+		}
+	}
+	option = { 
+		name = rot_germany.23.a
+		ai_chance = {
+			base = 100
+		}
+		white_peace = {
+			tag = SOV
+		}
+		puppet = SOV
+		country_event = rot_germany.22			
+	}
+}
+
+country_event = { 
+	id = rot_germany.24
+	title = rot_germany.24.t
+	desc = rot_germany.24.desc
+	picture = GFX_report_event_ger_proletariat
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = GER
+		has_completed_focus = GER_reds_amnesty
+		}
+		mean_time_to_happen = { days = 60 }	
+
+	option = { 
+		name = rot_germany.24.a
+		ai_chance = {
+			base = 100
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.03
+		}				
+	}
+}
+
+
+country_event = { 
+	id = rot_germany.25
+	title = rot_germany.25.t
+	desc = rot_germany.25.desc
+	picture = GFX_report_event_fascist_militia
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = GER
+		has_completed_focus = GER_reds_amnesty	
+		}
+
+		mean_time_to_happen = { days = 10 }
+
+	option = { 
+		name = rot_germany.25.a
+		ai_chance = {
+			base = 100
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -500
+		}	
+		#add_stability = -0.3
+		add_war_support = -0.05					
+	}
+}
+
+country_event = { 
+	id = rot_germany.26
+	title = rot_germany.26.t
+	desc = rot_germany.26.desc
+	picture = GFX_report_event_thalmann
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = GER
+		has_completed_focus = GER_rot_front	
+		communism > 0.3
+		NOT = {
+			has_country_flag = thalmann_killed		
+		}
+	}
+
+	mean_time_to_happen = { days = 10 }
+
+	option = { 
+		name = rot_germany.26.a
+		ai_chance = {
+			base = 100
+		}	
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+		}				
+	}
+}
+
+country_event = { 
+	id = rot_germany.27
+	title = rot_germany.27.t
+	desc = rot_germany.27.desc
+	picture = GFX_report_event_wo_thalmann
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = GER
+		has_completed_focus = GER_rot_front
+		communism > 0.3
+		has_country_flag = thalmann_killed
+		}
+
+	mean_time_to_happen = { days = 10 }
+
+	option = { 
+		name = rot_germany.27.a
+		ai_chance = {
+			base = 100
+		}	
+		add_popularity = {
+			ideology = communism
+			popularity = 0.03
+		}				
+	}
+}
+
+country_event = { 
+	id = rot_germany.28
+	title = rot_germany.28.t
+	desc = rot_germany.28.desc
+	picture = GFX_report_event_spain_civil_war_volunteers_02
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = GER
+		has_completed_focus = GER_rot_front
+		NOT = {
+			has_government = communism
+		}
+	}
+
+		mean_time_to_happen = { days = 40 }
+
+	option = { 
+		name = rot_germany.28.a
+		ai_chance = {
+			base = 100
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+				amount = -1000
+		}
+		add_stability = -0.05
+		add_war_support = -0.05					
+	}
+}
+#Strike
+country_event = { 
+	id = rot_germany.29
+	title = rot_germany.29.t
+	desc = rot_germany.29.desc
+	picture = GFX_report_event_ger_strike
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = GER
+		focus_progress = {
+			focus = GER_second_civil_war
+			progress > 0.2
+		}
+	}
+
+	mean_time_to_happen = { 
+		days = 1
+	}
+	immediate = {
+		hidden_effect = {
+			add_ideas = strikes_1
+		}
+	}
+	option = { 
+		name = rot_germany.29.a
+		ai_chance = {
+			base = 100
+		}
+		add_stability = -0.05				
+	}
+}
+#General Strike
+country_event = { 
+	id = rot_germany.30
+	title = rot_germany.30.t
+	desc = rot_germany.30.desc
+	picture = GFX_report_event_ger_big_strike
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = GER
+		focus_progress = {
+			focus = GER_second_civil_war
+			progress > 0.6
+		}	
+		NOT = {
+			has_government = communism
+		}	
+	}
+
+	mean_time_to_happen = { 
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = strikes_1
+				add_idea = strikes_3
+			}	
+		}
+	}
+
+	option = { 
+		name = rot_germany.30.a
+		ai_chance = {
+			base = 100
+		}
+		add_stability = -0.1		
+	}
+}
+
+country_event = { 
+	id = rot_germany.31
+	title = rot_germany.31.t
+	desc = rot_germany.31.desc
+	picture = GFX_report_event_german_polish_border
+
+	hidden = yes
+
+	trigger = {
+		any_country = {
+			original_tag = ENG
+			has_country_flag = ENG_cw_fired
+			has_civil_war = no
+		}
+	}
+
+	fire_only_once = yes
+
+	option = { 
+		name = rot_germany.31.a
+		ai_chance = {
+			base = 100
+		}
+		every_other_country = {
+			limit = {
+				original_tag = ENG
+			}
+			delete_unit_template_and_units = { division_template = "Militia Brigade" }
+		}		
+	}
+}
+#Civilwar if Thalmann Killed
+country_event = {
+	id = rot_germany.32
+	title = political.22.t
+	desc = political.22.d
+	picture = GFX_report_event_worker_protests
+
+	is_triggered_only = yes
+
+	option = {
+		name = political.22.a
+		ai_chance = {
+			factor = 0
+		}
+		start_civil_war = {
+			ideology = communism
+			size = 0.5
+		}
+	}
+
+	option = {
+		name = political.22.b
+		if = {
+			limit = {
+				has_government = democratic
+			}
+			start_civil_war = {
+				ruling_party = communism
+				ideology = democratic
+				size = 0.5
+			}
+		}
+		if = {
+			limit = {
+				has_government = fascism
+			}
+			start_civil_war = {
+				ruling_party = communism
+				ideology = fascism
+				size = 0.5
+			}
+		}
+		if = {
+			limit = {
+				has_government = neutrality
+			}
+			start_civil_war = {
+				ruling_party = communism
+				ideology = neutrality
+				size = 0.5
+			}
+		}
+	}
+}
+#SCIENTISTS Emigration
+country_event = { 
+	id = rot_germany.33
+	title = rot_germany.33.t
+	desc = rot_germany.33.desc
+	picture = GFX_report_event_generic_research_lab
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = GER
+		has_government = communism
+		has_completed_focus = GER_second_civil_war	
+	}
+
+	mean_time_to_happen = { 
+		days = 140
+	}
+	#Let them emigrate
+	option = { 
+		name = rot_germany.33.a
+		ai_chance = {
+			base = 100
+		}
+		add_ideas = GER_scientists_emigrated_1
+		add_stability = 0.1
+		random_other_country = {
+			limit = {
+				original_tag = FRA
+				NOT = {
+					has_government = communism
+				}
+			}
+		add_timed_idea = { idea = GER_scientists_from_germany days = 1095 }
+		}
+
+		random_other_country = {
+			limit = {
+				original_tag = ENG
+				NOT = {
+					has_government = communism
+				}
+			}
+		add_timed_idea = { idea = GER_scientists_from_germany days = 1095 }
+		}
+
+		random_other_country = {
+			limit = {
+				original_tag = ITA
+				NOT = {
+					has_government = communism
+				}
+			}
+		add_timed_idea = { idea = GER_scientists_from_germany days = 1095 }
+		}
+
+		random_other_country = {
+			limit = {
+				original_tag = USA
+				NOT = {
+					has_government = communism
+				}
+			}
+		add_timed_idea = { idea = GER_scientists_from_germany days = 1095 }
+		}
+
+		random_other_country = {
+			limit = {
+				original_tag = SWI
+				NOT = {
+					has_government = communism
+				}
+			}
+		add_timed_idea = { idea = GER_scientists_from_germany days = 1095 }
+		}		
+	}
+	#Purge them
+	option = { 
+		name = rot_germany.33.b
+		ai_chance = {
+			base = 0
+		}
+		add_stability = -0.1
+		add_ideas = GER_scientists_purged_1
+		add_popularity = {
+			ideology = communism
+			popularity = -0.05
+		}			
+	}
+}
+#corps commanders purges.
+country_event = { 
+	id = rot_germany.34
+	title = rot_germany.34.t
+	desc = rot_germany.34.desc
+	picture = GFX_report_event_soldiers_marching
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			random_unit_leader = {
+				limit = {
+					NOT = {
+						has_trait = JAP_communist_sympathizer
+					}
+				}
+			add_unit_leader_trait = disgruntled
+			}
+	
+			random_unit_leader = {
+				limit = {
+					NOT = {
+						has_trait = JAP_communist_sympathizer
+					}
+				}
+			add_unit_leader_trait = disgruntled
+			}
+
+			random_unit_leader = {
+				limit = {
+					NOT = {
+						has_trait = JAP_communist_sympathizer
+					}
+				}
+			add_unit_leader_trait = disgruntled
+			}				
+		}
+	}
+	option = { 
+		name = rot_germany.34.a
+		ai_chance = {
+			base = 100
+		}
+		every_unit_leader = {
+			limit = {
+				has_trait = disgruntled
+			}
+			retire = yes
+		}
+		hidden_effect = {
+			country_event = { 
+				id = rot_germany.35 
+				days = 15 
+			}
+		}		
+	}
+}
+
+country_event = { 
+	id = rot_germany.35
+	title = rot_germany.35.t
+	desc = rot_germany.35.desc
+	picture = GFX_report_event_spain_civil_war_volunteers_01
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			random_unit_leader = {
+				limit = {
+					NOT = {
+						has_trait = JAP_communist_sympathizer
+					}
+				}
+			add_unit_leader_trait = disgruntled
+			}
+	
+			random_unit_leader = {
+				limit = {
+					NOT = {
+						has_trait = JAP_communist_sympathizer
+					}
+				}
+			add_unit_leader_trait = disgruntled
+			}
+
+			random_unit_leader = {
+				limit = {
+					NOT = {
+						has_trait = JAP_communist_sympathizer
+					}
+				}
+			add_unit_leader_trait = disgruntled
+			}		
+			random_unit_leader = {
+				limit = {
+					NOT = {
+						has_trait = JAP_communist_sympathizer
+					}
+				}
+			add_unit_leader_trait = disgruntled
+			}		
+		}
+	}
+
+	option = { 
+		name = rot_germany.35.a
+		ai_chance = {
+			base = 100
+		}	
+		every_unit_leader = {
+			limit = {
+				has_trait = disgruntled
+			}
+			retire = yes
+		}
+	}
+}
+
+country_event = { 
+	id = rot_germany.36
+	title = rot_germany.36.t
+	desc = rot_germany.36.desc
+	picture = GFX_report_event_german_volunteers
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			random_unit_leader = {
+				limit = {
+					NOT = {
+						has_trait = JAP_communist_sympathizer
+					}
+				}
+			add_unit_leader_trait = disgruntled
+			}
+	
+			random_unit_leader = {
+				limit = {
+					NOT = {
+						has_trait = JAP_communist_sympathizer
+					}
+				}
+			add_unit_leader_trait = disgruntled
+			}
+
+			random_unit_leader = {
+				limit = {
+					NOT = {
+						has_trait = JAP_communist_sympathizer
+					}
+				}
+			add_unit_leader_trait = disgruntled
+			}	
+	
+			random_unit_leader = {
+				limit = {
+					NOT = {
+						has_trait = JAP_communist_sympathizer
+					}
+				}
+			add_unit_leader_trait = disgruntled
+			}	
+	
+			random_unit_leader = {
+				limit = {
+					NOT = {
+						has_trait = JAP_communist_sympathizer
+					}
+				}
+			add_unit_leader_trait = disgruntled
+			}	
+		}
+	}
+
+	option = { 
+		name = rot_germany.36.a
+		ai_chance = {
+			base = 100
+		}
+		every_unit_leader = {
+			limit = {
+				has_trait = disgruntled
+			}
+			retire = yes
+		}		
+		hidden_effect = {
+			country_event = {
+				id = rot_germany.37
+				days = 5
+			}
+		}
+	}
+}
+country_event = { 
+	id = rot_germany.37
+	title = rot_germany.37.t
+	desc = rot_germany.37.desc
+	picture = GFX_report_event_soviet_purge_trial
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			random_unit_leader = {
+				limit = {
+					NOT = {
+						has_trait = JAP_communist_sympathizer
+					}
+				}
+			add_unit_leader_trait = disgruntled
+			}
+	
+			random_unit_leader = {
+				limit = {
+					NOT = {
+						has_trait = JAP_communist_sympathizer
+					}
+				}
+			add_unit_leader_trait = disgruntled
+			}
+		}
+	}
+
+	option = { 
+		name = rot_germany.37.a
+		ai_chance = {
+			base = 100
+		}
+		every_unit_leader = {
+			limit = {
+				has_trait = disgruntled
+			}
+			retire = yes
+		}	
+	}
+}
+country_event = { #TODO: This is a modified copy of old (pre-NSB) event of Trotsky coup (soviet.28), which used in GER_trotsky_coup focus. So they may should replaced to new NSB style later. Seeing SOV_left_opposition_coup focus may be helpful. #I found SOV_start_civil_war in SOV_scripted_effects.txt
+	id = rot_germany.38
+	title = soviet.28.t
+	desc = soviet.28.d
+	picture = GFX_report_event_soviet_purge_politicians
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+#	mean_time_to_happen = {
+#		days = 90
+		#modifier = {
+		#	factor = 1.25
+		#	OR = {
+		#		has_country_flag = purged_kalinin
+		#		has_country_flag = purged_khrushchev
+		#		has_country_flag = purged_party_members
+		#	}
+		#}	
+#	}
+
+	option = {
+		name = soviet.28.a
+		set_country_flag = counter_purge
+		if = {
+			limit = { has_idea = trotskyite_plot_purged }
+			remove_ideas = trotskyite_plot_purged
+		}
+		if = {
+			limit = { has_idea = trotskyite_plot_nsb }
+			remove_ideas = trotskyite_plot_nsb
+		}
+#		if = {
+#			limit = { has_idea = trotskyite_plot }
+#			remove_ideas = trotskyite_plot
+#		}
+		kill_country_leader = yes
+#		create_country_leader = {
+#			name = "Leon Trotsky"
+#			desc = "POLITICS_LEON_TROTSKY_DESC"
+#			picture = "Portrait_Leon_Trotsky.dds"
+#			expire = "1965.1.1"
+#			ideology = leninism
+#			traits = {
+#				permanent_revolutionary
+#			}
+#		}
+		add_country_leader_role = { #Temporary #TODO: Consider changing traits, etc. to match NSB's Trotsky / NSB no Torotsuki- ni awase te tokusei nado wo henkou suru koto wo kentou
+			character = SOV_lev_trotsky
+			country_leader = {
+				expire = "1965.1.1"
+				ideology = leninism
+				traits = {
+					permanent_revolutionary
+				}
+			}
+			promote_leader = yes
+		}
+#		remove_ideas = mikhail_kalinin
+#		remove_ideas = ivan_konev
+#		remove_unit_leader = 408 # Konev's legacy id
+#		remove_ideas = pavel_zhigarev
+#		remove_ideas = stepan_krasovsky
+#		remove_ideas = arseniy_golovko
+#		remove_unit_leader = 409 # Golovko's legacy id
+#		remove_ideas = georgy_zhukov
+#		remove_unit_leader = 410 # Zhukov's legacy id
+#		remove_ideas = sergey_gorshkov
+#		remove_unit_leader = 411 # Gorshkov's legacy id
+#		remove_ideas = sergei_rudenko
+#		remove_ideas = nikita_khrushchev
+#		remove_ideas = konstantin_rodzaevsky
+		retire_character = SOV_mikhail_kalinin
+		retire_character = SOV_ivan_konev
+		retire_character = SOV_pavel_zhigarev
+		retire_character = SOV_stepan_krasovsky
+		retire_character = SOV_arseny_golovko
+		retire_character = SOV_georgy_zhukov
+		retire_character = SOV_sergey_gorshkov
+		retire_character = SOV_sergey_rudenko
+		retire_character = SOV_nikita_khrushchyov
+		retire_character = SOV_konstantin_rodzayevsky
+#		add_timed_idea = {
+#			idea = officers_purged_7 # officers_purged_7 is one of old (pre-NSB) Purge ideas so it does not working now
+#			days = 584
+#		}
+#		hidden_effect = {
+#			country_event = { id = soviet.43 days = 146 } # soviet.43 is one of old (pre-NSB) Purge events so it does not working now
+#		}
+		hidden_effect = {
+			IF = {
+				limit = {
+					SOV = {
+						NOT = { has_government = communism }
+					}
+				}
+				SOV = {
+					set_politics = {
+						ruling_party = communism
+						elections_allowed = no
+					}
+				}
+			}
+			IF = {
+				limit = {
+					SOV = { 
+						communism < 0.5
+					}
+					SOV = {
+						has_completed_focus = SOV_beaten_but_not_defeated
+					}
+				}
+				SOV = {
+					set_political_party = {
+						ideology = communism
+						popularity = 50
+					}
+				}
+			}
+		}
+		start_civil_war = {
+			ideology = neutrality
+#			ideology = communism
+			size = 0.18
+			keep_unit_leaders = { 401 402 407 410 406 405 403 407 404 } #I hope legacy_id parameters of characters works fine
+			keep_unit_leaders_trigger = { has_trait = trait_SOV_trotskyist }
+			keep_political_leader = yes
+			keep_political_party_members = yes
+		}
+		hidden_effect = {
+			set_global_flag = SOV_soviet_civil_war
+			set_global_flag = flag_trotsky_coup_kpdmod
+			SOV_left_opposition_civil_war_start = yes
+			add_ideas = one_on_one_battle
+			
+			uncomplete_national_focus = {
+				focus = SOV_the_centre
+				uncomplete_children = yes
+				refund_political_power = no
+			}
+			uncomplete_national_focus = {
+				focus = SOV_the_right_opposition
+				uncomplete_children = yes
+				refund_political_power = no
+			}
+			uncomplete_national_focus = {
+				focus = SOV_beaten_but_not_defeated
+				uncomplete_children = yes
+				refund_political_power = no
+			}
+			complete_national_focus = SOV_the_path_of_marxism_leninism
+			complete_national_focus = SOV_the_left_opposition
+			
+			SOV_remove_paranoia_effect = yes #REMOVE PARANOIA SYSTEM
+			
+			# Lose border war with Japan
+			IF = {
+				limit = {
+					has_border_war_between = {
+						attacker = 527
+						defender = 408
+					}
+				}
+				finalize_border_war = {
+					attacker_win = yes
+					attacker = 527
+					defender = 408
+				}
+			}
+			ELSE_IF = {
+				limit = {
+					has_border_war_between = {
+						attacker = 408
+						defender = 527
+					}
+				}
+				finalize_border_war = {
+					defender_win = yes
+					attacker = 408
+					defender = 527
+				}
+			}
+
+			# Dismantle the comintern (if faction leader)
+			IF = { 
+				limit = {
+					ROOT = { is_faction_leader = yes }
+				}
+				ROOT = { dismantle_faction = yes }
+			}
+			
+			random_other_country = {
+				limit = {
+					original_tag = SOV
+					has_government = neutrality
+				}
+#				limit = {
+#					original_tag = SOV
+#					has_war_with = ROOT
+#					has_government = communism
+#				}
+				set_cosmetic_tag = stalinist_soviet_union
+				# Remove ideas 
+				remove_ideas = SOV_the_fourth_international_idea
+				
+#				add_ideas = one_on_one_battle
+				
+				set_party_name = {
+					ideology = neutrality
+					long_name = SOV_communism_party_russian_long
+					name = SOV_communism_party_russian
+				}
+				
+				kill_country_leader = yes
+#				set_state_controller = 233
+#				set_state_controller = 826
+#				set_state_controller = 827
+#				set_state_controller = 828
+				create_country_leader = { #TODO: #Temporary: Temporary, it uses old create_country_leader effect to avoid bug (but with new (post-NSB) portrait and new style naming), and so he may appear even if he has been purged
+					name = SOV_ivan_konev
+					desc = "POLITICS_IVAN_KONEV_DESC"
+					picture = "GFX_portrait_SOV_ivan_konev"
+					expire = "1965.1.1"
+					ideology = oligarchism
+#					ideology = stalinism
+					traits = {
+#						phoenix
+						tough #Temporary trait for memorizing
+					}
+				}
+# The new format in the making is below
+#				recruit_character = SOV_ivan_konev #TODO: #Temporary: He may appear even if he has been purged
+#				add_country_leader_role = {
+#					character = SOV_ivan_konev
+#					country_leader = {
+#						expire = "1965.1.1"
+#						ideology = oligarchism
+#						traits = {
+#							
+#						}
+#					}
+#					promote_leader = yes
+#				}
+#				if = { #TODO: #Temporary trait for memorizing (But I can't guarantee that this will work properly)
+#					limit = {
+#						SOV_ivan_konev = {
+#							has_character_flag = SOV_character_purged_flag
+#						}
+#					}
+#					add_trait = {
+#						character = SOV_ivan_konev
+#						slot = country_leader
+#						trait = phoenix
+#					}
+#				}
+			
+			SOS = {
+				add_ideas = one_on_one_battle
+			}
+			
+			}
+			news_event = { hours = 6 id = news.221 }
+		}
+	}
+}
+country_event = { #Wirmer flag#
+	id = rot_germany.39
+	title = rot_germany.39.t
+	desc = rot_germany.39.desc
+	picture = GFX_report_event_wirmer_flag
+
+	mean_time_to_happen = {
+		days = 35
+	}
+	trigger = {
+		original_tag = GER
+		has_completed_focus = GER_right_wing
+	}
+
+	fire_only_once = yes
+
+	option = { #Decline
+		name = rot_germany.39.a
+		ai_chance = {
+			base = 70
+		}
+		#Nothing happens#	
+		custom_effect_tooltip = tt_GER_wirmer_flag_declined
+	}
+	option = { #Accept#
+		name = rot_germany.39.b
+		ai_chance = {
+			base = 30
+		}
+		#New flag for Germany.#	
+		custom_effect_tooltip = tt_GER_wirmer_flag_accepted
+		hidden_effect = {
+			drop_cosmetic_tag = yes
+			set_cosmetic_tag = GER_wirmer_flag
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = -0.05
+		}
+		add_stability = 0.05
+		news_event = { hours = 3 id = rot_news.18 }
+	}
+}
+
+country_event = { #Socialist_anschluss#
+	id = rot_germany.40
+	title = rot_germany.40.t
+	desc = rot_germany.40.desc
+	picture = GFX_report_event_german_reichstag_gathering
+
+	is_triggered_only = yes
+
+	option = { #Accept
+		name = rot_germany.40.a
+		ai_chance = {
+			base = 100
+		}
+		custom_effect_tooltip = GAME_OVER_TT
+		GER = {	
+			country_event = rot_germany.41 
+			annex_country = { target = ROOT transfer_troops = yes }	
+		}
+	}
+	option = { #Decline
+		name = rot_germany.40.b
+		ai_chance = {
+			base = 50
+		}
+		trigger = { 
+			NOT = { is_puppet_of = GER }
+		}
+		add_stability = -0.1
+		GER = {	
+			country_event = rot_germany.42 	
+		}		
+	}
+}
+country_event = { #Accepted
+	id = rot_germany.41
+	title = rot_germany.41.t
+	desc = rot_germany.41.desc
+	picture = GFX_report_event_german_reichstag_gathering
+
+	is_triggered_only = yes
+
+	option = { 
+		name = rot_germany.41.a
+		ai_chance = {
+			base = 100
+		}
+		IF = {
+			limit = {
+				has_completed_focus = GER_enter_comintern
+			}
+			hidden_effect = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = GER_ddr_austria
+			}
+		}
+		news_event = { hours = 3 id = rot_news.19 }
+	}
+}
+country_event = { #Denied
+	id = rot_germany.42
+	title = rot_germany.42.t
+	desc = rot_germany.42.desc
+	picture = GFX_report_event_german_reichstag_gathering
+
+	is_triggered_only = yes
+
+	option = { #War with them!
+		name = rot_germany.42.a
+		ai_chance = {
+			base = 50
+		}
+		trigger = { 
+			NOT = { has_completed_focus = GER_eurocommunism }
+		}
+		add_war_support = -0.15
+		random_other_country = {
+			limit = {
+				original_tag = AUS
+			}
+			GER = {
+				remove_from_faction = PREV
+				create_wargoal = {
+					type = annex_everything
+					target = PREV
+				}
+			}
+			random_other_country = {
+				limit = {
+					is_faction_leader = yes
+					is_in_faction_with = GER
+				}
+				remove_from_faction = PREV
+			}
+		}
+
+		IF = {
+			limit = {
+				has_completed_focus = GER_enter_comintern
+			}
+			hidden_effect = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = GER_ddr_austria
+			}
+		}
+	}
+	option = { #Cope with it
+		name = rot_germany.42.b
+		ai_chance = {
+			base = 50
+		}
+	}
+}
+
+country_event = { #Guarantees for influence
+	id = rot_germany.43
+	title = rot_germany.43.t
+	desc = rot_germany.43.desc
+	picture = GFX_report_event_german_reichstag_gathering
+
+	is_triggered_only = yes
+
+	option = { #OK
+		name = rot_germany.43.a
+		ai_chance = {
+			base = 100
+		}
+		add_ai_strategy = {
+			type = alliance
+			id = "GER"			
+			value = 200
+		}
+		add_ai_strategy = {
+			type = alliance
+			id = "SOV"			
+			value = -500
+		}
+		GER = {
+			country_event = { id = rot_germany.44 days = 1 }	
+			give_guarantee = ROOT
+		}	
+		add_timed_idea = { idea = communist_influence days = 730 }
+	}
+	option = { #No
+		name = rot_germany.43.b
+		ai_chance = {
+			base = 0
+		}
+		GER = {
+			country_event = { id = rot_germany.45 days = 1 }
+		}
+		add_ai_strategy = {
+			type = alliance
+			id = "GER"			
+			value = 50
+		}
+		add_ai_strategy = {
+			type = alliance
+			id = "SOV"			
+			value = -100
+		}
+	}
+}
+
+country_event = { #Accepted
+	id = rot_germany.44
+	title = rot_germany.44.t
+	desc = rot_germany.44.desc
+	picture = GFX_report_event_german_reichstag_gathering
+
+	is_triggered_only = yes
+
+	option = { #OK
+		name = rot_germany.44.a
+		ai_chance = {
+			base = 100
+		}		
+	}
+}
+
+country_event = { #Denied
+	id = rot_germany.45
+	title = rot_germany.45.t
+	desc = rot_germany.45.desc
+	picture = GFX_report_event_german_reichstag_gathering
+
+	is_triggered_only = yes
+
+	option = { #OK
+		name = rot_germany.45.a
+		ai_chance = {
+			base = 100
+		}			
+	}
+}

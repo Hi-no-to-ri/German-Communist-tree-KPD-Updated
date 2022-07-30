@@ -1,0 +1,60 @@
+﻿###########################
+# Debug Events
+###########################
+
+add_namespace = rot_debug
+
+
+country_event = {
+	id = rot_debug.1
+	title = lar_test.1.t
+	desc = lar_test.1.d
+	picture = GFX_report_event_soviet_purge_politicians
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = wtt_denmark.1.a
+		SOV_ivan_konev = {
+			set_character_flag = SOV_character_purged_flag
+			retire = yes
+		}
+	}
+	option = {
+		name = wtt_britain.24.a
+#		recruit_character = SOV_ivan_konev
+	}
+	option = {
+		name = news.332.a
+		SOV_ivan_konev = {
+			set_character_flag = SOV_exiled_flag
+		}
+	}
+	option = {
+		name = wtt_britain.25.a
+#		SOV = {
+#			set_country_flag = SOV_AI_RANDOM_COMMUNIST_LEFT_OPPOSITION
+#		}
+	}
+}
+
+country_event = {
+	id = rot_debug.2
+	title = lar_test.1.t
+	desc = lar_test.1.d
+	picture = GFX_report_event_bul_prince_simeon
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = wtt_denmark.1.a
+		kill_country_leader = yes
+	}
+	option = {
+		name = wtt_britain.25.a
+	}
+}

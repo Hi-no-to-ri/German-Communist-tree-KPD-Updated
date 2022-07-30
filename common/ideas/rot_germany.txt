@@ -1,0 +1,833 @@
+ideas = {
+
+	country = {
+		GER_NVA_general_staff = {
+			
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = GFX_idea_GER_NVA_general_staff
+			
+			modifier = {
+				army_org_Factor = 0.05
+				planning_speed = 0.25
+			}
+		}
+
+		GER_rot_front_idea = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			picture = generic_intel_bonus
+			
+			modifier = {
+				communism_drift = 0.1
+				stability_weekly = -0.01
+			}
+		}
+
+		GER_red_amnesties_idea = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = saf_history_of_segregation_2
+			
+			modifier = {
+				communism_drift = 0.1
+				political_power_gain = -0.25
+			}
+		}
+
+		GER_rot_front_exp_idea = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = generic_manpower_bonus
+			
+			modifier = {
+			drift_defence_factor = 0.15
+			training_time_factor = -0.1	
+			}
+		}
+
+		GER_rot_front_army_idea = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				drift_defence_factor = 0.15	
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				conscription = 0.005
+				army_morale_factor = 0.1
+				training_time_factor = -0.1	
+			}
+		}
+
+		GER_nationalisation_idea = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = generic_morale_bonus
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+
+		GER_new_culture_idea = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = generic_production_bonus
+			
+			modifier = {
+				production_speed_buildings_factor = 0.10
+				industrial_capacity_factory = 0.100
+				industrial_capacity_dockyard = 0.10
+				industry_repair_factor = 0.20
+
+			}
+		}
+
+		GER_supress_crev_idea = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = generic_oppression
+			
+			modifier = {
+				fascism_drift = -0.03
+				neutrality_drift = -0.03
+				democratic_drift = -0.03
+			}
+		}
+
+		GER_dissidents_idea = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				stability_weekly = -0.0075
+				political_power_gain = -0.5
+			}
+		}
+
+		GER_industry_wo_owner_idea = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = generic_exploit_mines
+			
+			modifier = {
+				production_speed_buildings_factor = -0.5
+				industrial_capacity_factory = -0.5
+				industrial_capacity_dockyard = -0.6
+				consumer_goods_factor = 0.10
+			}
+		}
+
+		GER_unknown_general_loyality_idea = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = chi_incompetent_officers
+			
+			modifier = {
+				training_time_factor = 0.1
+				army_org_Factor = -0.25
+				planning_speed = -0.55
+			}
+		}
+		GER_general_loyality_questioned_idea = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = chi_incompetent_officers
+			
+			modifier = {
+				army_org_Factor = -0.10
+				planning_speed = -0.30
+			}
+		}
+		GER_world_revolution_idea = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = generic_communism_drift_bonus
+			
+			modifier = {
+				subversive_activites_upkeep = -0.5
+				justify_war_goal_time = -0.5
+				political_power_gain = 0.75
+			}
+		}
+
+		GER_scientists_emigrated_1 = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = SOV_scientist_defect
+			
+			modifier = {
+				research_speed_factor = -0.45
+			}
+		}
+
+		GER_scientists_emigrated_2 = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = SOV_scientist_defect
+			
+			modifier = {
+				research_speed_factor = -0.3
+			}
+		}
+
+		GER_scientists_emigrated_3 = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = SOV_scientist_defect
+			
+			modifier = {
+				research_speed_factor = -0.15
+			}
+		}
+
+		GER_scientists_purged_1 = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = generic_secret_police
+			
+			modifier = {
+				research_speed_factor = -0.20
+				communism_drift = -0.1
+				political_power_gain = -1.00				
+			}
+		}
+
+		GER_scientists_purged_2 = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = generic_secret_police
+			
+			modifier = {
+				research_speed_factor = -0.15
+				communism_drift = -0.075
+				political_power_gain = -0.75				
+			}
+		}
+
+		GER_scientists_purged_3 = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = generic_secret_police
+			
+			modifier = {
+				research_speed_factor = -0.1
+				communism_drift = -0.05
+				political_power_gain = -0.5				
+			}
+		}
+
+		GER_scientists_purged_4 = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = generic_secret_police
+			
+			modifier = {
+				research_speed_factor = -0.05
+				communism_drift = -0.025
+				political_power_gain = -0.25				
+			}
+		}
+
+		GER_scientists_from_germany = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+
+			picture = generic_research_bonus
+			
+			modifier = {
+				research_speed_factor = 0.10
+				communism_drift = -0.05				
+			}
+		}
+		GER_five_year_mixed_idea = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = ger_five_year
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.2
+				production_speed_infrastructure_factor = 0.2
+				production_speed_industrial_complex_factor = 0.2
+				production_speed_dockyard_factor = 0.2
+			}
+		}
+		GER_five_year_civil_idea = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = ger_five_year
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+		GER_focus_on_military_idea = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = generic_acquire_tanks
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				light_tank_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}	
+				medium_tank_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				heavy_tank_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}	
+				artillery_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}	
+			}
+		}
+		GER_five_year_military_idea = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = ger_five_year
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.3
+				production_speed_dockyard_factor = 0.3
+			}
+		}
+
+		GER_pre_war_plan_idea = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = FRA_national_mobilization_focus
+			
+			modifier = {
+				conversion_cost_civ_to_mil_factor= -0.5
+				production_speed_arms_factory_factor = 0.2
+				industrial_capacity_factory = 0.20		
+			}
+		}
+
+		GER_trade_unions_1 = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = generic_production_bonus
+			
+			modifier = {
+				political_power_gain = 0.15
+				production_speed_buildings_factor = 0.125
+				industrial_capacity_factory = 0.125
+				industrial_capacity_dockyard = 0.125		
+			}
+		}
+
+		GER_trade_unions_2 = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = generic_production_bonus
+			
+			modifier = {
+				political_power_gain = 0.25
+				production_speed_buildings_factor = 0.15
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15				
+			}
+		}
+		GER_civil_resources_idea = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = generic_exploit_mines
+			
+			modifier = {
+				local_resources_factor = 0.10			
+			}
+		}
+
+		GER_help_for_peasants = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = generic_agrarian_reform
+			
+			modifier = {
+				consumer_goods_factor = 0.10	
+				stability_weekly = 0.005
+				political_power_gain = 0.25	
+			}
+		}
+
+		GER_equal_development = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = civilian_economy
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.075
+				production_speed_industrial_complex_factor = 0.075
+				global_building_slots_factor = 0.10
+				consumer_goods_factor = -0.04			
+			}
+		}
+
+		GER_socialist_market = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.15
+				production_speed_industrial_complex_factor = 0.15
+				global_building_slots_factor = 0.20
+				consumer_goods_factor = -0.08			
+			}
+		}
+		GER_antifa = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			allowed_civil_war = {
+				NOT = { has_government = fascism }
+			}
+
+			picture = generic_fascism_banned
+			
+			modifier = {
+				communism_drift = 0.01
+				fascism_drift = -0.05		
+			}
+		}
+		GER_prepare_for_war_USA = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = generic_infantry_bonus
+			
+			targeted_modifier = {
+				tag = USA
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+
+		GER_prepare_for_war_FRA = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = generic_infantry_bonus
+			
+			targeted_modifier = {
+				tag = FRA
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+		GER_prepare_for_war_ENG = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = generic_infantry_bonus
+			
+			targeted_modifier = {
+				tag = ENG
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+		GER_prepare_for_war_JAP = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = generic_infantry_bonus
+			
+			targeted_modifier = {
+				tag = JAP
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+		GER_fight_till_the_end1 = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = MEX_politicised_army
+			
+			modifier = {
+				surrender_limit = 1
+				max_surrender_limit_offset = 0.1	
+			}
+		}
+
+		GER_fight_till_the_end2 = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = MEX_revolutionary_army
+			
+			modifier = {
+				surrender_limit = 1
+				max_surrender_limit_offset = 0.1	
+			}
+		}
+		GER_low_support = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = prc_low_popular_support3
+			
+			modifier = {
+				mobilization_speed = -0.300
+				production_speed_buildings_factor = -0.1
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1	
+				stability_weekly = -0.005									
+			}
+		}
+		GER_communist_partisans = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = chi_army_corruption2
+			
+			modifier = {
+				conscription_factor = -0.2
+				army_morale_factor = -0.1
+				training_time_factor = 0.05
+				war_support_weekly = -0.005
+				attrition = 0.15
+				supply_consumption_factor = 0.2
+				communism_drift = 0.05												
+			}
+		}
+		GER_capital_outflows = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = SPR_relocate_the_gold_reserves
+			
+			modifier = {
+				consumer_goods_factor = 0.30	
+				political_power_gain = -0.25									
+			}
+		}
+	}
+}

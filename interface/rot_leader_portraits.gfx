@@ -1,0 +1,103 @@
+spriteTypes = {
+
+	# leaders we need to override in DLC go in this file
+	
+	### GER
+
+	spriteType = {
+		name = "GFX_portrait_ger_erich_mielke"
+		texturefile = "gfx/leaders/GER/Portrait_Germany_Erich_Mielke.dds"		
+	}
+
+	spriteType = {
+		name = "GFX_portrait_ger_otto_korfes"
+		texturefile = "gfx/leaders/GER/Portrait_Germany_Otto_Korfes.dds"		
+	}
+
+	spriteType = {
+		name = "GFX_portrait_ger_van_hooven"
+		texturefile = "gfx/leaders/GER/Portrait_Germany_Hans-Gunter_van_Hooven.dds"		
+	}
+
+	spriteType = {
+		name = "GFX_portrait_ger_vincenz_muller"
+		texturefile = "gfx/leaders/GER/Portrait_Germany_Vincenz_Muller.dds"		
+	}
+
+	spriteType = {
+		name = "GFX_portrait_ger_schmenkel"
+		texturefile = "gfx/leaders/GER/Portrait_Germany_Fritz_Paul_Schmenkel.dds"		
+	}
+
+	spriteType = {
+		name = "GFX_portrait_ger_luitpold_steidle"
+		texturefile = "gfx/leaders/GER/Portrait_Germany_Luitpold_Steidle.dds"		
+	}
+	
+	# KPD2.0
+	
+	spriteType = {
+		name = "GFX_portrait_ger_ruth_fischer"
+		texturefile = "gfx/leaders/GER/Portrait_Germany_Ruth_Fischer.dds"		
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_ger_heinrich_brandler"
+		texturefile = "gfx/leaders/GER/Portrait_Germany_Heinrich_Brandler.dds"		
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_ger_otto_korfes"
+		texturefile = "gfx/leaders/GER/Portrait_Germany_Otto_Korfes.dds"		
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_ger_hans_gunter_van_hooven"
+		texturefile = "gfx/leaders/GER/Portrait_Germany_Hans-Gunter_van_Hooven.dds"		
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_ger_vincenz_muller"
+		texturefile = "gfx/leaders/GER/Portrait_Germany_Vincenz_Muller.dds"		
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_ger_fritz_paul_schmenkel"
+		texturefile = "gfx/leaders/GER/Portrait_Germany_Fritz_Paul_Schmenkel.dds"		
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_ger_luitpold_steidle"
+		texturefile = "gfx/leaders/GER/Portrait_Germany_Luitpold_Steidle.dds"		
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_ger_ernst_thalmann"
+		texturefile = "gfx/leaders/GER/Portrait_Germany_Ernst_Thalmann.dds"		
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_ger_erich_mielke"
+		texturefile = "gfx/leaders/GER/Portrait_Germany_Erich_Mielke.dds"		
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_SOV_mikhail_kalinin"
+		texturefile = "gfx/leaders/SOV/Portrait_Mikhail_Kalinin.dds"		
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_SOV_natalia_sedova"
+		texturefile = "gfx/leaders/SOV/Portrait_Natalia_Sedova.dds"		
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_GER_felix_scheffler"
+		texturefile = "gfx/leaders/GER/Portrait_Germany_Generic_navy_2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_GER_felix_scheffler_small"
+		texturefile = "gfx/interface/ideas/idea_GER_generic_navy_2.dds"
+	}
+}
