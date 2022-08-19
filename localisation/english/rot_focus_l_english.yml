@@ -1,14 +1,14 @@
 ﻿l_english:
  GER_reds_amnesty:0 "Close the Concentration Camps"
  GER_reds_amnesty_desc:0 "Since the suspicious Reichstag fire in 1933, the KPD has been officially banned and its leaders have been sent to concentration camps. With the fall of the Nazi party, communist supporters have demanded that the camps be closed and the prisoners released. With newly released documents revealing they played no part in the fire, the government has been unable to resist the public pressure."
- GER_rot_front:0 "Reconstitute the 'Rotfront'"
+ GER_rot_front:1 "Reconstitute the 'Rotfront'"
  GER_rot_front_desc:0 "The Roter Frontkämpferbund, or ‘Red Front,’ is a paramilitary organization under the leadership of the Communist Party in Germany that fought the Nazis for over a decade until it was forcibly disbanded in 1933. Now released from the camps, KPD leaders are intent on re-forming it."
  GER_second_civil_war:0 "The Fate of the Provisional Government"
- GER_second_civil_war_desc:0 "While the Liberals and Monarchists fight in the Reichstag over the future of Germany, the people have lost faith in the Kaiser and Weimar just as they have in the tattered remains of the Nazis. ‘Rotfront’ divisions have formed in every factory and neighborhood and the time is right for us to strike just as the Bolsheviks did. Sometimes history needs a push."
+ GER_second_civil_war_desc:1 "While the Liberals and Monarchists fight in the Reichstag over the future of Germany, the people have lost faith in the Kaiser and Weimar just as they have in the tattered remains of the Nazis. ‘Rotfront’ divisions have formed in every factory and neighborhood and the time is right for us to strike just as the Bolsheviks did. Sometimes history needs a push."
  GER_rot_front_exp:1 "Expand the 'Rotfront'" #Edited in KPD2.1
  GER_rot_front_exp_desc:0 "The ‘Rotfront’ should be merged into society to spread Communist values and participation in the new system across Germany."
  GER_rot_front_army:1 "Comissars in the Army" #Edited in KPD2.1 (Title case)
- GER_rot_front_army_desc:0 "By having ‘Rotfront’ commissars in all divisions in the army, we can increase morale and ensure the the loyalty of our generals."
+ GER_rot_front_army_desc:1 "By having ‘Rotfront’ commissars in all divisions in the army, we can increase morale and ensure the the loyalty of our generals."
  GER_nationalisation:0 "Expropiation of Industry"#Edited in KPD2.0 (Deleted period)
  GER_nationalisation_desc:0 "The revolutionary upheaval has left many factories abandoned by their former owners. The workers are ready to take them over but they need the aid of the state to bring them back into operation. It’s time to begin our nationalization of the economy."
  GER_new_workers_culture:0 "New Worker's Culture"
@@ -56,15 +56,15 @@
  GER_stalin_industrialisation:0 "Industrialization"
  GER_stalin_industrialisation_desc:0 "While the USSR’s first two five year plans were marked by mistakes and overextensions, we can learn from their experience and enact a rapid plan of industrialization here as well."
  GER_invite_soviet_specialists:0 "Invite Military Advisors from the Soviet Union"
- GER_invite_soviet_specialists_desc:0 "With rising tensions across Europe, we must match our cooperation in scientific sphere with assistance and cooperation between the Rotfront and the Red Army. We need to learn from the their experiences since 1917, as well as the help of their military advisors."
+ GER_invite_soviet_specialists_desc:1 "With rising tensions across Europe, we must match our cooperation in scientific sphere with assistance and cooperation between the Rotfront and the Red Army. We need to learn from the their experiences since 1917, as well as the help of their military advisors."
  GER_radical_left:2 "Support the Radical Left Wing"#Edited in KPD2.0 (Deleted period) #Edited in KPD2.1 (Title case)
  GER_radical_left_desc:0 "The assassination of Ernst Thalmann has splintered the party into several factions. The party seems to be considering once banned ideas, accelerated by the unification of the KPD with previously ejected Trotskyist Left Opposition groups like the Internationale Kommunisten Deutschlands."
  GER_support_trotsky_coup:1 "Secret Support for the Soviet Left Opposition" #Edited in KPD2.1 (Title case)
- GER_support_trotsky_coup_desc:0 "$SOV_iosif_stalin$ has abandoned the World Revolution in favor of entrenching the circle of bureaucratic despots who have taken over the Russian Revolution the way Napoleon did the French Revolution. Now that the center of global communism has moved to Berlin, it is time to build a base in Russia to undo Stalin’s betrayals." #Edited in KPD2.1 20220819
+ GER_support_trotsky_coup_desc:1 "$SOV_iosif_stalin$ has abandoned the World Revolution in favor of entrenching the circle of bureaucratic despots who have taken over the Russian Revolution the way Napoleon did the French Revolution. Now that the center of global communism has moved to Berlin, it is time to build a base in Russia to undo Stalin’s betrayals." #Edited in KPD2.1 20220819
  GER_trotsky_coup:0 "Help Comrade Trotsky Overthrow Stalin"
  GER_trotsky_coup_desc:0 "The Soviet Communist Party left wing led by Trotsky has, with our help, become strong enough to return to the USSR in order to overthrow Stalin. We should help the conspirators return in secret to begin the revolt."
  GER_trotsky_coup_tt:0 "Later Trotsky will return to the Soviet Union and organize a coup in both the party and the military."
- trotsky_dead:0 "$SOV_lev_trotsky$ is dead."#Edited in KPD2.0 (Deleted period) #Edited in KPD2.1 20220819
+ trotsky_dead:1 "$SOV_lev_trotsky$ is dead."#Edited in KPD2.0 (Deleted period) #Edited in KPD2.1 20220819
  GER_join_fourth_internationale:0 "Join Fourth Internationale"
  GER_join_fourth_internationale_desc:0 "The opportunist regime of Stalin has been overthown. As Lenin wanted, Trotsky has become the leader of the Soviet Union. Now it is finally possible, on the ruins of the Third Internationale, to build a new one. Long live the Fourth Internationale!"
  GER_influence_on_western_europe:0 "Influence Western Europe"
@@ -99,7 +99,7 @@
  GER_red_europe:0 "Red Europe"
  GER_red_europe_desc:0 "The Italian fascist regime capitulated. It's time to crush the Western powers, taking advantage of the fact that they are slightly weakened after the war with Italy."
  GER_betrayed_october:1 "Betrayed October" #Edited in KPD2.1 (Title case)
- GER_betrayed_october_desc:0 "$SOV_iosif_stalin$ made a terrible mistake, which we talked to him tirelessly many times. But he constantly resisted and referred to our "anarchist illusions." Now it is obvious to all of us - Stalin has become a hostage of the bureaucracy he has grown. The liberation of the Soviet people will be the decisive stage in the onset of the World Revolution!" #Edited in KPD2.1 20220819
+ GER_betrayed_october_desc:1 "$SOV_iosif_stalin$ made a terrible mistake, which we talked to him tirelessly many times. But he constantly resisted and referred to our "anarchist illusions." Now it is obvious to all of us - Stalin has become a hostage of the bureaucracy he has grown. The liberation of the Soviet people will be the decisive stage in the onset of the World Revolution!" #Edited in KPD2.1 20220819
  GER_new_october:0 "New October"
  GER_new_october_desc:0 "Now that the Soviet people have been liberated, we can proceed to the restoration of Russia and the establishment of real Soviet power on its territory. Now we will show our proletarian fist to bourgeois."
  GER_weltrepublic:0 "Sozialistische Weltrepublik"
