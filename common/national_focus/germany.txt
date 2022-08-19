@@ -11841,8 +11841,9 @@ focus_tree = {
 			has_political_power > 150
 		}
 		continue_if_invalid = no
-		x = 75
-		y = 7
+		x = -1
+		y = 1
+		relative_position_id = GER_join_fourth_internationale
 
 		cost = 15
 		ai_will_do = {
@@ -11983,8 +11984,9 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		continue_if_invalid = no
-		x = 78
-		y = 8
+		x = 2
+		y = 2
+		relative_position_id = GER_join_fourth_internationale
 
 		cost = 15
 		ai_will_do = {
@@ -12197,8 +12199,9 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		continue_if_invalid = no
-		x = 77
-		y = 7
+		x = 1
+		y = 1
+		relative_position_id = GER_join_fourth_internationale
 
 		cost = 15
 		ai_will_do = {
@@ -12273,8 +12276,9 @@ focus_tree = {
 			has_political_power > 300
 		}
 		continue_if_invalid = no
-		x = 76
-		y = 8
+		x = 0
+		y = 2
+		relative_position_id = GER_join_fourth_internationale
 
 		cost = 20
 		ai_will_do = {
@@ -12310,8 +12314,9 @@ focus_tree = {
 			
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		x = 77
-		y = 9
+		x = 1
+		y = 3
+		relative_position_id = GER_join_fourth_internationale
 
 		cost = 10
 		ai_will_do = {
@@ -12335,8 +12340,9 @@ focus_tree = {
 			has_completed_focus = GER_new_workers_culture
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
-		x = 73
-		y = 7
+		x = -3
+		y = 1
+		relative_position_id = GER_join_fourth_internationale
 
 		cost = 10
 		ai_will_do = {
@@ -12361,8 +12367,9 @@ focus_tree = {
 
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
-		x = 73
-		y = 8
+		x = 0
+		y = 1
+		relative_position_id = GER_free_unions
 
 		cost = 10
 		ai_will_do = {
@@ -12388,8 +12395,9 @@ focus_tree = {
 
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-		x = 73
-		y = 9
+		x = 0
+		y = 1
+		relative_position_id = GER_active_role_of_unions
 
 		cost = 10
 		ai_will_do = {
@@ -12413,8 +12421,9 @@ focus_tree = {
 		available = {
 
 		}
-		x = 73
-		y = 10
+		x = 0
+		y = 1
+		relative_position_id = GER_five_year_production
 
 		cost = 10
 		ai_will_do = {
@@ -12566,8 +12575,9 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		continue_if_invalid = no
-		x = 77
-		y = 10
+		x = 0
+		y = 1
+		relative_position_id = GER_world_revolution
 
 		cost = 15
 		ai_will_do = {
