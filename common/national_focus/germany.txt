@@ -9176,9 +9176,9 @@ focus_tree = {
 		available = {
 
 		}
-		x = 59
-		y = 5
-#		relative_position_id = GER_second_civil_war
+		x = -2
+		y = 1
+		relative_position_id = GER_second_civil_war
 
 		cost = 5
 		ai_will_do = {
@@ -9332,9 +9332,9 @@ focus_tree = {
 		available = {
 
 		}
-		x = 2
-		y = 0
-		relative_position_id = GER_fight_with_counterrevolutionary
+		x = 3
+		y = 1
+		relative_position_id = GER_second_civil_war
 
 		cost = 5
 		ai_will_do = {
@@ -9345,6 +9345,29 @@ focus_tree = {
 		add_timed_idea = { idea = GER_nationalisation_idea days = 730 }
 		remove_ideas = GER_industry_wo_owner_idea
 		add_stability = 0.05
+		}
+	}
+	focus = {
+		id = GER_fight_with_counterrevolutionary
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = GER_second_civil_war }
+		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}
+		available = {
+
+		}
+		x = 1
+		y = 1
+		relative_position_id = GER_second_civil_war
+
+		cost = 5
+		ai_will_do = {
+			factor = 3
+		}
+		
+		completion_reward = {
+		add_stability = 0.05
+		add_timed_idea = { idea = GER_supress_crev_idea days = 365 }
+		remove_ideas = GER_dissidents_idea
 		}
 	}
 	focus = {
@@ -9367,29 +9390,6 @@ focus_tree = {
 		
 		completion_reward = {
 			add_ideas = GER_new_culture_idea
-		}
-	}
-	focus = {
-		id = GER_fight_with_counterrevolutionary
-		icon = GFX_goal_generic_political_pressure
-		prerequisite = { focus = GER_second_civil_war }
-		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}
-		available = {
-
-		}
-		x = 62
-		y = 5
-#		relative_position_id = GER_second_civil_war
-
-		cost = 5
-		ai_will_do = {
-			factor = 3
-		}
-		
-		completion_reward = {
-		add_stability = 0.05
-		add_timed_idea = { idea = GER_supress_crev_idea days = 365 }
-		remove_ideas = GER_dissidents_idea
 		}
 	}
 	focus = {
