@@ -9655,8 +9655,9 @@ focus_tree = {
 		available = {
 
 		}
-		x = 63
-		y = 7
+		x = 0
+		y = 1
+		relative_position_id = GER_enter_comintern
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		cost = 10
@@ -9678,8 +9679,9 @@ focus_tree = {
 		available = {
 
 		}
-		x = 62
-		y = 9
+		x = -1
+		y = 2
+		relative_position_id = GER_accept_stalinism
 
 		cost = 10
 		ai_will_do = {
@@ -9790,8 +9792,9 @@ focus_tree = {
 		available = {
 
 		}
-		x = 62
-		y = 11
+		x = 0
+		y = 2
+		relative_position_id = GER_tech_cooperation
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		cost = 10
@@ -9823,8 +9826,9 @@ focus_tree = {
 		dynamic = yes
 		prerequisite = { focus = GER_accept_stalinism }
 		prerequisite = { focus = GER_new_workers_culture }
-		x = 61
-		y = 8
+		x = -2
+		y = 1
+		relative_position_id = GER_accept_stalinism
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		cost = 10
@@ -9846,8 +9850,9 @@ focus_tree = {
 		icon = GFX_goal_generic_political_pressure
 		dynamic = yes
 		prerequisite = { focus = GER_stalin_industrialisation }
-		x = 60
-		y = 9
+		x = -1
+		y = 1
+		relative_position_id = GER_stalin_industrialisation
 
 		cost = 10
 		ai_will_do = {
@@ -9891,14 +9896,15 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GER_countinue_industrialisation
+		id = GER_countinue_industrialisation #Typo ID
 		icon = GFX_focus_generic_industry_3
 		dynamic = yes
 		prerequisite = { focus = GER_stalin_industrialisation }
 		prerequisite = { focus = GER_tech_cooperation }
 		prerequisite = { focus = GER_collectivisation }
-		x = 61
-		y = 10
+		x = 1
+		y = 1
+		relative_position_id = GER_collectivisation
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		cost = 10
@@ -10024,8 +10030,9 @@ focus_tree = {
 		dynamic = yes
 		prerequisite = { focus = GER_countinue_industrialisation }
 		prerequisite = { focus = GER_invite_soviet_specialists }
-		x = 61
-		y = 12
+		x = 0
+		y = 2
+		relative_position_id = GER_countinue_industrialisation
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		cost = 10
@@ -10063,8 +10070,9 @@ focus_tree = {
 			}
 		}
 		will_lead_to_war_with = POL
-		x = 63
-		y = 8
+		x = 0
+		y = 1
+		relative_position_id = GER_accept_stalinism
 
 		cost = 10
 		ai_will_do = {
@@ -10102,8 +10110,9 @@ focus_tree = {
 				}
 			}	
 		}
-		x = 63
-		y = 10
+		x = 0
+		y = 2
+		relative_position_id = GER_fate_of_poland
 
 		cost = 10
 		ai_will_do = {
@@ -10138,8 +10147,9 @@ focus_tree = {
 		bypass = {
 
 		}
-		x = 64
-		y = 11
+		x = 1
+		y = 1
+		relative_position_id = GER_support_dimitrov
 
 		cost = 10
 		ai_will_do = {
@@ -10178,8 +10188,9 @@ focus_tree = {
 
 		}
 
-		x = 63
-		y = 12
+		x = 0
+		y = 2
+		relative_position_id = GER_support_dimitrov
 
 		cost = 10
 		ai_will_do = {
@@ -10207,8 +10218,9 @@ focus_tree = {
 		available = {
 		
 		}
-		x = 62
-		y = 13
+		x = 0
+		y = 2
+		relative_position_id = GER_invite_soviet_specialists
 
 		cost = 10
 		ai_will_do = {
