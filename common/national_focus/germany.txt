@@ -5927,7 +5927,7 @@ focus_tree = {
 		icon = GFX_focus_ger_oppose_hitler
 		mutually_exclusive = { focus = GER_rhineland }
 
-		allow_branch = { # ENABLE HERE FOR RELEASE!!! - KPDModUpdated / You may comment out here for display in CWTools in VSCode while debugging.
+		allow_branch = { # ENABLE HERE FOR RELEASE!!! - KPD2 KPDModUpdated / You may comment out here for display in VSCode with CWTools while debugging.
 			has_dlc = "Waking the Tiger"
 		}
 
@@ -12933,9 +12933,9 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		continue_if_invalid = no
-		x = 5
-		y = 6
-		relative_position_id = GER_establish_fifth_internationale
+		x = 0
+		y = 9
+		relative_position_id = GER_radical_left
 
 		cost = 20
 		ai_will_do = {
