@@ -9649,6 +9649,28 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = GER_accept_stalinism
+		icon = GFX_goal_generic_stalinism
+		prerequisite = { focus = GER_enter_comintern }
+		available = {
+
+		}
+		x = 63
+		y = 7
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		cost = 10
+		ai_will_do = {
+			factor = 3
+		}
+		
+		completion_reward = {
+				add_country_leader_trait = staunch_stalinist
+				add_political_power = 150
+				add_stability = 0.05
+		}
+	}
+	focus = {
 		id = GER_tech_cooperation
 		icon = GFX_goal_tfv_generic_tech_sharing
 		prerequisite = { focus = GER_accept_stalinism }
@@ -9759,28 +9781,6 @@ focus_tree = {
 				}
 			}
 			add_political_power = 100
-		}
-	}
-	focus = {
-		id = GER_accept_stalinism
-		icon = GFX_goal_generic_stalinism
-		prerequisite = { focus = GER_enter_comintern }
-		available = {
-
-		}
-		x = 63
-		y = 7
-
-		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
-		cost = 10
-		ai_will_do = {
-			factor = 3
-		}
-		
-		completion_reward = {
-				add_country_leader_trait = staunch_stalinist
-				add_political_power = 150
-				add_stability = 0.05
 		}
 	}
 	focus = {
