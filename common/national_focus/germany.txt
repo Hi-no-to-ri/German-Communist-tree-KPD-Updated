@@ -10904,7 +10904,7 @@ focus_tree = {
 			}
 		}
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = GER_align_france
 
 		cost = 10
@@ -10981,7 +10981,7 @@ focus_tree = {
 			POR = { has_government = communism }
 		}
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = GER_align_spain
 
 		cost = 10
@@ -11185,8 +11185,8 @@ focus_tree = {
 
 		}
 		x = 0
-		y = 3
-		relative_position_id = GER_align_spain
+		y = 1
+		relative_position_id = GER_crush_salazar
 
 		cost = 10
 		ai_will_do = {
@@ -11475,8 +11475,8 @@ focus_tree = {
 
 		}
 		x = 0
-		y = 3
-		relative_position_id = GER_align_france
+		y = 1
+		relative_position_id = GER_align_benilux
 
 		cost = 10
 		ai_will_do = {
@@ -11658,9 +11658,9 @@ focus_tree = {
 		bypass = {
 
 		}
-		x = 0
-		y = 5
-		relative_position_id = GER_eurocommunism
+		x = 2
+		y = 1
+		relative_position_id = GER_align_balkans
 
 		cost = 10
 		ai_will_do = {
