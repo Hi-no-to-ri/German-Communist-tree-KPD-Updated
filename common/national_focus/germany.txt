@@ -11729,8 +11729,8 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		x = 3
-		y = 2
-		relative_position_id = GER_radical_left
+		y = 1
+		relative_position_id = GER_support_trotsky_coup
 
 		cost = 5
 		ai_will_do = {
