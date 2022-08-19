@@ -12438,135 +12438,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = GER_orientation_on_military
-		icon = GFX_focus_generic_combined_arms
-		prerequisite = { focus = GER_revolution_by_force }
-		available = {
-
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		x = 71
-		y = 8
-
-		cost = 10
-		ai_will_do = {
-			factor = 3
-		}
-		
-		bypass = {
-			
-		}
-		completion_reward = {
-			add_timed_idea = {
-				idea = GER_focus_on_military_idea
-				days = 1095
-			}  			
-		}
-	}
-
-	focus = {
-		id = GER_five_year_military
-		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = GER_orientation_on_military }
-		available = {
-
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		x = 71
-		y = 9
-
-		cost = 10
-		ai_will_do = {
-			factor = 3
-		}
-		
-		bypass = {
-			
-		}
-		completion_reward = {
-			add_timed_idea = {
-				idea = GER_five_year_military_idea
-				days = 1825
-			}  			
-		}
-	}
-
-	focus = {
-		id = GER_resources_for_war
-		icon = GFX_goal_generic_construction2
-		prerequisite = { focus = GER_five_year_military}
-		available = {
-			controls_state = 59
-			controls_state = 51
-			controls_state = 53
-			controls_state = 67
-			controls_state = 60
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-		x = 71
-		y = 10
-
-		cost = 10
-		ai_will_do = {
-			factor = 3
-		}
-		
-		bypass = {
-			
-		}
-		completion_reward = {
-			add_tech_bonus = { #TODO: Check the desc
-				name = SAF_expand_the_mining_industry
-				bonus = 2.0
-				uses = 2
-				technology = excavation1
-				technology = excavation2
-				technology = excavation3
-				technology = excavation4
-				technology = excavation5
-			}
-			59 = {
-				add_resource = {
-					type = oil
-					amount = 16
-				}
-			}	
-			51 = {
-				add_resource = {
-					type = steel
-					amount = 30
-				}
-			}	
-			53 = {
-				add_resource = {
-					type = oil
-					amount = 8
-				}
-			}
-			67 = {
-				add_resource = {
-					type = steel
-					amount = 20
-				}
-			}
-			60 = {
-				add_resource = {
-					type = chromium
-					amount = 25
-				}
-				add_resource = {
-					type = steel
-					amount = 29
-				}
-				add_resource = {
-					type = tungsten
-					amount = 25
-				}
-			}
-		}
-	}
-
-	focus = {
 		id = GER_influence_on_America
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = GER_world_revolution }
@@ -13168,6 +13039,134 @@ focus_tree = {
 			add_war_support = 0.1
 			add_ideas = militarism_focus
 			army_experience = 20
+		}
+	}
+	focus = {
+		id = GER_orientation_on_military
+		icon = GFX_focus_generic_combined_arms
+		prerequisite = { focus = GER_revolution_by_force }
+		available = {
+
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		x = 71
+		y = 8
+
+		cost = 10
+		ai_will_do = {
+			factor = 3
+		}
+		
+		bypass = {
+			
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = GER_focus_on_military_idea
+				days = 1095
+			}  			
+		}
+	}
+
+	focus = {
+		id = GER_five_year_military
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = GER_orientation_on_military }
+		available = {
+
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		x = 71
+		y = 9
+
+		cost = 10
+		ai_will_do = {
+			factor = 3
+		}
+		
+		bypass = {
+			
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = GER_five_year_military_idea
+				days = 1825
+			}  			
+		}
+	}
+
+	focus = {
+		id = GER_resources_for_war
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = GER_five_year_military}
+		available = {
+			controls_state = 59
+			controls_state = 51
+			controls_state = 53
+			controls_state = 67
+			controls_state = 60
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		x = 71
+		y = 10
+
+		cost = 10
+		ai_will_do = {
+			factor = 3
+		}
+		
+		bypass = {
+			
+		}
+		completion_reward = {
+			add_tech_bonus = { #TODO: Check the desc
+				name = SAF_expand_the_mining_industry
+				bonus = 2.0
+				uses = 2
+				technology = excavation1
+				technology = excavation2
+				technology = excavation3
+				technology = excavation4
+				technology = excavation5
+			}
+			59 = {
+				add_resource = {
+					type = oil
+					amount = 16
+				}
+			}	
+			51 = {
+				add_resource = {
+					type = steel
+					amount = 30
+				}
+			}	
+			53 = {
+				add_resource = {
+					type = oil
+					amount = 8
+				}
+			}
+			67 = {
+				add_resource = {
+					type = steel
+					amount = 20
+				}
+			}
+			60 = {
+				add_resource = {
+					type = chromium
+					amount = 25
+				}
+				add_resource = {
+					type = steel
+					amount = 29
+				}
+				add_resource = {
+					type = tungsten
+					amount = 25
+				}
+			}
 		}
 	}
 	focus = {
