@@ -1,14 +1,14 @@
 ﻿l_english:
  GER_reds_amnesty:0 "Close the Concentration Camps"
  GER_reds_amnesty_desc:0 "Since the suspicious Reichstag fire in 1933, the KPD has been officially banned and its leaders have been sent to concentration camps. With the fall of the Nazi party, communist supporters have demanded that the camps be closed and the prisoners released. With newly released documents revealing they played no part in the fire, the government has been unable to resist the public pressure."
- GER_rot_front:0 "Reconstitute the 'Rot Front'"
+ GER_rot_front:0 "Reconstitute the 'Rotfront'"
  GER_rot_front_desc:0 "The Roter Frontkämpferbund, or ‘Red Front,’ is a paramilitary organization under the leadership of the Communist Party in Germany that fought the Nazis for over a decade until it was forcibly disbanded in 1933. Now released from the camps, KPD leaders are intent on re-forming it."
  GER_second_civil_war:0 "The Fate of the Provisional Government"
- GER_second_civil_war_desc:0 "While the Liberals and Monarchists fight in the Reichstag over the future of Germany, the people have lost faith in the Kaiser and Weimar just as they have in the tattered remains of the Nazis. ‘Rot Front’ divisions have formed in every factory and neighborhood and the time is right for us to strike just as the Bolsheviks did. Sometimes history needs a push."
- GER_rot_front_exp:0 "Expand 'Rot Front'"
- GER_rot_front_exp_desc:0 "The ‘Rot Front’ should be merged into society to spread Communist values and participation in the new system across Germany."
+ GER_second_civil_war_desc:0 "While the Liberals and Monarchists fight in the Reichstag over the future of Germany, the people have lost faith in the Kaiser and Weimar just as they have in the tattered remains of the Nazis. ‘Rotfront’ divisions have formed in every factory and neighborhood and the time is right for us to strike just as the Bolsheviks did. Sometimes history needs a push."
+ GER_rot_front_exp:0 "Expand 'Rotfront'"
+ GER_rot_front_exp_desc:0 "The ‘Rotfront’ should be merged into society to spread Communist values and participation in the new system across Germany."
  GER_rot_front_army:0 "Comissars in the army"
- GER_rot_front_army_desc:0 "By having ‘Rot Front’ commissars in all divisions in the army, we can increase morale and ensure the the loyalty of our generals."
+ GER_rot_front_army_desc:0 "By having ‘Rotfront’ commissars in all divisions in the army, we can increase morale and ensure the the loyalty of our generals."
  GER_nationalisation:0 "Expropiation of Industry"#Edited in KPD2.0 (Deleted period)
  GER_nationalisation_desc:0 "The revolutionary upheaval has left many factories abandoned by their former owners. The workers are ready to take them over but they need the aid of the state to bring them back into operation. It’s time to begin our nationalization of the economy."
  GER_new_workers_culture:0 "New Worker's Culture"
@@ -56,7 +56,7 @@
  GER_stalin_industrialisation:0 "Industrialization"
  GER_stalin_industrialisation_desc:0 "While the USSR’s first two five year plans were marked by mistakes and overextensions, we can learn from their experience and enact a rapid plan of industrialization here as well."
  GER_invite_soviet_specialists:0 "Invite Military Advisors from the Soviet Union"
- GER_invite_soviet_specialists_desc:0 "With rising tensions across Europe, we must match our cooperation in scientific sphere with assistance and cooperation between the Rot Front and the Red Army. We need to learn from the their experiences since 1917, as well as the help of their military advisors."
+ GER_invite_soviet_specialists_desc:0 "With rising tensions across Europe, we must match our cooperation in scientific sphere with assistance and cooperation between the Rotfront and the Red Army. We need to learn from the their experiences since 1917, as well as the help of their military advisors."
  GER_radical_left:0 "Support the radical left wing"#Edited in KPD2.0 (Deleted period)
  GER_radical_left_desc:0 "The assassination of Ernst Thalmann has splintered the party into several factions. The party seems to be considering once banned ideas, accelerated by the unification of the KPD with previously ejected Trotskyist Left Opposition groups like the Internationale Kommunisten Deutschlands."
  GER_support_trotsky_coup:0 "Secret support for the Soviet Left Opposition"
