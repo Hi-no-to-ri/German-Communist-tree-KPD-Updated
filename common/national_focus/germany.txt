@@ -5927,9 +5927,9 @@ focus_tree = {
 		icon = GFX_focus_ger_oppose_hitler
 		mutually_exclusive = { focus = GER_rhineland }
 
-#		allow_branch = { #ENABLE HERE FOR RELEASE!!! - KPDModUpdated
-#			has_dlc = "Waking the Tiger"
-#		}
+		allow_branch = { # ENABLE HERE FOR RELEASE!!! - KPDModUpdated / You may comment out here for display in CWTools in VSCode while debugging.
+			has_dlc = "Waking the Tiger"
+		}
 
 		available = {
 			is_subject = no
