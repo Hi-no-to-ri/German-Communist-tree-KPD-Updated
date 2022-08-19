@@ -9438,8 +9438,8 @@ focus_tree = {
 				}
 			}
 		}
-		x = 65
-		y = 7
+		x = 64
+		y = 6
 
 		cost = 10
 		ai_will_do = {
@@ -9469,8 +9469,8 @@ focus_tree = {
 				has_civil_war = no
 			}	
 		}
-		x = -2
-		y = 2
+		x = -1
+		y = 1
 		relative_position_id = GER_press_austria
 
 		cost = 10
@@ -9565,7 +9565,7 @@ focus_tree = {
 		available = {
 			NOT = { has_civil_war = yes }
 		}
-		x = 67
+		x = 66
 		y = 5
 
 		search_filters = { FOCUS_FILTER_POLITICAL }

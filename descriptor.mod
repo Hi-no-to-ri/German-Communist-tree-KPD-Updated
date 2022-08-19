@@ -1,4 +1,4 @@
-version="KPD2.0alpha8"
+version="KPD2.1"
 tags={
 	"Alternative History"
 	"Events"
