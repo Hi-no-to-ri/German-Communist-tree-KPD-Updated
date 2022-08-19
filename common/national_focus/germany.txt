@@ -9116,7 +9116,7 @@ focus_tree = {
 		available = {
 
 		}
-		x = 61
+		x = 62
 		y = 3
 
 		cost = 10
@@ -9176,9 +9176,9 @@ focus_tree = {
 		available = {
 
 		}
-		x = -2
-		y = 1
-		relative_position_id = GER_second_civil_war
+		x = 59
+		y = 5
+#		relative_position_id = GER_second_civil_war
 
 		cost = 5
 		ai_will_do = {
@@ -9332,9 +9332,9 @@ focus_tree = {
 		available = {
 
 		}
-		x = 3
-		y = 1
-		relative_position_id = GER_second_civil_war
+		x = 63
+		y = 5
+#		relative_position_id = GER_second_civil_war
 
 		cost = 5
 		ai_will_do = {
@@ -9355,9 +9355,9 @@ focus_tree = {
 		available = {
 
 		}
-		x = 1
-		y = 1
-		relative_position_id = GER_second_civil_war
+		x = -2
+		y = 0
+		relative_position_id = GER_nationalisation
 
 		cost = 5
 		ai_will_do = {
@@ -9565,7 +9565,7 @@ focus_tree = {
 		available = {
 			NOT = { has_civil_war = yes }
 		}
-		x = 68
+		x = 67
 		y = 5
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -11828,7 +11828,7 @@ focus_tree = {
 
 			has_completed_focus = GER_second_civil_war
 		}
-		x = 88
+		x = 90
 		y = 3
 
 		cost = 5
@@ -12933,8 +12933,9 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		continue_if_invalid = no
-		x = 82
-		y = 11
+		x = 6
+		y = 6
+		relative_position_id = GER_establish_fifth_internationale
 
 		cost = 20
 		ai_will_do = {
