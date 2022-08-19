@@ -13077,7 +13077,7 @@ focus_tree = {
 
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-		x = 2
+		x = 3
 		y = 1
 		relative_position_id = GER_revolution_by_force
 
@@ -13267,8 +13267,8 @@ focus_tree = {
 		will_lead_to_war_with = ALB
 		will_lead_to_war_with = BUL
 		will_lead_to_war_with = GRE
-		x = 0
-		y = 2
+		x = 1
+		y = 1
 		relative_position_id = GER_red_eastern_europe
 
 		cost = 10
@@ -13321,7 +13321,7 @@ focus_tree = {
 				has_government = fascism 
 			}
 		}
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = GER_establish_fifth_internationale
 
@@ -13395,7 +13395,7 @@ focus_tree = {
 			}			
 		}
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = GER_alliance_with_FRA_and_ENG
 
 		cost = 5
@@ -13541,8 +13541,8 @@ focus_tree = {
 				}
 			}
 		}
-		x = 0
-		y = 2
+		x = 1
+		y = 1
 		relative_position_id = GER_red_europe
 
 		cost = 10
