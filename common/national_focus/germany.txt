@@ -10302,6 +10302,212 @@ focus_tree = {
 	}
 
 	focus = {
+		id = GER_right_wing
+		icon = GFX_focus_GER_support_the_right_wing
+		prerequisite = { focus = GER_reds_amnesty }
+		mutually_exclusive = { focus = GER_radical_left }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available = {
+			has_country_flag = thalmann_killed
+			NOT = { has_civil_war = yes }
+			NOT = {
+				has_completed_focus = GER_enter_comintern
+			}
+			has_completed_focus = GER_second_civil_war
+		}
+		x = 81
+		y = 3
+
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}
+		
+		bypass = {
+			
+		}
+		completion_reward = {
+			add_country_leader_role = {
+				character = GER_heinrich_brandler
+				country_leader = {
+					expire = "1965.1.1"
+					ideology = leninism
+					traits = {
+						social_reformer
+					}
+				}
+				promote_leader = yes
+			}
+			remove_ideas = GER_supress_crev_idea
+			SOV = {
+				add_ai_strategy = {
+				type = alliance
+				id = "GER"			
+				value = -300
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = GER_scientists_emigrated_3
+				}
+				remove_ideas = GER_scientists_emigrated_3
+			}
+			IF = {
+				limit = {
+					has_idea = GER_scientists_emigrated_2
+				}
+				swap_ideas = {
+					remove_idea = GER_scientists_emigrated_2
+					add_idea = GER_scientists_emigrated_3
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = GER_scientists_emigrated_1
+				}
+				swap_ideas = {
+					remove_idea = GER_scientists_emigrated_1
+					add_idea = GER_scientists_emigrated_2
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = GER_scientists_purged_4
+				}
+				remove_ideas = GER_scientists_purged_4
+			}
+			IF = {
+				limit = {
+					has_idea = GER_scientists_purged_3
+				}
+				swap_ideas = {
+					remove_idea = GER_scientists_purged_3
+					add_idea = GER_scientists_purged_4
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = GER_scientists_purged_2
+				}
+				swap_ideas = {
+					remove_idea = GER_scientists_purged_2
+					add_idea = GER_scientists_purged_3
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = GER_scientists_purged_1
+				}
+				swap_ideas = {
+					remove_idea = GER_scientists_purged_1
+					add_idea = GER_scientists_purged_2
+				}
+			}
+			drop_cosmetic_tag = yes
+			set_cosmetic_tag = GER_peoples_republic
+			news_event = { hours = 6 id = rot_news.12 }
+		}
+	}
+	focus = {
+		id = GER_small_business
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = GER_right_wing }
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_INDUSTRY }
+		available = {
+			democratic > 0.25
+			has_completed_focus = GER_nationalisation			
+		}
+		x = 0
+		y = 1
+		relative_position_id = GER_right_wing
+
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}
+		
+		bypass = {
+			
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_stability = 0.05	
+			add_ideas = liberty_ethos_focus
+			add_country_leader_trait = economic_reformer		
+		}
+	}
+	focus = {
+		id = GER_foreign_capital
+		icon = GFX_goal_generic_positive_trade_relations
+		prerequisite = { focus = GER_small_business }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		available = {
+			democratic > 0.3
+		}
+		x = 0
+		y = 1
+		relative_position_id = GER_small_business
+
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}
+		
+		bypass = {
+			
+		}
+		completion_reward = {
+		add_offsite_building = { type = industrial_complex level = 5 }
+		remove_ideas = GER_nationalisation_idea
+		}
+	}
+
+	focus = {
 		id = GER_eurocommunism
 		icon = GFX_GER_goal_eurocommunism #GFX_focus_generic_support_the_left_right
 		prerequisite = { focus = GER_expand_the_revolution }
@@ -12756,212 +12962,6 @@ focus_tree = {
 			}
 			add_political_power = -500	
 			add_threat = 10
-		}
-	}
-
-	focus = {
-		id = GER_right_wing
-		icon = GFX_focus_GER_support_the_right_wing
-		prerequisite = { focus = GER_reds_amnesty }
-		mutually_exclusive = { focus = GER_radical_left }
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		
-		available = {
-			has_country_flag = thalmann_killed
-			NOT = { has_civil_war = yes }
-			NOT = {
-				has_completed_focus = GER_enter_comintern
-			}
-			has_completed_focus = GER_second_civil_war
-		}
-		x = 81
-		y = 3
-
-		cost = 5
-		ai_will_do = {
-			factor = 2
-		}
-		
-		bypass = {
-			
-		}
-		completion_reward = {
-			add_country_leader_role = {
-				character = GER_heinrich_brandler
-				country_leader = {
-					expire = "1965.1.1"
-					ideology = leninism
-					traits = {
-						social_reformer
-					}
-				}
-				promote_leader = yes
-			}
-			remove_ideas = GER_supress_crev_idea
-			SOV = {
-				add_ai_strategy = {
-				type = alliance
-				id = "GER"			
-				value = -300
-				}
-			}
-			IF = {
-				limit = {
-					has_idea = GER_scientists_emigrated_3
-				}
-				remove_ideas = GER_scientists_emigrated_3
-			}
-			IF = {
-				limit = {
-					has_idea = GER_scientists_emigrated_2
-				}
-				swap_ideas = {
-					remove_idea = GER_scientists_emigrated_2
-					add_idea = GER_scientists_emigrated_3
-				}
-			}
-			IF = {
-				limit = {
-					has_idea = GER_scientists_emigrated_1
-				}
-				swap_ideas = {
-					remove_idea = GER_scientists_emigrated_1
-					add_idea = GER_scientists_emigrated_2
-				}
-			}
-			IF = {
-				limit = {
-					has_idea = GER_scientists_purged_4
-				}
-				remove_ideas = GER_scientists_purged_4
-			}
-			IF = {
-				limit = {
-					has_idea = GER_scientists_purged_3
-				}
-				swap_ideas = {
-					remove_idea = GER_scientists_purged_3
-					add_idea = GER_scientists_purged_4
-				}
-			}
-			IF = {
-				limit = {
-					has_idea = GER_scientists_purged_2
-				}
-				swap_ideas = {
-					remove_idea = GER_scientists_purged_2
-					add_idea = GER_scientists_purged_3
-				}
-			}
-			IF = {
-				limit = {
-					has_idea = GER_scientists_purged_1
-				}
-				swap_ideas = {
-					remove_idea = GER_scientists_purged_1
-					add_idea = GER_scientists_purged_2
-				}
-			}
-			drop_cosmetic_tag = yes
-			set_cosmetic_tag = GER_peoples_republic
-			news_event = { hours = 6 id = rot_news.12 }
-		}
-	}
-	focus = {
-		id = GER_small_business
-		icon = GFX_goal_generic_consumer_goods
-		prerequisite = { focus = GER_right_wing }
-		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_INDUSTRY }
-		available = {
-			democratic > 0.25
-			has_completed_focus = GER_nationalisation			
-		}
-		x = 0
-		y = 1
-		relative_position_id = GER_right_wing
-
-		cost = 5
-		ai_will_do = {
-			factor = 2
-		}
-		
-		bypass = {
-			
-		}
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			add_stability = 0.05	
-			add_ideas = liberty_ethos_focus
-			add_country_leader_trait = economic_reformer		
-		}
-	}
-	focus = {
-		id = GER_foreign_capital
-		icon = GFX_goal_generic_positive_trade_relations
-		prerequisite = { focus = GER_small_business }
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		available = {
-			democratic > 0.3
-		}
-		x = 0
-		y = 1
-		relative_position_id = GER_small_business
-
-		cost = 5
-		ai_will_do = {
-			factor = 2
-		}
-		
-		bypass = {
-			
-		}
-		completion_reward = {
-		add_offsite_building = { type = industrial_complex level = 5 }
-		remove_ideas = GER_nationalisation_idea
 		}
 	}
 
