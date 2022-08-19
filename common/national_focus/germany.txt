@@ -9090,7 +9090,7 @@ focus_tree = {
 				}
 			}
 		}
-		x = 66
+		x = 67
 		y = 2
 		cost = 10
 		ai_will_do = {
@@ -9618,7 +9618,7 @@ focus_tree = {
 			}
 		}
 		mutually_exclusive = { focus = GER_eurocommunism focus = GER_join_fourth_internationale focus = GER_establish_fifth_internationale }
-		x = 73
+		x = 70
 		y = 6
 
 		cost = 10
@@ -9681,7 +9681,7 @@ focus_tree = {
 		available = {
 
 		}
-		x = 2
+		x = -1
 		y = 2
 		relative_position_id = GER_accept_stalinism
 
@@ -9828,7 +9828,7 @@ focus_tree = {
 		dynamic = yes
 		prerequisite = { focus = GER_accept_stalinism }
 #		prerequisite = { focus = GER_new_workers_culture }
-		x = 5
+		x = 2
 		y = 1
 		relative_position_id = GER_accept_stalinism
 
@@ -10076,7 +10076,7 @@ focus_tree = {
 			}
 		}
 		will_lead_to_war_with = POL
-		x = -1
+		x = -3
 		y = 1
 		relative_position_id = GER_accept_stalinism
 
@@ -10322,7 +10322,7 @@ focus_tree = {
 			}
 			has_completed_focus = GER_second_civil_war
 		}
-		x = 101
+		x = 95
 		y = 3
 
 		cost = 5
@@ -11828,7 +11828,7 @@ focus_tree = {
 
 			has_completed_focus = GER_second_civil_war
 		}
-		x = 90
+		x = 82
 		y = 3
 
 		cost = 5
@@ -11940,7 +11940,7 @@ focus_tree = {
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		x = 3
+		x = 5
 		y = 1
 		relative_position_id = GER_support_trotsky_coup
 
@@ -12992,7 +12992,7 @@ focus_tree = {
 				is_in_faction_with = SOV
 			}
 		}
-		x = 75
+		x = 77
 		y = 5
 
 		cost = 10
@@ -13027,8 +13027,11 @@ focus_tree = {
 		available = {
 			is_in_faction = no
 		}
-		x = 82
-		y = 6
+#		x = 82
+#		y = 6
+		x = 0
+		y = 1
+		relative_position_id = GER_criticise_soviet
 
 		cost = 10
 		ai_will_do = {
