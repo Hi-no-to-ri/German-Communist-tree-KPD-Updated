@@ -9149,8 +9149,9 @@ focus_tree = {
 		available = {
 			communism > 0.4
 		}
-		x = 59
-		y = 4
+		x = 0
+		y = 1
+		relative_position_id = GER_rot_front
 
 		cost = 10
 		ai_will_do = {
@@ -9175,8 +9176,9 @@ focus_tree = {
 		available = {
 
 		}
-		x = 59
-		y = 5
+		x = 0
+		y = 1
+		relative_position_id = GER_second_civil_war
 
 		cost = 5
 		ai_will_do = {
@@ -9206,8 +9208,9 @@ focus_tree = {
 		available = {
 
 		}
-		x = 59
-		y = 7
+		x = 0
+		y = 2
+		relative_position_id = GER_rot_front_exp
 
 		cost = 5
 		ai_will_do = {
@@ -9237,8 +9240,9 @@ focus_tree = {
 		available = {
 
 		}
-		x = 59
-		y = 8
+		x = 0
+		y = 1
+		relative_position_id = GER_rot_front_army
 
 		cost = 10
 		ai_will_do = {
