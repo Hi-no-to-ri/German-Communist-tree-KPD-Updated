@@ -5,8 +5,8 @@
  GER_sov_republic_communism_DEF:0 "the German soviet republic"
  GER_ddr_communism:0 "German Democratic Republic"
  GER_ddr_communism_DEF:0 "the German democratic republic"
- GER_ddr_austria_communism:0 "Greater German Democratic Republic" #Edited in KPD2.0alpha5
- GER_ddr_austria_communism_DEF:0 "the Greater German Democratic Republic" #Edited in KPD2.0alpha5
+ GER_ddr_austria_communism:1 "Greater German Democratic Republic" #Edited in KPD2.0alpha5
+ GER_ddr_austria_communism_DEF:1 "the Greater German Democratic Republic" #Edited in KPD2.0alpha5
  GER_peoples_republic_communism:0 "German People's Republic"
  GER_peoples_republic_communism_DEF:0 "the German people's republic"
  GER_united_communism:0 "Socialist World Republic"

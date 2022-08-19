@@ -9,7 +9,7 @@
  GER_rot_front_exp_desc:0 "The ‘Rotfront’ should be merged into society to spread Communist values and participation in the new system across Germany."
  GER_rot_front_army:1 "Comissars in the Army" #Edited in KPD2.1 (Title case)
  GER_rot_front_army_desc:1 "By having ‘Rotfront’ commissars in all divisions in the army, we can increase morale and ensure the the loyalty of our generals."
- GER_nationalisation:0 "Expropiation of Industry"#Edited in KPD2.0 (Deleted period)
+ GER_nationalisation:1 "Expropiation of Industry"#Edited in KPD2.0 (Deleted period)
  GER_nationalisation_desc:0 "The revolutionary upheaval has left many factories abandoned by their former owners. The workers are ready to take them over but they need the aid of the state to bring them back into operation. It’s time to begin our nationalization of the economy."
  GER_new_workers_culture:0 "New Worker's Culture"
  GER_new_workers_culture_desc:0 "The experience of the Soviet Union has shown that creating a Proletarian Culture is useful for defending the revolution and washing away the way of life of the Kaiserreich, Weimar, and Hitler."
@@ -106,7 +106,7 @@
  GER_weltrepublic_desc:0 "Every advanced capitalist countries of the world were destroyed. And now, when socialism has finally consolidated its position in the world, we can begin uniting into the World Republic on the basis of the territories liberated by us. The moment of the onset of communism is getting closer, comrades!"
  GER_NVA:0 "Nationale Volksarmee"
  GER_NVA_desc:0 "Recent cospiracies in army, showed us that is necessary to reform the army, to create 'Nationale Volksarmee' (National people's army), in which we will provide the opportunity for loyal generals to get to higher ranks."
- GER_exile_fascism_tt:0 "Gain war goal against §Yall the fascist countries in Europe§!."#Edited #Complemented an exclamation mark to solve the error, in KPD2.0 update
+ GER_exile_fascism_tt:1 "Gain war goal against §Yall the fascist countries in Europe§!."#Edited #Complemented an exclamation mark to solve the error, in KPD2.0 update
  GER_collectivisation:0 "Collectivisation"
  GER_collectivisation_desc:0 "The Soviet leadership carried out collectivization and managed to increase the total yield and the influx of funds into the treasury. We need to do this in order to be able to support the ongoing industrialization. Moreover, this will help to make more rational use of existing lands, although it is possible that the prosperous peasantry will not support this."
  GER_countinue_industrialisation:1 "Open Up City-Forming Enterprises" #Edited in KPD2.1 (Title case)
