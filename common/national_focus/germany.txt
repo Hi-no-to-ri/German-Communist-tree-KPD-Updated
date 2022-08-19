@@ -12927,8 +12927,8 @@ focus_tree = {
 			democratic > 0.3
 		}
 		x = 0
-		y = 2
-		relative_position_id = GER_right_wing
+		y = 1
+		relative_position_id = GER_small_business
 
 		cost = 5
 		ai_will_do = {
@@ -13024,8 +13024,9 @@ focus_tree = {
 		available = {
 
 		}
-		x = 69
-		y = 7
+		x = 1
+		y = 1
+		relative_position_id = GER_establish_fifth_internationale
 
 		cost = 10
 		ai_will_do = {
@@ -13049,8 +13050,9 @@ focus_tree = {
 
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-		x = 71
-		y = 8
+		x = 2
+		y = 1
+		relative_position_id = GER_revolution_by_force
 
 		cost = 10
 		ai_will_do = {
@@ -13076,8 +13078,9 @@ focus_tree = {
 
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-		x = 71
-		y = 9
+		x = 0
+		y = 1
+		relative_position_id = GER_orientation_on_military
 
 		cost = 10
 		ai_will_do = {
@@ -13107,8 +13110,9 @@ focus_tree = {
 			controls_state = 60
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
-		x = 71
-		y = 10
+		x = 0
+		y = 1
+		relative_position_id = GER_five_year_military
 
 		cost = 10
 		ai_will_do = {
@@ -13183,8 +13187,9 @@ focus_tree = {
 
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
-		x = 69
-		y = 8
+		x = 0
+		y = 1
+		relative_position_id = GER_revolution_by_force
 
 		cost = 10
 		ai_will_do = {
@@ -13235,8 +13240,9 @@ focus_tree = {
 		will_lead_to_war_with = ALB
 		will_lead_to_war_with = BUL
 		will_lead_to_war_with = GRE
-		x = 69
-		y = 10
+		x = 0
+		y = 2
+		relative_position_id = GER_red_eastern_europe
 
 		cost = 10
 		ai_will_do = {
@@ -13288,8 +13294,9 @@ focus_tree = {
 				has_government = fascism 
 			}
 		}
-		x = 67
-		y = 7
+		x = -1
+		y = 1
+		relative_position_id = GER_establish_fifth_internationale
 
 		cost = 10
 		ai_will_do = {
@@ -13360,8 +13367,9 @@ focus_tree = {
 				}
 			}			
 		}
-		x = 67
-		y = 8
+		x = 0
+		y = 1
+		relative_position_id = GER_alliance_with_FRA_and_ENG
 
 		cost = 5
 		ai_will_do = {
@@ -13449,8 +13457,9 @@ focus_tree = {
 		available = {
 
 		}
-		x = 68
-		y = 9
+		x = -1
+		y = 1
+		relative_position_id = GER_red_eastern_europe
 
 		cost = 10
 		ai_will_do = {
@@ -13505,8 +13514,9 @@ focus_tree = {
 				}
 			}
 		}
-		x = 67
-		y = 10
+		x = 0
+		y = 2
+		relative_position_id = GER_red_europe
 
 		cost = 10
 		ai_will_do = {
@@ -13530,8 +13540,9 @@ focus_tree = {
 		available = {
 
 		}
-		x = 72
-		y = 12
+		x = 0
+		y = 1
+		relative_position_id = GER_strike_at_the_heart_of_capitalism
 
 		cost = 10
 		ai_will_do = {
