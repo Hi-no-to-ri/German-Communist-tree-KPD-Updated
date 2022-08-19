@@ -9899,7 +9899,7 @@ focus_tree = {
 		id = GER_countinue_industrialisation #Typo ID
 		icon = GFX_focus_generic_industry_3
 		dynamic = yes
-		prerequisite = { focus = GER_stalin_industrialisation }
+#		prerequisite = { focus = GER_stalin_industrialisation }
 		prerequisite = { focus = GER_tech_cooperation }
 		prerequisite = { focus = GER_collectivisation }
 		x = 1
