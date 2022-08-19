@@ -60,11 +60,11 @@
  GER_radical_left:0 "Support the radical left wing"#Edited in KPD2.0 (Deleted period)
  GER_radical_left_desc:0 "The assassination of Ernst Thalmann has splintered the party into several factions. The party seems to be considering once banned ideas, accelerated by the unification of the KPD with previously ejected Trotskyist Left Opposition groups like the Internationale Kommunisten Deutschlands."
  GER_support_trotsky_coup:0 "Secret support for the Soviet Left Opposition"
- GER_support_trotsky_coup_desc:0 "Joseph Stalin has abandoned the World Revolution in favor of entrenching the circle of bureaucratic despots who have taken over the Russian Revolution the way Napoleon did the French Revolution. Now that the center of global communism has moved to Berlin, it is time to build a base in Russia to undo Stalin’s betrayals."
+ GER_support_trotsky_coup_desc:0 "$SOV_iosif_stalin$ has abandoned the World Revolution in favor of entrenching the circle of bureaucratic despots who have taken over the Russian Revolution the way Napoleon did the French Revolution. Now that the center of global communism has moved to Berlin, it is time to build a base in Russia to undo Stalin’s betrayals." #Edited in KPD2.1 20220819
  GER_trotsky_coup:0 "Help Comrade Trotsky Overthrow Stalin"
  GER_trotsky_coup_desc:0 "The Soviet Communist Party left wing led by Trotsky has, with our help, become strong enough to return to the USSR in order to overthrow Stalin. We should help the conspirators return in secret to begin the revolt."
  GER_trotsky_coup_tt:0 "Later Trotsky will return to the Soviet Union and organize a coup in both the party and the military."
- trotsky_dead:0 "Leon Trotsky is dead."#Edited in KPD2.0 (Deleted period)
+ trotsky_dead:0 "$SOV_lev_trotsky$ is dead."#Edited in KPD2.0 (Deleted period) #Edited in KPD2.1 20220819
  GER_join_fourth_internationale:0 "Join Fourth Internationale"
  GER_join_fourth_internationale_desc:0 "The opportunist regime of Stalin has been overthown. As Lenin wanted, Trotsky has become the leader of the Soviet Union. Now it is finally possible, on the ruins of the Third Internationale, to build a new one. Long live the Fourth Internationale!"
  GER_influence_on_western_europe:0 "Influence Western Europe"
@@ -99,7 +99,7 @@
  GER_red_europe:0 "Red Europe"
  GER_red_europe_desc:0 "The Italian fascist regime capitulated. It's time to crush the Western powers, taking advantage of the fact that they are slightly weakened after the war with Italy."
  GER_betrayed_october:0 "Betrayed october"
- GER_betrayed_october_desc:0 "Joseph Stalin made a terrible mistake, which we talked to him tirelessly many times. But he constantly resisted and referred to our "anarchist illusions." Now it is obvious to all of us - Stalin has become a hostage of the bureaucracy he has grown. The liberation of the Soviet people will be the decisive stage in the onset of the World Revolution!"
+ GER_betrayed_october_desc:0 "$SOV_iosif_stalin$ made a terrible mistake, which we talked to him tirelessly many times. But he constantly resisted and referred to our "anarchist illusions." Now it is obvious to all of us - Stalin has become a hostage of the bureaucracy he has grown. The liberation of the Soviet people will be the decisive stage in the onset of the World Revolution!" #Edited in KPD2.1 20220819
  GER_new_october:0 "New October"
  GER_new_october_desc:0 "Now that the Soviet people have been liberated, we can proceed to the restoration of Russia and the establishment of real Soviet power on its territory. Now we will show our proletarian fist to bourgeois."
  GER_weltrepublic:0 "Sozialistische Weltrepublik"
