@@ -1,18 +1,18 @@
 ﻿l_english:
- rot_news.1.t:0 "Ernst Thalmann has been killed"
- rot_news.1.d:0 "Recent reports have revealed that that the [GER.GetAdjective] government decided to execute the leader of the German Communist Party, Ernst Thalmann, in the Buchenwald concentration camp. \n The communists have spent years fighting the Nazis on the streets but now, however, they have eliminated their leader. It is unknown how the German people reacted to this, or whether they know about it at all." # Removed line break at the beginning of the line in KPD2.0alpha5 update
+ rot_news.1.t:1 "Ernst Thalmann Has Been Killed"
+ rot_news.1.d:2 "Recent reports have revealed that that the [GER.GetAdjective] government decided to execute the leader of the German Communist Party, Ernst Thalmann, in the Buchenwald concentration camp. \n The communists have spent years fighting the Nazis on the streets but now, however, [GetTheyOrTheGovernment] have eliminated their leader. It is unknown how the German people reacted to this, or whether they know about it at all." # Removed line break at the beginning of the line in KPD2.0alpha5 update
  rot_news.1.a:0 "Death to communists!"
  rot_news.1.b:0 "Damn fascists!"
  rot_news.1.c:0 "Another victim of Nazi regime."
  rot_news.1.e:0 "Sad news for communists the world over..."
- rot_news.2.t:0 "Ernst Thalmann has been killed"
- rot_news.2.d:0 "Recent reports have revealed that that the [GER.GetAdjective] government decided to execute the leader of the German Communist Party, Ernst Thalmann, in the Buchenwald concentration camp. \n The communists have spent years fighting the Nazis on the streets but now, however, they have eliminated their leader. German workers are rallying across Germany and strikes have already begun to emerge." # Removed line break at the beginning of the line in KPD2.0alpha5 update
+ rot_news.2.t:1 "Ernst Thalmann Has Been Killed"
+ rot_news.2.d:2 "Recent reports have revealed that that the [GER.GetAdjective] government decided to execute the leader of the German Communist Party, Ernst Thalmann, in the Buchenwald concentration camp. \n The communists have spent years fighting the Nazis on the streets but now, however, [GetTheyOrTheGovernment] have eliminated their leader. German workers are rallying across Germany and strikes have already begun to emerge." # Removed line break at the beginning of the line in KPD2.0alpha5 update
  rot_news.2.a:0 "Death to communists."
  rot_news.2.b:0 "The German working class is finally waking up."
  rot_news.2.c:0 "Another victim of Nazi regime."
  rot_news.2.e:0 "It's barbaric."
- rot_news.3.t:0 "Ernst Thalmann has been killed"
- rot_news.3.d:0 "Recently, from secret sources, it became known that [GER.GetAdjective] government decided to execute the leader of the German Communists, Ernst Thalmann in the Buchenwald concentration camp. \nAfter 1933, Ernst Thalmann was held in solitary confinement in Moabit prison. After the failure of the Dimitrov case, the Nazis were afraid to begin trials of the Communists. Now, however, they have eliminated their leader. German workers across the country went to large-scale meetings, production throughout the country stopped. Workers demand the overthrow of the Nazi regime. The situation in Germany is getting out of control." # Removed line break at the beginning of the line in KPD2.0alpha5 update
+ rot_news.3.t:1 "Ernst Thalmann Has Been Killed"
+ rot_news.3.d:2 "Recently, from secret sources, it became known that [GER.GetAdjective] government decided to execute the leader of the German Communists, Ernst Thalmann in the Buchenwald concentration camp. \nAfter 1933, Ernst Thalmann was held in solitary confinement in Moabit prison. After the failure of the Dimitrov case, the Nazis were afraid to begin trials of the Communists. Now, however, [GetTheyOrTheGovernment] have eliminated their leader. German workers across the country went to large-scale meetings, production throughout the country stopped. Workers demand the overthrow of the Nazi regime. The situation in Germany is getting out of control." # Removed line break at the beginning of the line in KPD2.0alpha5 update
  rot_news.3.a:0 "Traitors!"
  rot_news.3.b:0 "The German working class has awoken! Workers of all countries, unite!"
  rot_news.3.c:0 "Interesting."
@@ -242,3 +242,27 @@
  rot_germany.45.t:0 "[POL.GetName] rejected"
  rot_germany.45.desc:0 "Polish govenment has rejected our purpose. They have decided not to have any treaties with the communists." # Removed line break at the beginning of the line in KPD2.0alpha5 update
  rot_germany.45.a:0 "That's too bad."
+ # KPD2.1-
+ rot_germany.1000.t:0 "$ernst_thalmann$への処置"
+ rot_germany.1000.desc:0 "共産主義の政治犯を釈放し、収容所を閉鎖する政令案が臨時軍政府に提出された。今や国会議事堂の不審火に共産党が関わっていなかったことが明らかである以上、この政令は数ヶ月以内に現に公布されることが確実視されている。\n\n問題となるのは、[From.GetCommunistParty]の独裁的指導者である$ernst_thalmann$もこの政治犯の中に含まれることだ。政府の中には、彼の釈放が[From.GetCommunistParty]を勢いづかせ、その共産主義イデオロギーで政府の転覆を謀る可能性を危惧している者もいる。彼らの一部は、政令が実際に公布されるまでの間に、彼に「適切な処置」を与えるべきとの不気味な提案を行っている。\n\n他の政府構成員は、共産主義者を妨害するためのこの提案を疑問視しており、こうした過激な方法が共産主義者に与える影響について慎重な判断を求めているが、その中でも特に悲観的な集団は、$ernst_thalmann$は「赤い総統」であり、たとえ彼を排除することが共産主義の終息に繋がらなかったとしても、むしろ彼以外のより民主的な指導者が共産主義を率いることが[From.GetNonIdeologyName]のためになるかもしれないと非公式に述べている。"
+ rot_germany.1000.a:0 "放っておけ"
+ rot_germany.1000.b:0 "赤い総統はごめんだ！"
+ rot_germany.1001.t:0 "労働者の暴力的抗議"
+ rot_germany.1001.desc:0 "我々がテールマンに下した処置は予想をはるかに上回る影響をもたらした。ドイツ全土で労働者による破壊的なストライキが始まっており、彼らは政権の打倒を要求している。\n以前よりも支持を伸ばした[From.GetCommunistParty]は、かつてドイツ社会民主党が阻止した共産主義革命の実現を企図している。\n\n資本家達や政府の構成員の一部は我々の軽率で楽観的すぎた判断を批判しているが、我々にはその批判に応じる暇すらないかもしれない……"
+ rot_germany.1001.a:0 "We should have been more aware of our surroundings." #我々はもっと自分の周囲に気を配るべきだった
+ rot_germany.1002.t:0 "労働者の深刻な抗議"
+ rot_germany.1002.desc:0 "我々がテールマンに下した処置は予想以上の影響をもたらした。ドイツ全土で労働者によるストライキが始まっており、中には政権の打倒を要求する者もいる。資本家達や政府の構成員の一部は我々の軽率で楽観的すぎた判断を批判している。\n[From.GetCommunistParty]はこの状況下で労働者と共にデモを行い、以前よりも支持を伸ばしている。\n\n[From.GetName]に混乱が広がっている。"
+ rot_germany.1002.a:0 "It's a terrible situation." #ひどい状況だ
+ rot_germany.1003.t:0 "労働者の強い抗議"
+ rot_germany.1003.desc:0 "我々がテールマンに下した処置は予想以上の影響をもたらした。ドイツ全土で労働者によるストライキが始まっており、中には政権の打倒を要求する者もいる。資本家達は我々の軽率で楽観的すぎた判断を批判している。\n\n[From.GetName]に混乱が広がっている。"
+ rot_germany.1003.a:0 "It's a terrible situation."
+ rot_germany.1004.t:0 "労働者の抗議"
+ rot_germany.1004.desc:0 "我々がテールマンに下した処置は予想以上の影響をもたらした。ドイツ全土で労働者によるストライキが始まっており、資本家達は我々の軽率で楽観的すぎた判断を批判している。\n\n[From.GetName]に混乱が広がっている。"
+ rot_germany.1004.a:0 "It's a terrible situation."
+ rot_germany.1005.t:0 "共産主義の終息"
+ rot_germany.1005.desc:0 "我々がテールマンに下した処置は問題なく効果を示した。彼の求心力を失ったことによって、[From.GetCommunistParty]はその政治的影響力を失いつつあるようだ。"
+ rot_germany.1005.a:0 "Very good." #よろしい
+ GER_NazisOrGovernment_nazis:0 "Nazis"
+ GER_NazisOrGovernment_government:0 "the government"
+ GER_GetTheyOrTheGovernment_nazis:0 "they"
+ GER_GetTheyOrTheGovernment_government:0 "the government"
