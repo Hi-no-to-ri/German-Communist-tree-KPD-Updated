@@ -51,6 +51,8 @@ communism_on_the_rise = {
 				promote_leader = yes
 			}
 			set_country_flag = thalmann_killed
+			add_stability = 0.1
+			add_political_power = 300
 			if = {
 				limit = {
 						communism > 0.39
@@ -59,8 +61,6 @@ communism_on_the_rise = {
 					country_event = rot_germany.1001
 					news_event = { hours = 24 id = rot_news.3 }
 				}
-				add_stability = 0.1
-				add_political_power = 300
 			}
 			if = {
 				limit = {
@@ -79,8 +79,6 @@ communism_on_the_rise = {
 				hidden_effect = {
 					country_event = rot_germany.1002
 				}
-				add_stability = 0.1
-				add_political_power = 300
 			}
 			if = {
 				limit = {
@@ -90,8 +88,6 @@ communism_on_the_rise = {
 				hidden_effect = {
 					country_event = rot_germany.1003
 				}
-				add_stability = 0.1
-				add_political_power = 300
 			}
 			if = {
 				limit = {
@@ -101,8 +97,6 @@ communism_on_the_rise = {
 				hidden_effect = {
 					country_event = rot_germany.1004
 				}
-				add_stability = 0.1
-				add_political_power = 300
 			}	
 			if = {
 				limit = {
@@ -112,8 +106,6 @@ communism_on_the_rise = {
 					country_event = rot_germany.1005
 					news_event = { hours = 24 id = rot_news.1 }
 				}
-				add_stability = 0.1
-				add_political_power = 300
 			}
 		}
 		
