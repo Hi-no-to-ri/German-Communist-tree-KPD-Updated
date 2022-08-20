@@ -3146,7 +3146,7 @@ country_event = { #Denied
 	}
 }
 
-country_event = { #Release Thailman or not
+country_event = { #Release Thalmann or not
 	id = rot_germany.1000
 	title = rot_germany.1000.t
 	desc = rot_germany.1000.desc
@@ -3158,6 +3158,7 @@ country_event = { #Release Thailman or not
 			focus = GER_reds_amnesty
 			progress > 0.1
 		}
+		NOT = { has_country_flag = thalmann_killed }
 	}
 	
 	mean_time_to_happen = {
@@ -3171,7 +3172,7 @@ country_event = { #Release Thailman or not
 		ai_chance = {
 			base = 100
 		}
-		custom_effect_tooltip = no_thalmann_for_wings_tt
+		custom_effect_tooltip = GER_no_thalmann_for_wings_tt
 	}
 	
 	option = { #Remove him
@@ -3180,9 +3181,9 @@ country_event = { #Release Thailman or not
 			base = 0
 		}
 		GER_remove_thalmann_kpdmod = yes
-		custom_effect_tooltip = no_thalmann_for_wings_tt
-		custom_effect_tooltip = thalmann_will_be_removed_tt
-		custom_effect_tooltip = danger_alert_for_removing_thalmann_tt
+		custom_effect_tooltip = GER_no_thalmann_for_wings_tt
+		custom_effect_tooltip = GER_thalmann_will_be_removed_tt
+		custom_effect_tooltip = GER_danger_alert_for_removing_thalmann_tt
 	}
 }
 

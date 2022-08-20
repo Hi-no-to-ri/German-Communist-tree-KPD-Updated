@@ -1,2 +1,5 @@
 ﻿l_english:
  GER_second_civil_war_tt:0 "§RThe Second civil war will start!§!\n"
+ GER_no_thalmann_for_wings_tt:0 "To go down the focus tree of the Fourth International or Eurocommunism, you need to remove Thälmann before completing the "$GER_reds_amnesty$" focus."
+ GER_thalmann_will_be_removed_tt:0 "§Y$ernst_thalmann$ will be removed§!"
+ GER_danger_alert_for_removing_thalmann_tt:0 "§RIf the popularity of the communist party isn't that small, then we may face some consequences!§!"
