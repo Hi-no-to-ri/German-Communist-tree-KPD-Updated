@@ -266,3 +266,7 @@
  GER_NazisOrGovernment_government:0 "the government"
  GER_GetTheyOrTheGovernment_nazis:0 "they"
  GER_GetTheyOrTheGovernment_government:0 "the government"
+ rot_germany.32.t:0 "$political.22.t$"
+ rot_germany.32.desc:0 "$political.22.d$" #will be replaced later
+ rot_germany.32.a:0 "$political.22.a$"
+ rot_germany.32.b:0 "$political.22.b$"

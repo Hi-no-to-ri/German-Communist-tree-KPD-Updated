@@ -2255,14 +2255,14 @@ country_event = {
 #Civilwar if Thalmann Killed
 country_event = {
 	id = rot_germany.32
-	title = political.22.t
-	desc = political.22.d
+	title = rot_germany.32.t
+	desc = rot_germany.32.desc
 	picture = GFX_report_event_worker_protests
 
 	is_triggered_only = yes
 
 	option = {
-		name = political.22.a
+		name = rot_germany.32.a
 		ai_chance = {
 			factor = 0
 		}
@@ -2273,7 +2273,7 @@ country_event = {
 	}
 
 	option = {
-		name = political.22.b
+		name = rot_germany.32.b
 		if = {
 			limit = {
 				has_government = democratic
