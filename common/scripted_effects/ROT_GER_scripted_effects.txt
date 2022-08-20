@@ -68,5 +68,5 @@ GER_remove_thalmann_kpdmod = {
 }
 
 GER_set_cosmetic_tag_for_socialist_anschluss = {
-	
+	#testtesttest
 }
