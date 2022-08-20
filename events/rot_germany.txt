@@ -3180,10 +3180,10 @@ country_event = { #Release Thalmann or not
 		ai_chance = {
 			base = 0
 		}
-		GER_remove_thalmann_kpdmod = yes
-		custom_effect_tooltip = GER_no_thalmann_for_wings_tt
 		custom_effect_tooltip = GER_thalmann_will_be_removed_tt
+		GER_remove_thalmann_kpdmod = yes
 		custom_effect_tooltip = GER_danger_alert_for_removing_thalmann_tt
+		custom_effect_tooltip = GER_no_thalmann_for_wings_tt
 	}
 }
 

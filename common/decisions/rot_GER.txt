@@ -38,10 +38,10 @@ communism_on_the_rise = {
 		cost = 50
 		
 		complete_effect = {
+			custom_effect_tooltip = GER_thalmann_will_be_removed_tt
 			GER_remove_thalmann_kpdmod = yes
+			custom_effect_tooltip = GER_no_thalmann_for_wings_tt
 		}
-		
-		custom_effect_tooltip = GER_no_thalmann_for_wings_tt
 
 		ai_will_do = {
 			factor = 0

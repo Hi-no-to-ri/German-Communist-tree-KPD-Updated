@@ -263,6 +263,6 @@
  rot_germany.1005.desc:0 "我々がテールマンに下した処置は問題なく効果を示した。彼の求心力を失ったことによって、[From.GetCommunistParty]はその政治的影響力を失いつつあるようだ。"
  rot_germany.1005.a:0 "Very good." #よろしい
  GER_NazisOrGovernment_nazis:0 "Nazis"
- GER_NazisOrGovernment_government:0 "The government"
- GER_GetTheyOrTheGovernment_nazis:0 "They"
- GER_GetTheyOrTheGovernment_government:0 "The government"
+ GER_NazisOrGovernment_government:0 "the government"
+ GER_GetTheyOrTheGovernment_nazis:0 "they"
+ GER_GetTheyOrTheGovernment_government:0 "the government"
