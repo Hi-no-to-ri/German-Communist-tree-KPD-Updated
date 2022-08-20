@@ -5927,7 +5927,7 @@ focus_tree = {
 		icon = GFX_focus_ger_oppose_hitler
 		mutually_exclusive = { focus = GER_rhineland }
 
-		allow_branch = {
+		allow_branch = { # ENABLE HERE FOR RELEASE!!! - KPD2 KPDModUpdated / You may comment out here for display in VSCode with CWTools while debugging.
 			has_dlc = "Waking the Tiger"
 		}
 
@@ -9090,7 +9090,7 @@ focus_tree = {
 				}
 			}
 		}
-		x = 66
+		x = 67
 		y = 2
 		cost = 10
 		ai_will_do = {
@@ -9116,7 +9116,7 @@ focus_tree = {
 		available = {
 
 		}
-		x = 59
+		x = 62
 		y = 3
 
 		cost = 10
@@ -9176,9 +9176,9 @@ focus_tree = {
 		available = {
 
 		}
-		x = 0
-		y = 1
-		relative_position_id = GER_second_civil_war
+		x = 59
+		y = 5
+#		relative_position_id = GER_second_civil_war
 
 		cost = 5
 		ai_will_do = {
@@ -9209,7 +9209,7 @@ focus_tree = {
 
 		}
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = GER_rot_front_exp
 
 		cost = 5
@@ -9332,9 +9332,9 @@ focus_tree = {
 		available = {
 
 		}
-		x = 2
-		y = 1
-		relative_position_id = GER_second_civil_war
+		x = 63
+		y = 5
+#		relative_position_id = GER_second_civil_war
 
 		cost = 5
 		ai_will_do = {
@@ -9348,28 +9348,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = GER_new_workers_culture
-		icon = GFX_goal_generic_construct_civilian
-		prerequisite = { focus = GER_nationalisation }
-		prerequisite = { focus = GER_fight_with_counterrevolutionary }
-		search_filters = {FOCUS_FILTER_INDUSTRY}
-		available = {
-
-		}
-		x = 0
-		y = 2
-		relative_position_id = GER_nationalisation
-
-		cost = 10
-		ai_will_do = {
-			factor = 3
-		}
-		
-		completion_reward = {
-			add_ideas = GER_new_culture_idea
-		}
-	}
-	focus = {
 		id = GER_fight_with_counterrevolutionary
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = GER_second_civil_war }
@@ -9377,9 +9355,9 @@ focus_tree = {
 		available = {
 
 		}
-		x = 1
-		y = 2
-		relative_position_id = GER_second_civil_war
+		x = -2
+		y = 0
+		relative_position_id = GER_nationalisation
 
 		cost = 5
 		ai_will_do = {
@@ -9393,14 +9371,38 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = GER_new_workers_culture
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = GER_nationalisation }
+		prerequisite = { focus = GER_fight_with_counterrevolutionary }
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		available = {
+
+		}
+		x = 1
+		y = 1
+		relative_position_id = GER_fight_with_counterrevolutionary
+
+		cost = 10
+		ai_will_do = {
+			factor = 3
+		}
+		
+		completion_reward = {
+			add_ideas = GER_new_culture_idea
+		}
+	}
+	focus = {
 		id = GER_press_austria
 		icon = GFX_goal_generic_more_territorial_claims
-		prerequisite = { focus = GER_eurocommunism focus = GER_enter_comintern focus = GER_join_fourth_internationale focus = GER_establish_fifth_internationale }
+#		prerequisite = { focus = GER_eurocommunism focus = GER_enter_comintern focus = GER_join_fourth_internationale focus = GER_establish_fifth_internationale }
+		prerequisite = { focus = GER_expand_the_revolution }
 		available = {
 			any_country = {
 				original_tag = AUS
 				communism > 0.3
 			}
+			is_in_faction = yes #KPD2.1
 		}
 		will_lead_to_war_with = AUS
 		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_POLITICAL }
@@ -9437,7 +9439,7 @@ focus_tree = {
 			}
 		}
 		x = 65
-		y = 7
+		y = 6
 
 		cost = 10
 		ai_will_do = {
@@ -9467,7 +9469,7 @@ focus_tree = {
 				has_civil_war = no
 			}	
 		}
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = GER_press_austria
 
@@ -9514,7 +9516,7 @@ focus_tree = {
 				}
 			}
 		}
-		x = -1
+		x = 0
 		y = 2
 		relative_position_id = GER_press_austria
 
@@ -9563,7 +9565,7 @@ focus_tree = {
 		available = {
 			NOT = { has_civil_war = yes }
 		}
-		x = 63
+		x = 66
 		y = 5
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -9616,7 +9618,7 @@ focus_tree = {
 			}
 		}
 		mutually_exclusive = { focus = GER_eurocommunism focus = GER_join_fourth_internationale focus = GER_establish_fifth_internationale }
-		x = 63
+		x = 69
 		y = 6
 
 		cost = 10
@@ -9825,8 +9827,8 @@ focus_tree = {
 		icon = GFX_goal_generic_soviet_construction
 		dynamic = yes
 		prerequisite = { focus = GER_accept_stalinism }
-		prerequisite = { focus = GER_new_workers_culture }
-		x = -2
+#		prerequisite = { focus = GER_new_workers_culture }
+		x = 1
 		y = 1
 		relative_position_id = GER_accept_stalinism
 
@@ -9834,6 +9836,10 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 5
+		}
+
+		available = {
+			has_completed_focus = GER_new_workers_culture
 		}
 
 		available_if_capitulated = no
@@ -9850,7 +9856,7 @@ focus_tree = {
 		icon = GFX_goal_generic_political_pressure
 		dynamic = yes
 		prerequisite = { focus = GER_stalin_industrialisation }
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = GER_stalin_industrialisation
 
@@ -9902,7 +9908,7 @@ focus_tree = {
 #		prerequisite = { focus = GER_stalin_industrialisation }
 		prerequisite = { focus = GER_tech_cooperation }
 		prerequisite = { focus = GER_collectivisation }
-		x = 1
+		x = -1
 		y = 1
 		relative_position_id = GER_collectivisation
 
@@ -10070,7 +10076,7 @@ focus_tree = {
 			}
 		}
 		will_lead_to_war_with = POL
-		x = 0
+		x = -2
 		y = 1
 		relative_position_id = GER_accept_stalinism
 
@@ -10147,7 +10153,7 @@ focus_tree = {
 		bypass = {
 
 		}
-		x = 1
+		x = -1
 		y = 1
 		relative_position_id = GER_support_dimitrov
 
@@ -10316,7 +10322,7 @@ focus_tree = {
 			}
 			has_completed_focus = GER_second_civil_war
 		}
-		x = 81
+		x = 93
 		y = 3
 
 		cost = 5
@@ -10608,7 +10614,7 @@ focus_tree = {
 		available = {
 			
 			}
-		x = 3
+		x = 4
 		y = 1
 		relative_position_id = GER_eurocommunism
 
@@ -10712,7 +10718,7 @@ focus_tree = {
 				is_in_faction_with = GER
 			}
 		}
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = GER_eurocommunism
 
@@ -10763,7 +10769,7 @@ focus_tree = {
 			
 		}
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = GER_eurocommunism
 
 		cost = 10
@@ -10803,7 +10809,7 @@ focus_tree = {
 				is_in_faction_with = GER
 			}
 		}
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = GER_eurocommunism
 
@@ -10898,7 +10904,7 @@ focus_tree = {
 			}
 		}
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = GER_align_france
 
 		cost = 10
@@ -10975,7 +10981,7 @@ focus_tree = {
 			POR = { has_government = communism }
 		}
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = GER_align_spain
 
 		cost = 10
@@ -11179,8 +11185,8 @@ focus_tree = {
 
 		}
 		x = 0
-		y = 3
-		relative_position_id = GER_align_spain
+		y = 1
+		relative_position_id = GER_crush_salazar
 
 		cost = 10
 		ai_will_do = {
@@ -11469,8 +11475,8 @@ focus_tree = {
 
 		}
 		x = 0
-		y = 3
-		relative_position_id = GER_align_france
+		y = 1
+		relative_position_id = GER_align_benilux
 
 		cost = 10
 		ai_will_do = {
@@ -11652,9 +11658,9 @@ focus_tree = {
 		bypass = {
 
 		}
-		x = 0
-		y = 5
-		relative_position_id = GER_eurocommunism
+		x = 2
+		y = 1
+		relative_position_id = GER_align_balkans
 
 		cost = 10
 		ai_will_do = {
@@ -11822,7 +11828,7 @@ focus_tree = {
 
 			has_completed_focus = GER_second_civil_war
 		}
-		x = 73
+		x = 80
 		y = 3
 
 		cost = 5
@@ -11934,7 +11940,7 @@ focus_tree = {
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		x = 3
+		x = 5
 		y = 1
 		relative_position_id = GER_support_trotsky_coup
 
@@ -12211,8 +12217,8 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		continue_if_invalid = no
-		x = 2
-		y = 2
+		x = 3
+		y = 1
 		relative_position_id = GER_join_fourth_internationale
 
 		cost = 15
@@ -12541,7 +12547,7 @@ focus_tree = {
 			
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		x = 1
+		x = 2
 		y = 3
 		relative_position_id = GER_join_fourth_internationale
 
@@ -12927,8 +12933,9 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		continue_if_invalid = no
-		x = 72
-		y = 11
+		x = 0
+		y = 9
+		relative_position_id = GER_radical_left
 
 		cost = 20
 		ai_will_do = {
@@ -12985,7 +12992,7 @@ focus_tree = {
 				is_in_faction_with = SOV
 			}
 		}
-		x = 66
+		x = 75
 		y = 5
 
 		cost = 10
@@ -13020,8 +13027,11 @@ focus_tree = {
 		available = {
 			is_in_faction = no
 		}
-		x = 68
-		y = 6
+#		x = 82
+#		y = 6
+		x = 0
+		y = 1
+		relative_position_id = GER_criticise_soviet
 
 		cost = 10
 		ai_will_do = {
@@ -13071,7 +13081,7 @@ focus_tree = {
 
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-		x = 2
+		x = 3
 		y = 1
 		relative_position_id = GER_revolution_by_force
 
@@ -13261,8 +13271,8 @@ focus_tree = {
 		will_lead_to_war_with = ALB
 		will_lead_to_war_with = BUL
 		will_lead_to_war_with = GRE
-		x = 0
-		y = 2
+		x = 1
+		y = 1
 		relative_position_id = GER_red_eastern_europe
 
 		cost = 10
@@ -13315,7 +13325,7 @@ focus_tree = {
 				has_government = fascism 
 			}
 		}
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = GER_establish_fifth_internationale
 
@@ -13389,7 +13399,7 @@ focus_tree = {
 			}			
 		}
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = GER_alliance_with_FRA_and_ENG
 
 		cost = 5
@@ -13535,8 +13545,8 @@ focus_tree = {
 				}
 			}
 		}
-		x = 0
-		y = 2
+		x = 1
+		y = 1
 		relative_position_id = GER_red_europe
 
 		cost = 10
