@@ -65,5 +65,8 @@ GER_remove_thalmann_kpdmod = {
 			news_event = { hours = 24 id = rot_news.1 }
 		}
 	}
+}
 
+GER_set_cosmetic_tag_for_socialist_anschluss = {
+	
 }
