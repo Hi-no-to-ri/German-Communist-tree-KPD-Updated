@@ -41,6 +41,8 @@ communism_on_the_rise = {
 			GER_remove_thalmann_kpdmod = yes
 		}
 		
+		custom_effect_tooltip = GER_no_thalmann_for_wings_tt
+
 		ai_will_do = {
 			factor = 0
 			modifier = {
