@@ -1,18 +1,18 @@
 ﻿l_english:
- rot_news.1.t:0 "Ernst Thalmann has been killed"
- rot_news.1.d:0 "Recent reports have revealed that that the [GER.GetAdjective] government decided to execute the leader of the German Communist Party, Ernst Thalmann, in the Buchenwald concentration camp. \n The communists have spent years fighting the Nazis on the streets but now, however, they have eliminated their leader. It is unknown how the German people reacted to this, or whether they know about it at all." # Removed line break at the beginning of the line in KPD2.0alpha5 update
+ rot_news.1.t:1 "Ernst Thalmann Has Been Killed"
+ rot_news.1.d:2 "Recent reports have revealed that that the [GER.GetAdjective] government decided to execute the leader of the German Communist Party, Ernst Thalmann, in the Buchenwald concentration camp. \n The communists have spent years fighting the Nazis on the streets but now, however, [GetTheyOrTheGovernment] have eliminated their leader. It is unknown how the German people reacted to this, or whether they know about it at all." # Removed line break at the beginning of the line in KPD2.0alpha5 update
  rot_news.1.a:0 "Death to communists!"
  rot_news.1.b:0 "Damn fascists!"
  rot_news.1.c:0 "Another victim of Nazi regime."
  rot_news.1.e:0 "Sad news for communists the world over..."
- rot_news.2.t:0 "Ernst Thalmann has been killed"
- rot_news.2.d:0 "Recent reports have revealed that that the [GER.GetAdjective] government decided to execute the leader of the German Communist Party, Ernst Thalmann, in the Buchenwald concentration camp. \n The communists have spent years fighting the Nazis on the streets but now, however, they have eliminated their leader. German workers are rallying across Germany and strikes have already begun to emerge." # Removed line break at the beginning of the line in KPD2.0alpha5 update
+ rot_news.2.t:1 "Ernst Thalmann Has Been Killed"
+ rot_news.2.d:2 "Recent reports have revealed that that the [GER.GetAdjective] government decided to execute the leader of the German Communist Party, Ernst Thalmann, in the Buchenwald concentration camp. \n The communists have spent years fighting the Nazis on the streets but now, however, [GetTheyOrTheGovernment] have eliminated their leader. German workers are rallying across Germany and strikes have already begun to emerge." # Removed line break at the beginning of the line in KPD2.0alpha5 update
  rot_news.2.a:0 "Death to communists."
  rot_news.2.b:0 "The German working class is finally waking up."
  rot_news.2.c:0 "Another victim of Nazi regime."
  rot_news.2.e:0 "It's barbaric."
- rot_news.3.t:0 "Ernst Thalmann has been killed"
- rot_news.3.d:0 "Recently, from secret sources, it became known that [GER.GetAdjective] government decided to execute the leader of the German Communists, Ernst Thalmann in the Buchenwald concentration camp. \nAfter 1933, Ernst Thalmann was held in solitary confinement in Moabit prison. After the failure of the Dimitrov case, the Nazis were afraid to begin trials of the Communists. Now, however, they have eliminated their leader. German workers across the country went to large-scale meetings, production throughout the country stopped. Workers demand the overthrow of the Nazi regime. The situation in Germany is getting out of control." # Removed line break at the beginning of the line in KPD2.0alpha5 update
+ rot_news.3.t:1 "Ernst Thalmann Has Been Killed"
+ rot_news.3.d:2 "Recently, from secret sources, it became known that [GER.GetAdjective] government decided to execute the leader of the German Communists, Ernst Thalmann in the Buchenwald concentration camp. \nAfter 1933, Ernst Thalmann was held in solitary confinement in Moabit prison. After the failure of the Dimitrov case, the Nazis were afraid to begin trials of the Communists. Now, however, [GetTheyOrTheGovernment] have eliminated their leader. German workers across the country went to large-scale meetings, production throughout the country stopped. Workers demand the overthrow of the Nazi regime. The situation in Germany is getting out of control." # Removed line break at the beginning of the line in KPD2.0alpha5 update
  rot_news.3.a:0 "Traitors!"
  rot_news.3.b:0 "The German working class has awoken! Workers of all countries, unite!"
  rot_news.3.c:0 "Interesting."
@@ -262,3 +262,7 @@
  rot_germany.1005.t:0 "共産主義の終息"
  rot_germany.1005.desc:0 "我々がテールマンに下した処置は問題なく効果を示した。彼の求心力を失ったことによって、[From.GetCommunistParty]はその政治的影響力を失いつつあるようだ。"
  rot_germany.1005.a:0 "Very good." #よろしい
+ GER_NazisOrGovernment_nazis:0 "Nazis"
+ GER_NazisOrGovernment_government:0 "The government"
+ GER_GetTheyOrTheGovernment_nazis:0 "They"
+ GER_GetTheyOrTheGovernment_government:0 "The government"
