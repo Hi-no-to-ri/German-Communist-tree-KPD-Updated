@@ -3146,11 +3146,51 @@ country_event = { #Denied
 	}
 }
 
+country_event = { #Release Thailman or not
+	id = rot_germany.1000
+	title = rot_germany.1000.t
+	desc = rot_germany.1000.desc
+	picture = GFX_report_event_german_reichstag_gathering
+	
+	trigger = {
+		tag = GER
+		focus_progress = {
+			focus = GER_reds_amnesty
+			progress > 0.1
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	fire_only_once = yes
+
+	option = { #Release him
+		name = rot_germany.1000.a
+		ai_chance = {
+			base = 100
+		}
+		custom_effect_tooltip = no_thalmann_for_wings_tt
+	}
+	
+	option = { #Remove him
+		name = rot_germany.1000.b
+		ai_chance = {
+			base = 0
+		}
+		GER_remove_thalmann_kpdmod = yes
+		custom_effect_tooltip = no_thalmann_for_wings_tt
+		custom_effect_tooltip = thalmann_will_be_removed_tt
+		custom_effect_tooltip = danger_alert_for_removing_thalmann_tt
+	}
+}
+
 country_event = { #Thailman killed and civil war will start
 	id = rot_germany.1001
 	title = rot_germany.1001.t
 	desc = rot_germany.1001.desc
-	picture = GFX_report_event_german_reichstag_gathering
+	picture = GFX_report_event_ger_big_strike
 
 	is_triggered_only = yes
 
@@ -3173,7 +3213,7 @@ country_event = { #Thailman killed and communist popularity is between 0.39 and 
 	id = rot_germany.1002
 	title = rot_germany.1002.t
 	desc = rot_germany.1002.desc
-	picture = GFX_report_event_german_reichstag_gathering
+	picture = GFX_report_event_ger_strike
 
 	is_triggered_only = yes
 
@@ -3196,7 +3236,7 @@ country_event = { #Thailman killed and communist popularity is between 0.29 and 
 	id = rot_germany.1003
 	title = rot_germany.1003.t
 	desc = rot_germany.1003.desc
-	picture = GFX_report_event_german_reichstag_gathering
+	picture = GFX_report_event_ger_strike
 
 	is_triggered_only = yes
 
@@ -3215,7 +3255,7 @@ country_event = { #Thailman killed and communist popularity is between 0.19 and 
 	id = rot_germany.1004
 	title = rot_germany.1004.t
 	desc = rot_germany.1004.desc
-	picture = GFX_report_event_german_reichstag_gathering
+	picture = GFX_report_event_ger_proletariat
 
 	is_triggered_only = yes
 

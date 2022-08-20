@@ -1,0 +1,69 @@
+#rot20
+GER_remove_thalmann_kpdmod = {
+	add_country_leader_role = {
+		character = GER_wilhelm_pieck
+		country_leader = {
+			expire = "1965.1.1.1"
+			ideology = stalinism
+			traits = {
+				stalins_puppet
+				exiled
+			}
+		}
+		promote_leader = yes
+	}
+	set_country_flag = thalmann_killed
+	add_stability = 0.1
+	add_political_power = 300
+	if = {
+		limit = {
+				communism > 0.39
+		}	
+		country_event = rot_germany.1001
+		hidden_effect = {
+			news_event = { hours = 24 id = rot_news.3 }
+		}
+	}
+	if = {
+		limit = {
+				communism < 0.4
+				communism > 0.09
+		}	
+		hidden_effect = {
+			news_event = { hours = 24 id = rot_news.2 }
+		}
+	}				
+	if = {
+		limit = {
+				communism > 0.29
+				communism < 0.4
+		}	
+		country_event = rot_germany.1002
+	}
+	if = {
+		limit = {
+				communism > 0.19
+				communism < 0.3
+		}	
+		country_event = rot_germany.1003
+	}
+	if = {
+		limit = {
+				communism > 0.09
+				communism < 0.2
+		}	
+		hidden_effect = {
+			country_event = rot_germany.1004
+		}
+	}	
+	if = {
+		limit = {
+				communism < 0.1
+		}	
+		country_event = rot_germany.1005
+		hidden_effect = {
+			news_event = { hours = 24 id = rot_news.1 }
+		}
+	}
+
+}
