@@ -19,7 +19,7 @@ GER_remove_thalmann_kpdmod = {
 		limit = {
 				communism > 0.39
 		}	
-		country_event = rot_germany.1001
+		country_event = { id =rot_germany.1001 hours = 8 }
 		hidden_effect = {
 			news_event = { hours = 24 id = rot_news.3 }
 		}
@@ -38,27 +38,27 @@ GER_remove_thalmann_kpdmod = {
 				communism > 0.29
 				communism < 0.4
 		}	
-		country_event = rot_germany.1002
+		country_event = { id = rot_germany.1002 hours = 8 }
 	}
 	if = {
 		limit = {
 				communism > 0.19
 				communism < 0.3
 		}	
-		country_event = rot_germany.1003
+		country_event = { id = rot_germany.1003 hours = 8 }
 	}
 	if = {
 		limit = {
 				communism > 0.09
 				communism < 0.2
 		}	
-		country_event = rot_germany.1004
+		country_event = { id = rot_germany.1004 hours = 8 }
 	}	
 	if = {
 		limit = {
 				communism < 0.1
 		}	
-		country_event = rot_germany.1005
+		country_event = { id = rot_germany.1005 hours = 8 }
 		hidden_effect = {
 			news_event = { hours = 24 id = rot_news.1 }
 		}
