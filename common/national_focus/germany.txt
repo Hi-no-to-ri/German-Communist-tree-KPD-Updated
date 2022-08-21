@@ -9139,6 +9139,13 @@ focus_tree = {
 			}
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = erich_mielke
+			IF = {
+				limit = { GER = { is_ai = yes } }
+				add_timed_idea = {
+					idea = internationalism
+					days = 720
+				}	
+			}
 		}
 	}
 	focus = {
