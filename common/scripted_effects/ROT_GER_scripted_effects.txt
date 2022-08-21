@@ -24,7 +24,7 @@ GER_remove_thalmann_kpdmod = {
 			news_event = { hours = 24 id = rot_news.3 }
 		}
 	}
-	if = {
+	if = { #1002～1004の場合に共通のニュース
 		limit = {
 				communism < 0.4
 				communism > 0.09
