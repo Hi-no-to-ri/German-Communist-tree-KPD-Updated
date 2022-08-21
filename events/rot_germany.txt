@@ -2270,6 +2270,11 @@ country_event = {
 			ideology = communism
 			size = 0.5
 		}
+		hidden_effect = {
+			uncomplete_national_focus = {
+				focus = GER_reds_amnesty
+			}				
+		}
 	}
 
 	option = {
@@ -2303,6 +2308,13 @@ country_event = {
 				ideology = neutrality
 				size = 0.5
 			}
+		}
+		hidden_effect = {
+			unlock_national_focus = GER_oppose_hitler
+			unlock_national_focus = GER_reds_amnesty #顧問はcompleteじゃなくunlockでも雇用条件の「国家方針の達成」を満たす
+			complete_national_focus = GER_rot_front #国家方針による将軍の追加はcompleteで国家方針の効果を発動させないとできない
+			unlock_national_focus = GER_second_civil_war 
+			remove_ideas = GER_rot_front_idea #GER_rot_frontで追加される国民精神（安定度下がって共産主義支持率上がる期限付き精神）を削除
 		}
 	}
 }
