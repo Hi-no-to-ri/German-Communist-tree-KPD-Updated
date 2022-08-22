@@ -1,0 +1,79 @@
+#rot20
+GER_remove_thalmann_kpdmod = {
+	add_country_leader_role = {
+		character = GER_wilhelm_pieck
+		country_leader = {
+			expire = "1965.1.1.1"
+			ideology = stalinism
+			traits = {
+				stalins_puppet
+				exiled
+			}
+		}
+		promote_leader = yes
+	}
+	set_country_flag = thalmann_killed
+	add_stability = 0.1
+	add_political_power = 300
+	if = {
+		limit = {
+				communism > 0.39
+		}	
+		country_event = { id =rot_germany.1001 hours = 8 }
+		hidden_effect = {
+			news_event = { hours = 24 id = rot_news.3 }
+		}
+	}
+	if = { #1002～1004の場合に共通のニュース
+		limit = {
+				communism < 0.4
+				communism > 0.09
+		}	
+		hidden_effect = {
+			news_event = { hours = 24 id = rot_news.2 }
+		}
+	}				
+	if = {
+		limit = {
+				communism > 0.29
+				communism < 0.4
+		}	
+		country_event = { id = rot_germany.1002 hours = 8 }
+	}
+	if = {
+		limit = {
+				communism > 0.19
+				communism < 0.3
+		}	
+		country_event = { id = rot_germany.1003 hours = 8 }
+	}
+	if = {
+		limit = {
+				communism > 0.09
+				communism < 0.2
+		}	
+		country_event = { id = rot_germany.1004 hours = 8 }
+	}	
+	if = {
+		limit = {
+				communism < 0.1
+		}	
+		country_event = { id = rot_germany.1005 hours = 8 }
+		hidden_effect = {
+			news_event = { hours = 24 id = rot_news.1 }
+		}
+	}
+}
+
+GER_set_cosmetic_tag_for_socialist_anschluss = { #WIP #See also rot_germany.41.a
+	IF = {
+		limit = {
+			has_completed_focus = GER_enter_comintern
+		}
+		hidden_effect = {
+			drop_cosmetic_tag = yes
+			set_cosmetic_tag = GER_ddr_austria
+		}
+	}
+
+}

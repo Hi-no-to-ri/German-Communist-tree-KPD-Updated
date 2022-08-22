@@ -38,104 +38,11 @@ communism_on_the_rise = {
 		cost = 50
 		
 		complete_effect = {
-			add_country_leader_role = {
-				character = GER_wilhelm_pieck
-				country_leader = {
-					expire = "1965.1.1.1"
-					ideology = stalinism
-					traits = {
-						stalins_puppet
-						exiled
-					}
-				}
-				promote_leader = yes
-			}
-			set_country_flag = thalmann_killed
-			if = {
-				limit = {
-						communism > 0.39
-				}	
-				hidden_effect = {
-					country_event = rot_germany.32
-					news_event = { hours = 24 id = rot_news.3 }
-					add_stability = -0.6
-					add_timed_idea = { idea = FRA_factory_strikes days = 365 }
-					add_popularity = {
-						ideology = communism
-						popularity = 0.35
-					}
-				}
-				add_stability = 0.1
-				add_political_power = 300
-			}
-			if = {
-				limit = {
-						communism < 0.4
-						communism > 0.09
-				}	
-				hidden_effect = {
-					news_event = { hours = 24 id = rot_news.2 }
-				}
-			}				
-			if = {
-				limit = {
-						communism > 0.29
-						communism < 0.4
-				}	
-				hidden_effect = {
-					add_popularity = {
-						ideology = communism
-						popularity = 0.3
-					}
-					add_stability = -0.6
-					add_political_power = -800
-					add_timed_idea = { idea = FRA_factory_strikes days = 270 }
-				}
-				add_stability = 0.1
-				add_political_power = 300
-			}
-			if = {
-				limit = {
-						communism > 0.19
-						communism < 0.3
-				}	
-				hidden_effect = {
-					add_stability = -0.4
-					add_political_power = -500
-					add_timed_idea = { idea = FRA_factory_strikes days = 180 }
-				}
-				add_stability = 0.1
-				add_political_power = 300
-			}
-			if = {
-				limit = {
-						communism > 0.09
-						communism < 0.2
-				}	
-				hidden_effect = {
-					add_stability = -0.2
-					add_political_power = -400
-					add_timed_idea = { idea = FRA_factory_strikes days = 90 }
-				}
-				add_stability = 0.1
-				add_political_power = 300
-			}	
-			if = {
-				limit = {
-						communism < 0.1
-				}	
-				hidden_effect = {
-					add_popularity = {
-						ideology = communism
-						popularity = -0.25
-					}
-					news_event = { hours = 24 id = rot_news.1 }
-				}
-				add_stability = 0.1
-				add_political_power = 300
-			}
+			custom_effect_tooltip = GER_thalmann_will_be_removed_tt
+			GER_remove_thalmann_kpdmod = yes
+			custom_effect_tooltip = GER_no_thalmann_for_wings_tt
 		}
-		
+
 		ai_will_do = {
 			factor = 0
 			modifier = {
