@@ -230,3 +230,31 @@
  rot_germany.45.t:0 "[POL.GetName] abgelehnt"
  rot_germany.45.desc:0 "\n Die polnische Regierung hat unser Vorhaben abgelehnt. Sie haben beschlossen, keine Verträge mit den Kommunisten zu schließen."
  rot_germany.45.a:0 "Das ist sehr schade."
+ # KPD2.1-
+ rot_germany.1000.t:0 "Measure Ageinst Thalmann" #$ernst_thalmann$への処置
+ rot_germany.1000.desc:0 "A draft cabinet order to release communist political prisoners and close the camps has been submitted to the Provisional Military Government. Since it is now clear that the Communist Party was not involved in the suspicious fire at the Reichstag building, this order is certain to be promulgated in the present within a few months.\n\nThe problem is that $ernst_thalmann$, the autocratic leader of the [From.GetCommunistParty], is also among these political prisoners. Some in the government fear that his release could embolden [From.GetCommunistParty] to plot to overthrow the government with its communist ideology. Some of them have made the lurid suggestion that he should be given "an appropriate measure" until the order is actually promulgated.\n\nOther members of the government have questioned this proposal to thwart the communists and call for careful judgment of the impact of such radical methods on the communists, but a particularly pessimistic group among them has privately stated that $ernst_thalmann$ is the "Red Führer" and that even if his elimination did not lead to the end of communism, it might rather be in the interest of [From.GetNonIdeologyName] that a more democratic leader other than him lead communism." #共産主義の政治犯を釈放し、収容所を閉鎖する政令案が臨時軍政府に提出された。今や国会議事堂の不審火に共産党が関わっていなかったことが明らかである以上、この政令は数ヶ月以内に現に公布されることが確実視されている。\n\n問題となるのは、[From.GetCommunistParty]の独裁的指導者である$ernst_thalmann$もこの政治犯の中に含まれることだ。政府の中には、彼の釈放が[From.GetCommunistParty]を勢いづかせ、その共産主義イデオロギーで政府の転覆を謀る可能性を危惧している者もいる。彼らの一部は、政令が実際に公布されるまでの間に、彼に「適切な処置」を与えるべきとの不気味な提案を行っている。\n\n他の政府構成員は、共産主義者を妨害するためのこの提案を疑問視しており、こうした過激な方法が共産主義者に与える影響について慎重な判断を求めているが、その中でも特に悲観的な集団は、$ernst_thalmann$は「赤い総統」であり、たとえ彼を排除することが共産主義の終息に繋がらなかったとしても、むしろ彼以外のより民主的な指導者が共産主義を率いることが[From.GetNonIdeologyName]のためになるかもしれないと非公式に述べている。
+ rot_germany.1000.a:0 "Leave it alone." #放っておけ
+ rot_germany.1000.b:0 "We don't want a Red Führer!" #赤い総統はごめんだ！
+ rot_germany.1001.t:0 "Workers’ Violent Protests" #労働者の暴力的抗議
+ rot_germany.1001.desc:0 "Our measure against Thalmann has had a far more significant impact than we had expected. Destructive strikes by workers have begun throughout Germany, and they are demanding the overthrow of the administration.\nHaving increased its support more than before, [From.GetCommunistParty] is scheming to achieve the communist revolution that the Social Democratic Party of Germany (SPD) once prevented.\n\nCapitalists and some members of the government are criticizing our rash and overly optimistic decision, but we may not even have time to respond to that criticisms..." #我々がテールマンに下した処置は予想をはるかに上回る影響をもたらした。ドイツ全土で労働者による破壊的なストライキが始まっており、彼らは政権の打倒を要求している。\n以前よりも支持を伸ばした[From.GetCommunistParty]は、かつてドイツ社会民主党が阻止した共産主義革命の実現を企図している。\n\n資本家達や政府の構成員の一部は我々の軽率で楽観的すぎた判断を批判しているが、我々にはその批判に応じる暇すらないかもしれない……
+ rot_germany.1001.a:0 "We should have been more aware of our surroundings." #我々はもっと自分の周囲に気を配るべきだった
+ rot_germany.1002.t:0 "Workers’ Serious Protests" #労働者の深刻な抗議
+ rot_germany.1002.desc:0 "Our measure against Thalmann has had a greater impact than we had expected. Strikes by workers have begun throughout Germany, some of them demanding the overthrow of the administration. Capitalists and some members of the government are criticizing our rash and overly optimistic decision.\n[From.GetCommunistParty] has demonstrated with the workers in this situation and is gaining more support than before.\n\nConfusion is spreading in [From.GetName]." #我々がテールマンに下した処置は予想以上の影響をもたらした。ドイツ全土で労働者によるストライキが始まっており、中には政権の打倒を要求する者もいる。資本家達や政府の構成員の一部は我々の軽率で楽観的すぎた判断を批判している。\n[From.GetCommunistParty]はこの状況下で労働者と共にデモを行い、以前よりも支持を伸ばしている。\n\n[From.GetName]に混乱が広がっている。
+ rot_germany.1002.a:0 "It's a terrible situation." #ひどい状況だ
+ rot_germany.1003.t:0 "Workers’ Strong Protests" #労働者の強い抗議
+ rot_germany.1003.desc:0 "Our measure against Thalmann has had a greater impact than we had expected. Strikes by workers have begun throughout Germany, some of them demanding the overthrow of the administration. Capitalists are criticizing our rash and overly optimistic decision.\n\nConfusion is spreading in [From.GetName]." #我々がテールマンに下した処置は予想以上の影響をもたらした。ドイツ全土で労働者によるストライキが始まっており、中には政権の打倒を要求する者もいる。資本家達は我々の軽率で楽観的すぎた判断を批判している。\n\n[From.GetName]に混乱が広がっている。
+ rot_germany.1003.a:0 "It's a terrible situation."
+ rot_germany.1004.t:0 "Workers’ Protests" #労働者の抗議
+ rot_germany.1004.desc:0 "Our measure against Thalmann has had a greater impact than we had expected. Strikes by workers have begun throughout Germany, and capitalists are criticizing our rash and overly optimistic decision.\n\nConfusion is spreading in [From.GetName]." #我々がテールマンに下した処置は予想以上の影響をもたらした。ドイツ全土で労働者によるストライキが始まっており、資本家達は我々の軽率で楽観的すぎた判断を批判している。\n\n[From.GetName]に混乱が広がっている。
+ rot_germany.1004.a:0 "It's a terrible situation."
+ rot_germany.1005.t:0 "The End of Communism" #共産主義の終息
+ rot_germany.1005.desc:0 "Our measure against Thalmann has worked without a problem. By losing his centripetal force, [From.GetCommunistParty] seems to be losing its political influence." #我々がテールマンに下した処置は問題なく効果を示した。彼の求心力を失ったことによって、[From.GetCommunistParty]はその政治的影響力を失いつつあるようだ。
+ rot_germany.1005.a:0 "Very good." #よろしい
+ GER_NazisOrGovernment_nazis:0 "Nazis"
+ GER_NazisOrGovernment_government:0 "the government"
+ GER_GetTheyOrTheGovernment_nazis:0 "they"
+ GER_GetTheyOrTheGovernment_government:0 "the government"
+ rot_germany.32.t:0 "$political.22.t$"
+ rot_germany.32.desc:0 "$political.22.d$" #will be replaced later
+ rot_germany.32.a:0 "$political.22.a$"
+ rot_germany.32.b:0 "$political.22.b$"

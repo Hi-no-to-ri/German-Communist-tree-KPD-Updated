@@ -2255,14 +2255,14 @@ country_event = {
 #Civilwar if Thalmann Killed
 country_event = {
 	id = rot_germany.32
-	title = political.22.t
-	desc = political.22.d
+	title = rot_germany.32.t
+	desc = rot_germany.32.desc
 	picture = GFX_report_event_worker_protests
 
 	is_triggered_only = yes
 
 	option = {
-		name = political.22.a
+		name = rot_germany.32.a
 		ai_chance = {
 			factor = 0
 		}
@@ -2270,10 +2270,15 @@ country_event = {
 			ideology = communism
 			size = 0.5
 		}
+		hidden_effect = {
+			uncomplete_national_focus = {
+				focus = GER_reds_amnesty
+			}				
+		}
 	}
 
 	option = {
-		name = political.22.b
+		name = rot_germany.32.b
 		if = {
 			limit = {
 				has_government = democratic
@@ -2303,6 +2308,13 @@ country_event = {
 				ideology = neutrality
 				size = 0.5
 			}
+		}
+		hidden_effect = {
+			unlock_national_focus = GER_oppose_hitler
+			unlock_national_focus = GER_reds_amnesty #顧問はcompleteじゃなくunlockでも雇用条件の「国家方針の達成」を満たす
+			complete_national_focus = GER_rot_front #国家方針による将軍の追加はcompleteで国家方針の効果を発動させないとできない
+			unlock_national_focus = GER_second_civil_war 
+			remove_ideas = GER_rot_front_idea #GER_rot_frontで追加される国民精神（安定度下がって共産主義支持率上がる期限付き精神）を削除
 		}
 	}
 }
@@ -3145,3 +3157,149 @@ country_event = { #Denied
 		}			
 	}
 }
+
+country_event = { #Release Thalmann or not
+	id = rot_germany.1000
+	title = rot_germany.1000.t
+	desc = rot_germany.1000.desc
+	picture = GFX_report_event_german_reichstag_gathering
+	
+	trigger = {
+		tag = GER
+		focus_progress = {
+			focus = GER_reds_amnesty
+			progress > 0.1
+		}
+		NOT = { has_country_flag = thalmann_killed }
+	}
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	fire_only_once = yes
+
+	option = { #Release him
+		name = rot_germany.1000.a
+		ai_chance = {
+			base = 100
+		}
+		custom_effect_tooltip = GER_no_thalmann_for_wings_tt
+	}
+	
+	option = { #Remove him
+		name = rot_germany.1000.b
+		ai_chance = {
+			base = 0
+		}
+		custom_effect_tooltip = GER_thalmann_will_be_removed_tt
+		GER_remove_thalmann_kpdmod = yes
+		custom_effect_tooltip = GER_danger_alert_for_removing_thalmann_tt
+		custom_effect_tooltip = GER_no_thalmann_for_wings_tt
+	}
+}
+
+country_event = { #Thailman killed and civil war will start
+	id = rot_germany.1001
+	title = rot_germany.1001.t
+	desc = rot_germany.1001.desc
+	picture = GFX_report_event_ger_big_strike
+
+	is_triggered_only = yes
+
+	option = {
+		name = rot_germany.1001.a
+		ai_chance = {
+			base = 100
+		}
+		country_event = rot_germany.32
+		add_stability = -0.6
+		add_timed_idea = { idea = FRA_factory_strikes days = 365 }
+		add_popularity = {
+			ideology = communism
+			popularity = 0.35
+		}
+	}
+}
+
+country_event = { #Thailman killed and communist popularity is between 0.39 and 0.3
+	id = rot_germany.1002
+	title = rot_germany.1002.t
+	desc = rot_germany.1002.desc
+	picture = GFX_report_event_ger_strike
+
+	is_triggered_only = yes
+
+	option = {
+		name = rot_germany.1002.a
+		ai_chance = {
+			base = 100
+		}
+		add_stability = -0.6
+		add_political_power = -800
+		add_timed_idea = { idea = FRA_factory_strikes days = 270 }
+		add_popularity = {
+			ideology = communism
+			popularity = 0.3
+		}
+	}
+}
+
+country_event = { #Thailman killed and communist popularity is between 0.29 and 0.2
+	id = rot_germany.1003
+	title = rot_germany.1003.t
+	desc = rot_germany.1003.desc
+	picture = GFX_report_event_ger_strike
+
+	is_triggered_only = yes
+
+	option = {
+		name = rot_germany.1003.a
+		ai_chance = {
+			base = 100
+		}
+		add_stability = -0.4
+		add_political_power = -500
+		add_timed_idea = { idea = FRA_factory_strikes days = 180 }
+	}
+}
+
+country_event = { #Thailman killed and communist popularity is between 0.19 and 0.1
+	id = rot_germany.1004
+	title = rot_germany.1004.t
+	desc = rot_germany.1004.desc
+	picture = GFX_report_event_ger_proletariat
+
+	is_triggered_only = yes
+
+	option = {
+		name = rot_germany.1004.a
+		ai_chance = {
+			base = 100
+		}
+		add_stability = -0.2
+		add_political_power = -400
+		add_timed_idea = { idea = FRA_factory_strikes days = 90 }
+	}
+}
+
+country_event = { #Thailman killed and communist popularity is lower than 0.1
+	id = rot_germany.1005
+	title = rot_germany.1005.t
+	desc = rot_germany.1005.desc
+	picture = GFX_report_event_german_reichstag_gathering
+
+	is_triggered_only = yes
+
+	option = {
+		name = rot_germany.1005.a
+		ai_chance = {
+			base = 100
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = -0.25
+		}
+	}
+}
+

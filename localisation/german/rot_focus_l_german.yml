@@ -9,7 +9,7 @@
  GER_rot_front_exp_desc:0 "Die ‘Rot Front’ sollte mehr in die Gesellschaft integriert werden um die kommunistischen Werte in ganz Deutschland zu verbreiten."
  GER_rot_front_army:0 "Kommissare in der Armee"
  GER_rot_front_army_desc:0 "Mit Hilfe von Kommissaren der 'Rot Front' in den Reihen unserer Armee können wir sicherstellen, dass unsere Generäle der Partei treu bleiben."
- GER_nationalisation:0 "Enteignung der Industrie"#Edited in KPD2.0 (Deleted period)
+ GER_nationalisation:1 "Enteignung der Industrie"#Edited in KPD2.0 (Deleted period)
  GER_nationalisation_desc:0 "Der revolutionäre Umbruch hat viele, von ihren ehemaligen Besitzern verlassene Fabriken hinterlassen. Die Arbeiter sind bereit die Kontrolle der Fabriken zu übernehmen, aber sie benötigen zusätzliche Unterstützung durch den Staat dafür. Es ist Zeit die Wirtschaft zu ins Volkseigentum über zu führen."
  GER_new_workers_culture:0 "Neue Arbeiterkultur"
  GER_new_workers_culture_desc:0 "Die Erfahrungen aus der Sowjetunion zeigen, dass das Bilden eines Proletariats hilfreichh ist um die Revolution zu verteidigen und die Lebensart des alten Kaiserreichs ab zu schaffen."
@@ -60,11 +60,11 @@
  GER_radical_left:0 "Unterstützung für den radikalen linken Flügel"#Edited in KPD2.0 (Deleted period)
  GER_radical_left_desc:0 "Die Ermordung von Thalmann hat die Partei in viele einzelne Flügel aufgeteilt. Die Partei scheint, einst verbannte Ideen wieder in betracht zu ziehen, seitdem die KPD mit den einst ausgestoßenen Trotzkyanhängern wiedervereint wurde."
  GER_support_trotsky_coup:0 "Heimliche Unterstützung des linken Flügels in der Sowjetunion"
- GER_support_trotsky_coup_desc:0 "Josef Stalin hat die Weltrevolution zu gunsten eines verstärkten Zirkels aus bürokratischem Despotismus aufgegeben, genauso wie Napoleon die Französische Revolution zerstört hat. Nun wo das globale Zentrum des Kommunismus in Berlin liegt, wird es Zeit eine Basis in Russland zu errichten und die Fehler von Stalin rückgängig zu machen."
+ GER_support_trotsky_coup_desc:1 "$SOV_iosif_stalin$ hat die Weltrevolution zu gunsten eines verstärkten Zirkels aus bürokratischem Despotismus aufgegeben, genauso wie Napoleon die Französische Revolution zerstört hat. Nun wo das globale Zentrum des Kommunismus in Berlin liegt, wird es Zeit eine Basis in Russland zu errichten und die Fehler von Stalin rückgängig zu machen."
  GER_trotsky_coup:0 "Unterstützung für Genosse Trotsky gegen Stalin"
  GER_trotsky_coup_desc:0 "Der linke der kommunistischen Partei in der Sowjetunion, angeführt von Trotky könnte mit unserer Hilfe Stalin entmachten und die Sowjetunion wieder auf den richtigen Pfad führen. Wir sollten den Verschwöreren bei ihrer heimlichen Rückkehr helfen."
  GER_trotsky_coup_tt:0 "Trotky wird zur Sowjetunion zurückkehren und einen Putsch in der Partei und in der Armee organisieren."
- trotsky_dead:0 "Leon Trotsky ist tot."#Edited in KPD2.0 (Deleted period)
+ trotsky_dead:1 "$SOV_lev_trotsky$ ist tot."#Edited in KPD2.0 (Deleted period)
  GER_join_fourth_internationale:0 "Der vierten Internationalen beitreten"
  GER_join_fourth_internationale_desc:0 "Das opportunistische Regime Stalins wurde gestürzt. Wie Lenin wollte, wurde Trotzki der Führer der Sowjetunion. Jetzt ist es endlich möglich, auf den Trümmern der Dritten Internationale eine neue aufzubauen. Es lebe die Vierte Internationale!"
  GER_influence_on_western_europe:0 "Westeuropa beeinflussen"
@@ -99,14 +99,14 @@
  GER_red_europe:0 "Rotes Europa"
  GER_red_europe_desc:0 "Das faschistische Regime in Italien hat kapituliert. Es ist an der Zeit, die Westmächte zu vernichten und dabei die Tatsache auszunutzen, dass sie nach dem Krieg mit Italien leicht geschwächt sind."
  GER_betrayed_october:0 "Oktoberverrat"
- GER_betrayed_october_desc:0 "Josef Stalin hat einen schrecklichen Fehler gemacht, über den wir viele Male unermüdlich mit ihm gesprochen haben. Aber er wehrte sich ständig und verwies auf unsere „anarchistischen Illusionen“. Jetzt ist es für uns alle offensichtlich, Stalin ist eine Geisel seiner eigenen Bürokratie geworden. Die Befreiung des Sowjetvolkes wird die entscheidende Etappe beim Beginn der Weltrevolution sein!"
+ GER_betrayed_october_desc:1 "$SOV_iosif_stalin$ hat einen schrecklichen Fehler gemacht, über den wir viele Male unermüdlich mit ihm gesprochen haben. Aber er wehrte sich ständig und verwies auf unsere „anarchistischen Illusionen“. Jetzt ist es für uns alle offensichtlich, Stalin ist eine Geisel seiner eigenen Bürokratie geworden. Die Befreiung des Sowjetvolkes wird die entscheidende Etappe beim Beginn der Weltrevolution sein!"
  GER_new_october:0 "Neuer Oktober"
  GER_new_october_desc:0 "Jetzt, da das sowjetische Volk befreit ist, können wir mit der Wiederherstellung Russlands und der Errichtung einer wirklichen sowjetischen Macht auf seinem Territorium fortfahren. Jetzt werden wir den Bourgeois unsere proletarische Faust zeigen."
  GER_weltrepublic:0 "Sozialistische Weltrepublik"
  GER_weltrepublic_desc:0 "Alle fortgeschrittenen kapitalistischen Länder der Welt wurden zerstört. Und jetzt, wo der Sozialismus endlich seine Stellung in der Welt gefestigt hat, können wir beginnen, uns auf der Grundlage der von uns befreiten Gebiete zur Weltrepublik zu vereinen. Der Moment des Ausbruchs des Kommunismus rückt näher, Genossen!"
  GER_NVA:0 "Nationale Volksarmee"
  GER_NVA_desc:0 "Die jüngsten Verschwörungen in der Armee haben uns gezeigt, dass es notwendig ist, die Armee zu reformieren, um eine nationale Volksarmee zu schaffen, in der wir loyalen Generälen die Möglichkeit geben werden, in höhere Ränge aufzusteigen."
- GER_exile_fascism_tt:0 "Erhalte einen Kriegsgrund gegen §Yalle faschistischen Nationen in Europa§!"
+ GER_exile_fascism_tt:1 "Erhalte einen Kriegsgrund gegen §Yalle faschistischen Nationen in Europa§!"
  GER_collectivisation:0 "Kollektivierung"
  GER_collectivisation_desc:0 "Die sowjetische Führung führte eine Kollektivierung durch und schaffte es, den Gesamtertrag und den Geldzufluss in die Staatskasse zu steigern. Wir müssen dies tun, um die fortschreitende Industrialisierung unterstützen zu können. Darüber hinaus wird dies dazu beitragen, das vorhandene Land rationeller zu nutzen, obwohl es möglich ist, dass die wohlhabende Bauernschaft dies nicht unterstützt."
  GER_countinue_industrialisation:0 "Städtebauunternehmen eröffnen"
