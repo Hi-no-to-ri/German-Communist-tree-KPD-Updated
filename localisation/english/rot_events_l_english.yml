@@ -248,7 +248,7 @@
  rot_germany.1000.a:0 "Leave it alone." #放っておけ
  rot_germany.1000.b:0 "We don't want a Red Führer!" #赤い総統はごめんだ！
  rot_germany.1001.t:0 "Workers’ Violent Protests" #労働者の暴力的抗議
- rot_germany.1001.desc:0 "我々がテールマンに下した処置は予想をはるかに上回る影響をもたらした。ドイツ全土で労働者による破壊的なストライキが始まっており、彼らは政権の打倒を要求している。\n以前よりも支持を伸ばした[From.GetCommunistParty]は、かつてドイツ社会民主党が阻止した共産主義革命の実現を企図している。\n\n資本家達や政府の構成員の一部は我々の軽率で楽観的すぎた判断を批判しているが、我々にはその批判に応じる暇すらないかもしれない……"
+ rot_germany.1001.desc:0 "Our measure against Thalmann has had a far more significant impact than we had expected. Destructive strikes by workers have begun throughout Germany, and they are demanding the overthrow of the administration.\nHaving increased its support more than before, [From.GetCommunistParty] is scheming to achieve the communist revolution that the Social Democratic Party of Germany (SPD) once prevented.\n\nCapitalists and some members of the government are criticizing our rash and overly optimistic decision, but we may not even have time to respond to that criticisms..." #我々がテールマンに下した処置は予想をはるかに上回る影響をもたらした。ドイツ全土で労働者による破壊的なストライキが始まっており、彼らは政権の打倒を要求している。\n以前よりも支持を伸ばした[From.GetCommunistParty]は、かつてドイツ社会民主党が阻止した共産主義革命の実現を企図している。\n\n資本家達や政府の構成員の一部は我々の軽率で楽観的すぎた判断を批判しているが、我々にはその批判に応じる暇すらないかもしれない……
  rot_germany.1001.a:0 "We should have been more aware of our surroundings." #我々はもっと自分の周囲に気を配るべきだった
  rot_germany.1002.t:0 "Workers’ Serious Protests" #労働者の深刻な抗議
  rot_germany.1002.desc:0 "Our measure against Thalmann has had a greater impact than we had expected. Strikes by workers have begun throughout Germany, some of them demanding the overthrow of the administration. Capitalists and some members of the government are criticizing our rash and overly optimistic decision.\n[From.GetCommunistParty] has demonstrated with the workers in this situation and is gaining more support than before.\n\nConfusion is spreading in [From.GetName]." #我々がテールマンに下した処置は予想以上の影響をもたらした。ドイツ全土で労働者によるストライキが始まっており、中には政権の打倒を要求する者もいる。資本家達や政府の構成員の一部は我々の軽率で楽観的すぎた判断を批判している。\n[From.GetCommunistParty]はこの状況下で労働者と共にデモを行い、以前よりも支持を伸ばしている。\n\n[From.GetName]に混乱が広がっている。
@@ -260,7 +260,7 @@
  rot_germany.1004.desc:0 "Our measure against Thalmann has had a greater impact than we had expected. Strikes by workers have begun throughout Germany, and capitalists are criticizing our rash and overly optimistic decision.\n\nConfusion is spreading in [From.GetName]." #我々がテールマンに下した処置は予想以上の影響をもたらした。ドイツ全土で労働者によるストライキが始まっており、資本家達は我々の軽率で楽観的すぎた判断を批判している。\n\n[From.GetName]に混乱が広がっている。
  rot_germany.1004.a:0 "It's a terrible situation."
  rot_germany.1005.t:0 "The End of Communism" #共産主義の終息
- rot_germany.1005.desc:0 "我々がテールマンに下した処置は問題なく効果を示した。彼の求心力を失ったことによって、[From.GetCommunistParty]はその政治的影響力を失いつつあるようだ。"
+ rot_germany.1005.desc:0 "Our measure against Thalmann has worked without a problem. By losing his centripetal force, [From.GetCommunistParty] seems to be losing its political influence." #我々がテールマンに下した処置は問題なく効果を示した。彼の求心力を失ったことによって、[From.GetCommunistParty]はその政治的影響力を失いつつあるようだ。
  rot_germany.1005.a:0 "Very good." #よろしい
  GER_NazisOrGovernment_nazis:0 "Nazis"
  GER_NazisOrGovernment_government:0 "the government"
