@@ -60,11 +60,11 @@
  GER_radical_left:0 "Unterstützung für den radikalen linken Flügel"#Edited in KPD2.0 (Deleted period)
  GER_radical_left_desc:0 "Die Ermordung von Thalmann hat die Partei in viele einzelne Flügel aufgeteilt. Die Partei scheint, einst verbannte Ideen wieder in betracht zu ziehen, seitdem die KPD mit den einst ausgestoßenen Trotzkyanhängern wiedervereint wurde."
  GER_support_trotsky_coup:0 "Heimliche Unterstützung des linken Flügels in der Sowjetunion"
- GER_support_trotsky_coup_desc:0 "Josef Stalin hat die Weltrevolution zu gunsten eines verstärkten Zirkels aus bürokratischem Despotismus aufgegeben, genauso wie Napoleon die Französische Revolution zerstört hat. Nun wo das globale Zentrum des Kommunismus in Berlin liegt, wird es Zeit eine Basis in Russland zu errichten und die Fehler von Stalin rückgängig zu machen."
+ GER_support_trotsky_coup_desc:1 "$SOV_iosif_stalin$ hat die Weltrevolution zu gunsten eines verstärkten Zirkels aus bürokratischem Despotismus aufgegeben, genauso wie Napoleon die Französische Revolution zerstört hat. Nun wo das globale Zentrum des Kommunismus in Berlin liegt, wird es Zeit eine Basis in Russland zu errichten und die Fehler von Stalin rückgängig zu machen."
  GER_trotsky_coup:0 "Unterstützung für Genosse Trotsky gegen Stalin"
  GER_trotsky_coup_desc:0 "Der linke der kommunistischen Partei in der Sowjetunion, angeführt von Trotky könnte mit unserer Hilfe Stalin entmachten und die Sowjetunion wieder auf den richtigen Pfad führen. Wir sollten den Verschwöreren bei ihrer heimlichen Rückkehr helfen."
  GER_trotsky_coup_tt:0 "Trotky wird zur Sowjetunion zurückkehren und einen Putsch in der Partei und in der Armee organisieren."
- trotsky_dead:0 "Leon Trotsky ist tot."#Edited in KPD2.0 (Deleted period)
+ trotsky_dead:1 "$SOV_lev_trotsky$ ist tot."#Edited in KPD2.0 (Deleted period)
  GER_join_fourth_internationale:0 "Der vierten Internationalen beitreten"
  GER_join_fourth_internationale_desc:0 "Das opportunistische Regime Stalins wurde gestürzt. Wie Lenin wollte, wurde Trotzki der Führer der Sowjetunion. Jetzt ist es endlich möglich, auf den Trümmern der Dritten Internationale eine neue aufzubauen. Es lebe die Vierte Internationale!"
  GER_influence_on_western_europe:0 "Westeuropa beeinflussen"
@@ -99,7 +99,7 @@
  GER_red_europe:0 "Rotes Europa"
  GER_red_europe_desc:0 "Das faschistische Regime in Italien hat kapituliert. Es ist an der Zeit, die Westmächte zu vernichten und dabei die Tatsache auszunutzen, dass sie nach dem Krieg mit Italien leicht geschwächt sind."
  GER_betrayed_october:0 "Oktoberverrat"
- GER_betrayed_october_desc:0 "Josef Stalin hat einen schrecklichen Fehler gemacht, über den wir viele Male unermüdlich mit ihm gesprochen haben. Aber er wehrte sich ständig und verwies auf unsere „anarchistischen Illusionen“. Jetzt ist es für uns alle offensichtlich, Stalin ist eine Geisel seiner eigenen Bürokratie geworden. Die Befreiung des Sowjetvolkes wird die entscheidende Etappe beim Beginn der Weltrevolution sein!"
+ GER_betrayed_october_desc:1 "$SOV_iosif_stalin$ hat einen schrecklichen Fehler gemacht, über den wir viele Male unermüdlich mit ihm gesprochen haben. Aber er wehrte sich ständig und verwies auf unsere „anarchistischen Illusionen“. Jetzt ist es für uns alle offensichtlich, Stalin ist eine Geisel seiner eigenen Bürokratie geworden. Die Befreiung des Sowjetvolkes wird die entscheidende Etappe beim Beginn der Weltrevolution sein!"
  GER_new_october:0 "Neuer Oktober"
  GER_new_october_desc:0 "Jetzt, da das sowjetische Volk befreit ist, können wir mit der Wiederherstellung Russlands und der Errichtung einer wirklichen sowjetischen Macht auf seinem Territorium fortfahren. Jetzt werden wir den Bourgeois unsere proletarische Faust zeigen."
  GER_weltrepublic:0 "Sozialistische Weltrepublik"
