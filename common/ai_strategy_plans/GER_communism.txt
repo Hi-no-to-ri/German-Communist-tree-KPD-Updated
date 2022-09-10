@@ -1,6 +1,6 @@
 German_alternate_communism = {
 	name = "German Alternate plan to establish socialism"
-	desc = "Rot Front, Genossen!"
+	desc = "Rotfront, Genossen!"
 
 	enable = {
 		original_tag = GER
