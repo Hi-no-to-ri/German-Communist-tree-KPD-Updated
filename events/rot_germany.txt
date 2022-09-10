@@ -38,6 +38,13 @@ country_event = {
 			keep_unit_leaders = { 2 3 4 5 35 21 1000 }
 		}
 		hidden_effect = {
+			every_possible_country = {
+				limit = { has_character = GER_albert_kesselring }
+				random_character = {
+					limit = { is_character = GER_albert_kesselring }
+					set_nationality = GMJ
+				}
+			}
 			every_other_country = {
 				limit = {
 					original_tag = GER
