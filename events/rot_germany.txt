@@ -1181,7 +1181,7 @@ country_event = {
 			base = 100
 		}
 		GER = {
-			delete_unit_template_and_units = { division_template = "'Rot Front' regiment" }	
+			delete_unit_template_and_units = { division_template = "'Rotfront' regiment" }	
 			remove_ideas = GER_fight_till_the_end2 
 		}	
 	}
