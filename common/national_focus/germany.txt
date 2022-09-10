@@ -1586,7 +1586,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	focus = { #Edited
 		id = GER_align_hungary
 		icon = GFX_goal_generic_positive_trade_relations
 		prerequisite = { focus = GER_grosraumwirtschaft }
@@ -1641,6 +1641,14 @@ focus_tree = {
 					add_timed_idea = { idea = GER_align_hungary_democratic days = 730 }
 				}
 			}	
+			if = {
+				limit = {
+					has_government = communism
+				}
+				HUN = {
+					add_timed_idea = { idea = GER_align_hungary_communism days = 730 }
+				}
+			}	
 			HUN = {
 				add_opinion_modifier = {
 					target = ROOT
@@ -1650,7 +1658,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	focus = { #Edited
 		id = GER_align_romania
 		icon = GFX_goal_generic_positive_trade_relations
 		prerequisite = { focus = GER_grosraumwirtschaft }
@@ -1703,6 +1711,14 @@ focus_tree = {
 				}
 				ROM = {
 					add_timed_idea = { idea = GER_align_romania_democratic days = 730 }
+				}
+			}	
+			if = {
+				limit = {
+					has_government = communism
+				}
+				ROM = {
+					add_timed_idea = { idea = GER_align_romania_communism days = 730 }
 				}
 			}	
 			ROM = {
