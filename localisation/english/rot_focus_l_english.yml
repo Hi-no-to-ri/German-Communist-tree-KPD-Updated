@@ -20,11 +20,11 @@
  GER_exile_fascists:0 "Take the Fight to the Fascists"
  GER_exile_fascists_desc:0 "After we crushed the Nazi Party, only one breeding ground of fascism remains - Italy, and it’s buffoon of a leader in Mussolini. Our only course of action is to overthrow the Italian Fascists, even if our only means is all out war."
  GER_enter_comintern:0 "Join Comintern"
- GER_enter_comintern_desc:0 "The Communist International, alongside our comrades in the Soviet Union, is the rightful home of out revolution and the way to promote the world revolution."
+ GER_enter_comintern_desc:1 "The Communist International, alongside our comrades in the Soviet Union, is the rightful home of our revolution and the way to promote the world revolution."
  GER_tech_cooperation:1 "Tech Cooperation with USSR" #Edited in KPD2.1 (Title case)
  GER_tech_cooperation_desc:0 "Soviet and German scientists can together show how socialist cooperation will always outpace bourgeois science and competition."
  GER_eurocommunism:0 "Eurocommunism"
- GER_eurocommunism_desc:0 "The Socialism of the Soviet Union is reportedly not a great example for parties attempting to gain hegemony in Western Europe. By returning some bourgeois freedoms we can attract other European countries, and speed up the creation of a new western Communist bloc. It's doubt that the Soviet leadership will appreciate this."
+ GER_eurocommunism_desc:1 "The Socialism of the Soviet Union is reportedly not a great example for parties attempting to gain hegemony in Western Europe. By returning some bourgeois freedoms we can attract other European countries, and speed up the creation of a new western Communist bloc. It's doubtful that the Soviet leadership will appreciate this."
  GER_press_austria:0 "Pressure on Austria"
  GER_press_austria_desc:0 "Between us and the Italian hotbed of fascism we are separated only by Austria, whose leaders openly express sympathy for Mussolini. We should use our influence to force their government to cede power to the quickly rising Communist Party of Austria."
  GER_socialist_anschluss:0 "Reunification with Austria"
@@ -44,19 +44,19 @@
  GER_align_balkans:1 "Align Balkan Countries" #Edited in KPD2.1 (Title case)
  GER_align_balkans_desc:0 "The Balkans have been a source of division and conflict in Europe, but our internationalism can cross the barriers of ethnicity, language, and culture that have separated the workers of south eastern Europe."
  GER_align_scandinavia:1 "Align Scandinavian Countries" #Edited in KPD2.1 (Title case)
- GER_align_scandinavia_desc:0 "Social democratic parties are the ruling parties on Scandinavian region. Despite the fact that we are having a large number of disagreements with them, we can get their support by liberalizing our state."
+ GER_align_scandinavia_desc:1 "Social democratic parties are the ruling parties in the Scandinavian region. Despite the fact that we are having a large number of disagreements with them, we can get their support by liberalizing our state."
  GER_guarantees_for_influence:1 "Guarantees for the Influence" #Edited in KPD2.1 (Title case)
- GER_guarantees_for_influence_desc:0 "Poland is the only country that devides us and the Stalin's Soviet Union. Polish government clearly understands that one day their country will be tha front line with the Soviet Union. We will offer them protection by guaranting their independence. But for this Poland has to be in our sphere of inluence."
+ GER_guarantees_for_influence_desc:1 "Poland is the only country that divides us and the Stalin's Soviet Union. Polish government clearly understands that one day their country will be the front line with the Soviet Union. We will offer them protection by guaranteeing their independence. But for this Poland has to be in our sphere of influence."
  GER_align_british_isles:1 "Align British Isles" #Edited in KPD2.1 (Title case)
- GER_align_british_isles_desc:0 "It would be great to align British isles in our sphere of influence. Despite of their ideology, it is possible to get into the fight with far more radical enemy - with 'the Stalinist socialism'. The strategic position of the isles is important, it will help us to get to every part of the World!"
+ GER_align_british_isles_desc:1 "It would be great to align British isles in our sphere of influence. Despite their ideology, it is possible to get into the fight with the far more radical enemy - 'Stalinist socialism'. The strategic position of the isles is important, it will help us to get to every part of the World!"
  GER_preventive_strike_at_USSR:1 "Preventive Strike" #Edited in KPD2.1 (Title case)
- GER_preventive_strike_at_USSR_desc:0 "The waiting of the enemy attack is boring! We have to attack the stalinists! As soon as we can."
+ GER_preventive_strike_at_USSR_desc:1 "The waiting for the enemy attack is boring! We have to attack the Stalinists! As soon as we can."
  GER_accept_stalinism:0 "Support Stalinism"
- GER_accept_stalinism_desc:0 "Stalinism, in general, has clearly been shown to a necessary step in the constriction of Socialism in a capitalist world. We should emulate their success and put aside the world revolution and prioritize the development of the party and economy at home. Alongside our comrades in the Soviet Union, of course."
+ GER_accept_stalinism_desc:1 "Stalinism, in general, has clearly been shown to be a necessary step in the constriction of Socialism in a capitalist world. We should emulate their success and put aside the world revolution and prioritize the development of the party and economy at home. Alongside our comrades in the Soviet Union, of course."
  GER_stalin_industrialisation:0 "Industrialization"
  GER_stalin_industrialisation_desc:0 "While the USSR’s first two five year plans were marked by mistakes and overextensions, we can learn from their experience and enact a rapid plan of industrialization here as well."
  GER_invite_soviet_specialists:0 "Invite Military Advisors from the Soviet Union"
- GER_invite_soviet_specialists_desc:1 "With rising tensions across Europe, we must match our cooperation in scientific sphere with assistance and cooperation between the Rotfront and the Red Army. We need to learn from the their experiences since 1917, as well as the help of their military advisors."
+ GER_invite_soviet_specialists_desc:2 "With rising tensions across Europe, we must match our cooperation in the scientific sphere with assistance and cooperation between the Rotfront and the Red Army. We need to learn from their experiences since 1917, as well as the help of their military advisors."
  GER_radical_left:2 "Support the Radical Left Wing"#Edited in KPD2.0 (Deleted period) #Edited in KPD2.1 (Title case)
  GER_radical_left_desc:0 "The assassination of Ernst Thalmann has splintered the party into several factions. The party seems to be considering once banned ideas, accelerated by the unification of the KPD with previously ejected Trotskyist Left Opposition groups like the Internationale Kommunisten Deutschlands."
  GER_support_trotsky_coup:1 "Secret Support for the Soviet Left Opposition" #Edited in KPD2.1 (Title case)
@@ -66,7 +66,7 @@
  GER_trotsky_coup_tt:0 "Later Trotsky will return to the Soviet Union and organize a coup in both the party and the military."
  trotsky_dead:1 "$SOV_lev_trotsky$ is dead."#Edited in KPD2.0 (Deleted period) #Edited in KPD2.1 20220819
  GER_join_fourth_internationale:0 "Join Fourth Internationale"
- GER_join_fourth_internationale_desc:0 "The opportunist regime of Stalin has been overthown. As Lenin wanted, Trotsky has become the leader of the Soviet Union. Now it is finally possible, on the ruins of the Third Internationale, to build a new one. Long live the Fourth Internationale!"
+ GER_join_fourth_internationale_desc:1 "The opportunist regime of Stalin has been overthrown. As Lenin wanted, Trotsky has become the leader of the Soviet Union. Now it is finally possible, on the ruins of the Third Internationale, to build a new one. Long live the Fourth Internationale!"
  GER_influence_on_western_europe:0 "Influence Western Europe"
  GER_influence_on_western_europe_desc:0 "We must help spread the world revolution to Western Europe by any means necessary."
  GER_influence_on_scandinavia:0 "Influence Scandinavia"
@@ -78,7 +78,7 @@
  GER_world_revolution:0 "World Revolution"
  GER_world_revolution_desc:0 "With the center of the Imperialist Capitalist system now broken and under the control of the working class, the world revolution has become unstoppable. We must press our advantage and begin to move against the rest of the capitalist world as quickly as possible!"
  GER_right_wing:1 "Support the Right Wing"# #Edited in KPD2.1 (Title case)
- GER_right_wing_desc:0 "The assassination of Ernst Thalmann has splintered the party into several factions. The party seems to be considering once banned ideas, accelerated by the unification of the KPD with previously ejected Right Opposition groups like the KPD-Opposition, with Heintich Brandler as the head."
+ GER_right_wing_desc:1 "The assassination of Ernst Thalmann has splintered the party into several factions. The party seems to be considering once banned ideas, accelerated by the unification of the KPD with previously ejected Right Opposition groups like the KPD-Opposition, with Heinrich Brandler as the head."
  GER_small_business:1 "Allow Small Business" #Edited in KPD2.1 (Title case)
  GER_small_business_desc:0 "We should not violate the freedom of private enterprise. We will transfer part of the factories and plants to private hands, and thus we will give impetus to the development of 'Folk enterprises'. The new form of private property will take in itself all the good things that capitalism and socialism have."
  GER_foreign_capital:1 "Attract Foreign Capital" #Edited in KPD2.1 (Title case)
@@ -88,7 +88,7 @@
  GER_criticise_soviet:1 "Criticize the Stalin's Politics" #Edited in KPD2.1 (Title case)
  GER_criticise_soviet_desc:0 "The Stalinist constitution recently introduced in the Soviet Union is a departure from the ideas of socialism! The Stalinist leadership can only be criticized for the numerous manifestations of revisionism and the departure from the achievement of the true goals of socialism."
  GER_establish_fifth_internationale:0 "Establish the Fifth International"
- GER_establish_fifth_internationale_desc:0 "The Third International is rotten as a result of the Stalinist leadership. The Fourth Internationale is very weak now, and won't he gain the same fortune? We need to form your own! The Fifth International will lead humanity to liberation from capitalist slavery and perverted socialist regimes."
+ GER_establish_fifth_internationale_desc:1 "The Third International is rotten as a result of the Stalinist leadership. The Fourth Internationale is very weak now, and won't he gain the same fortune? We need to form our own! The Fifth International will lead humanity to liberation from capitalist slavery and perverted socialist regimes."
  GER_alliance_with_FRA_and_ENG:0 "Establish an Anti-Fascist Union"
  GER_alliance_with_FRA_and_ENG_desc:0 "To defeat the stronghold of fascism in Europe, we should offer Western countries to conclude with us a temporary Anti-Fascist alliance, the main aim of which should be to overthrow the Italian dictator - Benito Mussolini. Even if it is done by military means."
  FRA_accepted:0 "France accepted our treaty"
@@ -103,9 +103,9 @@
  GER_new_october:0 "New October"
  GER_new_october_desc:0 "Now that the Soviet people have been liberated, we can proceed to the restoration of Russia and the establishment of real Soviet power on its territory. Now we will show our proletarian fist to bourgeois."
  GER_weltrepublic:0 "Sozialistische Weltrepublik"
- GER_weltrepublic_desc:0 "Every advanced capitalist countries of the world were destroyed. And now, when socialism has finally consolidated its position in the world, we can begin uniting into the World Republic on the basis of the territories liberated by us. The moment of the onset of communism is getting closer, comrades!"
+ GER_weltrepublic_desc:1 "All advanced capitalist countries of the world were destroyed. And now, when socialism has finally consolidated its position in the world, we can begin uniting into the World Republic on the basis of the territories liberated by us. The moment of the onset of communism is getting closer, comrades!"
  GER_NVA:0 "Nationale Volksarmee"
- GER_NVA_desc:0 "Recent cospiracies in army, showed us that is necessary to reform the army, to create 'Nationale Volksarmee' (National people's army), in which we will provide the opportunity for loyal generals to get to higher ranks."
+ GER_NVA_desc:1 "Recent conspiracies in the army, showed us that is necessary to reform the army, to create 'Nationale Volksarmee' (National people's army), in which we will provide the opportunity for loyal generals to get to higher ranks."
  GER_exile_fascism_tt:1 "Gain war goal against §Yall the fascist countries in Europe§!."#Edited #Complemented an exclamation mark to solve the error, in KPD2.0 update
  GER_collectivisation:0 "Collectivisation"
  GER_collectivisation_desc:0 "The Soviet leadership carried out collectivization and managed to increase the total yield and the influx of funds into the treasury. We need to do this in order to be able to support the ongoing industrialization. Moreover, this will help to make more rational use of existing lands, although it is possible that the prosperous peasantry will not support this."
@@ -116,7 +116,7 @@
  GER_trial_fascism:1 "Fulfill the Trial of Fascism" #Edited in KPD2.1 (Title case)
  GER_trial_fascism_desc:0 "Now that the last countries of fascism in Europe have been defeated, the time has come to execute the judgment on fascism as an ideology. It is necessary to prove to the whole world that fascism is a hateful ideology, and to support anti-fascist movements throughout Eurasia."
  GER_prepare_for_war:1 "Prepare for Coming War" #Edited in KPD2.1 (Title case)
- GER_prepare_for_war_desc:0 "The inevitability of war with the capitalist countries is becoming more and more obvious day by day. We urgently need to organize a series of large-scale exercises in the troops, \n just in case ..."
+ GER_prepare_for_war_desc:1 "The inevitability of war with the capitalist countries is becoming more and more obvious day by day. We urgently need to organize a series of large-scale exercises in the troops,\njust in case ..."
  GER_pre_war_plan:1 "Prewar Plan" #Edited in KPD2.1 (Title case)
  GER_pre_war_plan_desc:0 "The inevitability of war with the capitalist countries is becoming more and more obvious day by day. We must urgently, in one year, reorient our industry to military needs."
  GER_free_unions:0 "Free Trade Unions"
@@ -124,7 +124,7 @@
  GER_active_role_of_unions:1 "Active Role of Trade Unions" #Edited in KPD2.1 (Title case)
  GER_active_role_of_unions_desc:0 "The influence of new trade unions is growing, now it is possible to transfer part of enterprises to workers' self-government, on the basis of trade union organizations."
  GER_revolution_by_force:1 "Revolution by Force" #Edited in KPD2.1 (Title case)
- GER_revolution_by_force_desc:0 "We will export the revolution all over Europe! Our army will overthrow all the bourgeois regimes in the world! \n But before that we should urgently strengthen the propaganda of war and militarize the whole of society."
+ GER_revolution_by_force_desc:2 "We will export the revolution all over Europe! Our army will overthrow all the bourgeois regimes in the world!\nBut before that, we should urgently strengthen the propaganda of war and militarize the whole of society."
  GER_red_balkans:0 "Red Balkans"
  GER_red_balkans_desc:0 "The Balkan Peninsula is a gathering of kings and dictators. The only thing that will force them to resign is real power. We must overthrow them, as soon as possible."
  GER_orientation_on_military:1 "Emphasis on the Military Industry" #Edited in KPD2.1 (Title case)
@@ -132,7 +132,7 @@
  GER_five_year_military:1 "The Five-Year Plan for the Military Industry" #Edited in KPD2.1 (Title case)
  GER_five_year_military_desc:0 "To increase the production of military equipment, it is necessary to create a powerful military industry. The new five-year plan provides for the creation of enterprises focused on the military industry throughout the country."
  GER_five_year_production:1 "The Five-Year Plan for the Civil Industry" #Edited in KPD2.1 (Title case)
- GER_five_year_production_desc:0 "To increase the production, we need a huge number of factories. The new five-year plan provides for the creation across the country enterprises focused on the production of civil production."
+ GER_five_year_production_desc:1 "To increase production, we need a huge number of factories. The new five-year plan provides for the creation across the country enterprises focused on the production of civil production."
  GER_civil_resources:1 "People-Owned Mines" #Edited in KPD2.1 (Title case)
  GER_civil_resources_desc:0 "Work in the mines is dangerous. It is necessary to improve the situation of workers there. This will help us increase productivity and get more resources."
  GER_resources_for_war:1 "Resources for War" #Edited in KPD2.1 (Title case)
@@ -144,6 +144,6 @@
  GER_social_market:1 "Social Market Economy" #Edited in KPD2.1 (Title case)
  GER_social_market_desc:0 "Now is the time for our state to announce the establishment of a 'social' market economy in which we will completely allow private ownership and trade, but we will carefully monitor that the rights of workers are not infringed."
  GER_influence_on_America:0 "Influence America's"
- GER_influence_on_America_desc:0 "We must help spread the world revolution to American continent by any means necessary."
+ GER_influence_on_America_desc:1 "We must help spread the world revolution to the American continent by any means necessary."
  GER_strike_at_the_heart_of_capitalism:1 "Strike at the Heart of Capitalism" #Edited in KPD2.1 (Title case)
  GER_strike_at_the_heart_of_capitalism_desc:0 "We will do our best to support the Communists in the United States of America. It's time to hit right in the heart of the capitalist system!"
