@@ -8,7 +8,7 @@
  GER_rot_front_exp:1 "Expand the 'Rotfront'" #Edited in KPD2.1
  GER_rot_front_exp_desc:0 "The ‘Rotfront’ should be merged into society to spread Communist values and participation in the new system across Germany."
  GER_rot_front_army:1 "Comissars in the Army" #Edited in KPD2.1 (Title case)
- GER_rot_front_army_desc:1 "By having ‘Rotfront’ commissars in all divisions in the army, we can increase morale and ensure the the loyalty of our generals."
+ GER_rot_front_army_desc:2 "By having ‘Rotfront’ commissars in all divisions in the army, we can increase morale and ensure the loyalty of our generals."
  GER_nationalisation:1 "Expropiation of Industry"#Edited in KPD2.0 (Deleted period)
  GER_nationalisation_desc:0 "The revolutionary upheaval has left many factories abandoned by their former owners. The workers are ready to take them over but they need the aid of the state to bring them back into operation. It’s time to begin our nationalization of the economy."
  GER_new_workers_culture:0 "New Worker's Culture"

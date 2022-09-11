@@ -99,7 +99,7 @@
  rot_news.17.e:0 "Terrible news."
  rot_news.17.f:0 "Do the communists even have a chance to unite the whole world?"
  rot_news.18.t:0 "New flag of [GER.GetNameDef]"
- rot_news.18.d:2 "The government of [GER.GetNameDef] has chosen the new flag. \n\n The flag was purposed by german anti-fascist politician Joseph Wirmer. As he thinks the flag contains both republican and christian symbols, showing the unity between republicans and christians of [GER.GetNameDef]. \n\n The new flags have been raised across the [GER.GetNameDef] over the government buildings." # Removed line break at the beginning of the line in KPD2.0alpha5 update
+ rot_news.18.d:2 "The government of [GER.GetNameDef] has chosen the new flag. \n\n The flag was purposed by german anti-fascist politician Joseph Wirmer. As he thinks the flag contains both Republican and Christian symbols, showing the unity between Republicans and Christians of [GER.GetNameDef]. \n\n The new flags have been raised across the [GER.GetNameDef] over the government buildings." # Removed line break at the beginning of the line in KPD2.0alpha5 update
  rot_news.18.a:0 "Under the new banner, to the glorious future of the German people!"
  rot_news.18.b:0 "Interesting."
  rot_news.19.t:0 "Referendum in Austria"
@@ -134,7 +134,7 @@
  rot_germany.8.t:0 "The Provisional government crisis"
  rot_germany.8.desc:1 "The civil war is over. The communists have been defeated, but the provisional government has been weakened. Generals and regional administrators, without our permission, have established in some parts of our country their own cliques. Bavaria, headed by the FAUD anarchists, Prussia, headed by Kaiser Wilhelm III, and other military cliques have managed to break out of our control. Our country has broken up! \n\n From now on, United Germany does not exist ..." # Removed line break at the beginning of the line in KPD2.0alpha5 update
  rot_germany.8.a:1 "The provisional Government, with Albert Kesselring, still is the only real Germany!"
- rot_germany.8.b:0 "Glory for Germany without any exploitation! Long live the Anarchy!"
+ rot_germany.8.b:1 "Glory for Germany without any exploitation! Long live the Anarchy!"
  rot_germany.8.c:0 "We should return to our historical glory. We are going to support Prussia with Wilhelm III."
 # GAME_OVER_TT:0 "§RThe game will end for you.§!"
  rot_germany.11.t:0 "Revolution in Britain"
