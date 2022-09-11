@@ -116,7 +116,7 @@
  GER_trial_fascism:1 "Fulfill the Trial of Fascism" #Edited in KPD2.1 (Title case)
  GER_trial_fascism_desc:0 "Now that the last countries of fascism in Europe have been defeated, the time has come to execute the judgment on fascism as an ideology. It is necessary to prove to the whole world that fascism is a hateful ideology, and to support anti-fascist movements throughout Eurasia."
  GER_prepare_for_war:1 "Prepare for Coming War" #Edited in KPD2.1 (Title case)
- GER_prepare_for_war_desc:0 "The inevitability of war with the capitalist countries is becoming more and more obvious day by day. We urgently need to organize a series of large-scale exercises in the troops,\njust in case ..."
+ GER_prepare_for_war_desc:1 "The inevitability of war with the capitalist countries is becoming more and more obvious day by day. We urgently need to organize a series of large-scale exercises in the troops,\njust in case ..."
  GER_pre_war_plan:1 "Prewar Plan" #Edited in KPD2.1 (Title case)
  GER_pre_war_plan_desc:0 "The inevitability of war with the capitalist countries is becoming more and more obvious day by day. We must urgently, in one year, reorient our industry to military needs."
  GER_free_unions:0 "Free Trade Unions"
@@ -124,7 +124,7 @@
  GER_active_role_of_unions:1 "Active Role of Trade Unions" #Edited in KPD2.1 (Title case)
  GER_active_role_of_unions_desc:0 "The influence of new trade unions is growing, now it is possible to transfer part of enterprises to workers' self-government, on the basis of trade union organizations."
  GER_revolution_by_force:1 "Revolution by Force" #Edited in KPD2.1 (Title case)
- GER_revolution_by_force_desc:0 "We will export the revolution all over Europe! Our army will overthrow all the bourgeois regimes in the world!\nBut before that we should urgently strengthen the propaganda of war and militarize the whole of society."
+ GER_revolution_by_force_desc:1 "We will export the revolution all over Europe! Our army will overthrow all the bourgeois regimes in the world!\nBut before that we should urgently strengthen the propaganda of war and militarize the whole of society."
  GER_red_balkans:0 "Red Balkans"
  GER_red_balkans_desc:0 "The Balkan Peninsula is a gathering of kings and dictators. The only thing that will force them to resign is real power. We must overthrow them, as soon as possible."
  GER_orientation_on_military:1 "Emphasis on the Military Industry" #Edited in KPD2.1 (Title case)
