@@ -12,13 +12,13 @@
  rot_news.2.c:0 "Another victim of Nazi regime."
  rot_news.2.e:0 "It's barbaric."
  rot_news.3.t:1 "Ernst Thalmann Has Been Killed"
- rot_news.3.d:2 "Recently, from secret sources, it became known that [GER.GetAdjective] government decided to execute the leader of the German Communists, Ernst Thalmann in the Buchenwald concentration camp. \nAfter 1933, Ernst Thalmann was held in solitary confinement in Moabit prison. After the failure of the Dimitrov case, the Nazis were afraid to begin trials of the Communists. Now, however, [GetTheyOrTheGovernment] have eliminated their leader. German workers across the country went to large-scale meetings, production throughout the country stopped. Workers demand the overthrow of the Nazi regime. The situation in Germany is getting out of control." # Removed line break at the beginning of the line in KPD2.0alpha5 update
+ rot_news.3.d:3 "Recently, from secret sources, it became known that [GER.GetAdjective] government decided to execute the leader of the German Communists, Ernst Thalmann in the Buchenwald concentration camp. \nAfter 1933, Ernst Thalmann was held in solitary confinement in Moabit prison. After the failure of the Dimitrov case, the Nazis were afraid to begin trials of the Communists. Now, however, [GetTheyOrTheGovernment] have eliminated their leader. German workers across the country went to large-scale meetings, and production throughout the country stopped. Workers demand the overthrow of the Nazi regime. The situation in Germany is getting out of control." # Removed line break at the beginning of the line in KPD2.0alpha5 update
  rot_news.3.a:0 "Traitors!"
  rot_news.3.b:0 "The German working class has awoken! Workers of all countries, unite!"
  rot_news.3.c:0 "Interesting."
  rot_news.3.e:0 "The situation in Germany is out of control."
  rot_news.4.t:0 "Revolution in Germany"
- rot_news.4.d:1 " During heated debates in the Reichstag between Liberals and Monarchists this morning, a motorcade of armed men arrived and marched through the doors. Representatives of the Rotfront communist paramilitary group, they forced their way into the central hall and declared the entire provisional government to be under arrest, who surrendered without a struggle. \n Mackensen issued his resignation on the radio from the steps of the building, followed by the Chairman of the Communist Party and new General Secretary, [GER.GetLeader] . \n However, in the north General Albert Kesselring has rallied the Wehrmacht and Business community to stop the new government from establishing power. Germany, once again, is be caught in the flames of civil war."
+ rot_news.4.d:1 "During heated debates in the Reichstag between Liberals and Monarchists this morning, a motorcade of armed men arrived and marched through the doors. Representatives of the Rotfront communist paramilitary group forced their way into the central hall and declared the entire provisional government to be under arrest, who surrendered without a struggle. \n Mackensen issued his resignation on the radio from the steps of the building, followed by the Chairman of the Communist Party and new General Secretary, [GER.GetLeader].\nHowever, in the north General Albert Kesselring rallied the Wehrmacht and Business community to stop the new government from establishing power. Germany, once again, is being caught in the flames of civil war."
  rot_news.4.a:0 "The Revolution has spread to Germany!"
  rot_news.4.b:0 "The German working class has awoken!"
  rot_news.4.c:0 "Another puppet regime of Moscow..."
@@ -32,21 +32,21 @@
  rot_news.6.d:0 "Yesterday, leader of the newly formed [GER.GetNameDef] - [GER.GetLeader] announced a new course for the socialist movements across Europe. The newly established [From.GetFactionName], their replacement for the Soviet Communist International, will lead the Worker’s Revolution on the Continent. \n\n The nations of Europe are bracing for the explosion in Communist activity." # Removed line break at the beginning of the line in KPD2.0alpha5 update
  rot_news.6.a:0 "We will help Europe!"
  rot_news.6.b:0 "Traitors of Communist International."
- rot_news.6.c:0 "Now we have 'New International' in Europe. Anyway it's as useless, as the old one."
+ rot_news.6.c:1 "Now we have 'New International' in Europe. Anyway, it's as useless, as the old one."
  rot_news.6.e:0 "The situation in Europe is interesting."
  rot_news.7.t:0 "Austrian government resigned"
- rot_news.7.d:0 "Yesterday, the government of [AUS.GetNameDef], under pressure from[GER.GetNameDef] and the Communist Party of Austria, decided to fulfill the demands of the German and to transfer power to the Communist Party. \n The leader of the Austrian Communist Party [AUS.GetLeader], said that the Austrian people will fight shoulder to shoulder with the German in the name of the idea of a world revolution." # Removed line break at the beginning of the line in KPD2.0alpha5 update
+ rot_news.7.d:1 "Yesterday, the government of [AUS.GetNameDef], under pressure from[GER.GetNameDef] and the Communist Party of Austria, decided to fulfill the demands of the Germans and transfer power to the Communist Party. \n The leader of the Austrian Communist Party [AUS.GetLeader], said that the Austrian people will fight shoulder to shoulder with the German in the name of the idea of a world revolution." # Removed line break at the beginning of the line in KPD2.0alpha5 update
  rot_news.7.a:0 "Austria is ours"
  rot_news.7.b:0 "This changes the balance of power in Europe."
- rot_news.7.c:0 "Agressive expansion!"
+ rot_news.7.c:1 "Aggressive expansion!"
  rot_news.8.t:0 "Austrian government rejected the german ultimatum"
- rot_news.8.d:0 "Yesterday, the government of [AUS.GetNameDef] refused a German ultimatum which demanded the transfer of power in Austria to the hands of the Austrian Communist Party. \n In response, the Austrian Communists started the civil war, and German troops pulled to the border. The invasion of German troops is about to begin." # Removed line break at the beginning of the line in KPD2.0alpha5 update
+ rot_news.8.d:1 "Yesterday, the government of [AUS.GetNameDef] refused a German ultimatum that demanded the transfer of power in Austria to the hands of the Austrian Communist Party. \n In response, the Austrian Communists started the civil war, and German troops pulled to the border. The invasion of German troops is about to begin." # Removed line break at the beginning of the line in KPD2.0alpha5 update
  rot_news.8.a:0 "We will conquer them!"
- rot_news.8.b:0 "Austria don't stand a chance"
- rot_news.8.c:0 "Our new ally againsts the communists."
+ rot_news.8.b:1 "Austria doesn't stand a chance"
+ rot_news.8.c:1 "Our new ally against the communists."
  rot_news.8.e:0 "Will Austria survive?"
  rot_news.9.t:0 "Polish government resigns"
- rot_news.9.d:0 "Yesterday the Polish government, under pressure from the GDR, the Soviet Union and the Polish Communist Party, resigned, giving power to the Communists. \n The Polish Communist Party almost immediately decided to become part of the Comintern alliance." # Removed line break at the beginning of the line in KPD2.0alpha5 update
+ rot_news.9.d:2 "Yesterday the Polish government, under pressure from the GDR, the Soviet Union, and the Polish Communist Party, resigned giving power to the Communists. \n The Polish Communist Party almost immediately decided to become part of the Comintern alliance." # Removed line break at the beginning of the line in KPD2.0alpha5 update
  rot_news.9.a:0 "Greetings to the polish comrades!"
  rot_news.9.b:0 "Wise decision."
  rot_news.9.c:0 "Another agressive expansion of Internationale!"
