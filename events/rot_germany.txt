@@ -27,8 +27,12 @@ country_event = {
 			base = 100
 		}
 		hidden_effect = {
-		remove_ideas = strikes_1
-		remove_ideas = strikes_3
+			remove_ideas = strikes_1
+			remove_ideas = strikes_3
+			remove_country_leader_role = {
+				character = GER_august_von_mackensen
+				ideology = despotism		   
+			}
 		}
 		start_civil_war = {
 			ruling_party = communism
@@ -37,6 +41,11 @@ country_event = {
 			states = { 56 58 59 61 5 67 }
 			keep_unit_leaders = { 2 3 4 5 35 21 1000 }
 		}
+		# GER = {
+		# 	GER_albert_kesselring = {
+		# 		set_nationality = GMJ
+		# 	}
+		# }
 		hidden_effect = {
 			every_other_country = {
 				limit = {
@@ -97,17 +106,18 @@ country_event = {
 					amount = 600
 					producer = "POL"
 				}
-				add_country_leader_role = {
-					character = GER_albert_kesselring
-					country_leader = {
-						expire = "1965.1.1" #Changed from 1956.1.1 at KPD2.0 update
-						ideology = despotism
-						traits = {
-							great_war_hero
-						}
-					}
-					promote_leader = yes
-				}
+				# add_country_leader_role = {
+				# 	character = GER_albert_kesselring
+				# 	country_leader = {
+				# 		expire = "1965.1.1" #Changed from 1956.1.1 at KPD2.0 update
+				# 		ideology = despotism
+				# 		traits = {
+				# 			great_war_hero
+				# 		}
+				# 	}
+				# 	promote_leader = yes
+				# }
+				country_event = { id = rot_germany.46 hours = 1}
 			}
 			remove_ideas = sour_loser
 			set_cosmetic_tag = GER_revolution
@@ -1181,7 +1191,7 @@ country_event = {
 			base = 100
 		}
 		GER = {
-			delete_unit_template_and_units = { division_template = "'Rot Front' regiment" }	
+			delete_unit_template_and_units = { division_template = "'Rotfront' regiment" }	
 			remove_ideas = GER_fight_till_the_end2 
 		}	
 	}
@@ -3158,6 +3168,39 @@ country_event = { #Denied
 	}
 }
 
+# Hidden event to make kesselring to leader of the junta. 内戦→ケッセルリング移動→ケッセルリング指導者化　を順番に実行する必要がある。
+country_event = {
+	id = rot_germany.46
+
+	hidden = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		GER = {
+			GER_albert_kesselring = {
+				set_nationality = GMJ
+			}
+		}
+	}
+
+	option = {
+		GMJ = {
+			add_country_leader_role = {
+				character = GER_albert_kesselring
+				country_leader = {
+					expire = "1965.1.1" #Changed from 1956.1.1 at KPD2.0 update
+					ideology = despotism
+					traits = {
+						great_war_hero
+					}
+				}
+				promote_leader = yes
+			}
+		}
+	}
+}
+
 country_event = { #Release Thalmann or not
 	id = rot_germany.1000
 	title = rot_germany.1000.t
@@ -3192,7 +3235,7 @@ country_event = { #Release Thalmann or not
 		ai_chance = {
 			base = 0
 		}
-		add_political_power = -50
+#		add_political_power = -50
 		custom_effect_tooltip = GER_thalmann_will_be_removed_tt
 		GER_remove_thalmann_kpdmod = yes
 		custom_effect_tooltip = GER_danger_alert_for_removing_thalmann_tt
