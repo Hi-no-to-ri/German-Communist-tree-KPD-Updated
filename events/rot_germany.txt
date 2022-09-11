@@ -129,7 +129,7 @@ country_event = {
 				# }
 				set_country_leader_name = { # This is a dummy for temporary use, and will be replaced with a character identical to the General at an event an hour later.
 					ideology = neutrality
-					name = "Herr Kesselring" # You mustn't set here a name which equals to be "Albert Kesselring", $GER_albert_kesselring$ or $albert_kesselring$, because that breaks the rot_germany.46 event.
+					name = "Herr Kesselring" # You mustn't set here a name which equals to be "Albert Kesselring", $GER_albert_kesselring$ or $albert_kesselring$, because that breaks the rot_germany.46 event. # This section is intentionally hard-coded. This is because a bug will occur if the same contents as $albert_kesselring$ are assigned in some accidental situation by using soft code. # ここはわざとハードコーディングにしています。というのも、下手にソフトコードにして何かの拍子に$albert_kesselring$と同内容を代入されるとバグが発生するからです。
 				}
 				set_country_leader_portrait = {
 					ideology = neutrality
