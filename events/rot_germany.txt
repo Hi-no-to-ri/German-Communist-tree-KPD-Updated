@@ -117,25 +117,27 @@ country_event = {
 				# 	}
 				# 	promote_leader = yes
 				# }
-				# create_country_leader = { # This is a dummy for temporary use, and will be replaced with a character identical to the General at an event an hour later.
-				# 	name = "General_Kesselring"
-				# 	desc = "POLITICS_ALBERT_KESSELRING_DESC"
-				# 	picture = GFX_portrait_GER_albert_kesselring
-				# 	expire = "1965.1.1"
-				# 	ideology = despotism
-				# 	traits = {
-				# 		tough
-				# 	}
+
+				create_country_leader = { # This is a dummy for temporary use, and will be replaced with a character identical to the General at an event an hour later.
+					name = "GER_albert_kesselring"
+					desc = "POLITICS_ALBERT_KESSELRING_DESC"
+					picture = GFX_portrait_GER_albert_kesselring
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+						great_war_hero
+					}
+				}
+
+				# set_country_leader_name = { # This is a dummy for temporary use, and will be replaced with a character identical to the General at an event an hour later.
+				# 	ideology = neutrality
+				# 	name = "Herr Kesselring" # You mustn't set here a name which equals to be "Albert Kesselring", $GER_albert_kesselring$ or $albert_kesselring$, because that breaks the rot_germany.46 event. # This section is intentionally hard-coded. This is because a bug will occur if the same contents as $albert_kesselring$ are assigned in some accidental situation by using soft code. # ここはわざとハードコーディングにしています。というのも、下手にソフトコードにして何かの拍子に$albert_kesselring$と同内容を代入されるとバグが発生するからです。
 				# }
-				set_country_leader_name = { # This is a dummy for temporary use, and will be replaced with a character identical to the General at an event an hour later.
-					ideology = neutrality
-					name = "Herr Kesselring" # You mustn't set here a name which equals to be "Albert Kesselring", $GER_albert_kesselring$ or $albert_kesselring$, because that breaks the rot_germany.46 event. # This section is intentionally hard-coded. This is because a bug will occur if the same contents as $albert_kesselring$ are assigned in some accidental situation by using soft code. # ここはわざとハードコーディングにしています。というのも、下手にソフトコードにして何かの拍子に$albert_kesselring$と同内容を代入されるとバグが発生するからです。
-				}
-				set_country_leader_portrait = {
-					ideology = neutrality
-					portrait = GFX_portrait_GER_albert_kesselring
-				}
-				add_country_leader_trait = tough
+				# set_country_leader_portrait = {
+				# 	ideology = neutrality
+				# 	portrait = GFX_portrait_GER_albert_kesselring
+				# }
+				# add_country_leader_trait = tough
 				country_event = { id = rot_germany.46 hours = 1}
 			}
 			remove_ideas = sour_loser
@@ -3196,6 +3198,7 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
+		kill_country_leader = yes # Delete dummy to solve the error
 		GER = {
 			GER_albert_kesselring = {
 				set_nationality = GMJ
