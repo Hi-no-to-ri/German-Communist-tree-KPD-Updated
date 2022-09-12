@@ -25,7 +25,6 @@ country_event = {
 	option = {
 		name = wtt_britain.24.a
 #		recruit_character = SOV_ivan_konev
-		kill_country_leader = yes
 	}
 	option = {
 		name = news.332.a
@@ -56,33 +55,33 @@ country_event = {
 		name = wtt_denmark.1.a
 		kill_country_leader = yes
 	}
-	option = {
-		name = wtt_denmark.1.a
-		GER = {
-			GER_albert_kesselring = {
-				set_nationality = GMJ
-			}
-		}
-		GMJ = {
-			add_country_leader_role = {
-				character = GER_albert_kesselring
-				country_leader = {
-					expire = "1965.1.1" #Changed from 1956.1.1 at KPD2.0 update
-					ideology = despotism
-					traits = {
-						great_war_hero
-					}
-				}
-				promote_leader = yes
-			}
-		}
-#		kill_country_leader = yes
-		# uncomplete_national_focus = {
-		# 	focus = GER_four_year_plan
-		# 	uncomplete_children = yes
-		# 	refund_political_power = no
-		# }
-	}
+# 	option = {
+# 		name = wtt_denmark.1.a
+# 		GER = {
+# 			GER_albert_kesselring = {
+# 				set_nationality = GMJ
+# 			}
+# 		}
+# 		GMJ = {
+# 			add_country_leader_role = {
+# 				character = GER_albert_kesselring
+# 				country_leader = {
+# 					expire = "1965.1.1" #Changed from 1956.1.1 at KPD2.0 update
+# 					ideology = despotism
+# 					traits = {
+# 						great_war_hero
+# 					}
+# 				}
+# 				promote_leader = yes
+# 			}
+# 		}
+# #		kill_country_leader = yes
+# 		# uncomplete_national_focus = {
+# 		# 	focus = GER_four_year_plan
+# 		# 	uncomplete_children = yes
+# 		# 	refund_political_power = no
+# 		# }
+# 	}
 	option = {
 		name = wtt_britain.24.a
 		# GMJ = {
