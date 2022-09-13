@@ -42,7 +42,7 @@
  rot_news.8.t:0 "Die österreichische Regierung lehnte das deutsche Ultimatum ab"
  rot_news.8.d:2 "Gestern lehnte die Regierung von [AUS.GetNameDef] ein deutsches Ultimatum ab, das die Übergabe der Macht in Österreich an die österreichische Kommunistische Partei forderte.\nAls Reaktion darauf begannen die österreichischen Kommunisten den Bürgerkrieg und deutsche Truppen zogen an die Grenze. Der Einmarsch deutscher Truppen steht kurz bevor."
  rot_news.8.a:0 "Wir werden sie erobern!"
- rot_news.8.b:0 "Österreich hat keine Chance"
+ rot_news.8.b:1 "Österreich hat keine Chance."
  rot_news.8.c:0 "Unser neuer Verbündeter gegen die Kommunisten."
  rot_news.8.e:0 "Wird Österreich das überstehen?"
  rot_news.9.t:0 "Die polnische Regierung tritt zurück"
