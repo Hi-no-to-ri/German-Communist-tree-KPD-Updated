@@ -35,7 +35,7 @@ communism_on_the_rise = {
 			}
 	
 		days_remove = 0
-		cost = 50
+#		cost = 50
 		
 		complete_effect = {
 			custom_effect_tooltip = GER_thalmann_will_be_removed_tt

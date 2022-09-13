@@ -537,7 +537,8 @@ ideas = {
 				political_power_gain = 0.15
 				production_speed_buildings_factor = 0.125
 				industrial_capacity_factory = 0.125
-				industrial_capacity_dockyard = 0.125		
+				industrial_capacity_dockyard = 0.125
+				industry_repair_factor = 0.225		
 			}
 		}
 
@@ -558,7 +559,8 @@ ideas = {
 				political_power_gain = 0.25
 				production_speed_buildings_factor = 0.15
 				industrial_capacity_factory = 0.15
-				industrial_capacity_dockyard = 0.15				
+				industrial_capacity_dockyard = 0.15
+				industry_repair_factor = 0.25				
 			}
 		}
 		GER_civil_resources_idea = {
@@ -829,5 +831,44 @@ ideas = {
 				political_power_gain = -0.25									
 			}
 		}
+
+		GER_align_hungary_communism = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				 has_government = communism
+			}
+
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+
+			modifier = {
+				communism_drift = 0.2
+				communism_acceptance = 85
+			}
+		}
+
+		GER_align_romania_communism = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				 has_government = communism
+			}
+
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+
+			modifier = {
+				communism_drift = 0.2
+				communism_acceptance = 85
+			}
+		}
+
 	}
 }
