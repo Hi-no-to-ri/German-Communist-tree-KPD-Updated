@@ -1,2 +1,3 @@
 ﻿l_german:
  stalinist_soviet_union_neutrality:0 "$SOV_communism$" #<-- Nice! Takes it from the base game.
+ GER_provisional_gvt_neutrality_DEF:0 "$GER_provisional_gvt_neutrality$"
