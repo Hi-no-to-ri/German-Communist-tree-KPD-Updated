@@ -1,0 +1,5 @@
+﻿l_japanese:
+ GER_second_civil_war_tt:0 "§R第二次内戦が始まる！§!\n"
+ GER_no_thalmann_for_wings_tt:0 "\n第四インターナショナルもしくはユーロコミュニズムのフォーカスツリーを進めるには、国家方針「$GER_reds_amnesty$」を完了する前にテールマンを取り除く必要がある。"
+ GER_thalmann_will_be_removed_tt:0 "§Y$ernst_thalmann$§!が取り除かれる。"
+ GER_danger_alert_for_removing_thalmann_tt:0 "§R共産党の人気がそれほど低くないのであれば、我々は何らかの結果に直面する可能性がある！§!"

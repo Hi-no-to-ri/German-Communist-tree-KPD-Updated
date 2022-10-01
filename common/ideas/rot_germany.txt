@@ -467,15 +467,39 @@ ideas = {
 				infantry_equipment = {
 					build_cost_ic = -0.1 instant = yes
 				}
-				light_tank_equipment = {
+				# light_tank_equipment = {
+				# 	build_cost_ic = -0.1 instant = yes
+				# }	
+				# medium_tank_equipment = {
+				# 	build_cost_ic = -0.1 instant = yes
+				# }
+				# heavy_tank_equipment = {
+				# 	build_cost_ic = -0.1 instant = yes
+				# }	
+
+				# light_tank_chassis = {
+				# 	build_cost_ic = -0.1 instant = yes
+				# }	
+				# medium_tank_chassis = {
+				# 	build_cost_ic = -0.1 instant = yes
+				# }
+				# heavy_tank_chassis = {
+				# 	build_cost_ic = -0.1 instant = yes
+				# }	
+				# super_heavy_tank_chassis = {
+				# 	build_cost_ic = -0.1 instant = yes
+				# }	
+				# modern_tank_chassis = {
+				# 	build_cost_ic = -0.1 instant = yes
+				# }	
+				# amphibious_tank_chassis = {
+				# 	build_cost_ic = -0.1 instant = yes
+				# }	
+
+				armor = {
 					build_cost_ic = -0.1 instant = yes
 				}	
-				medium_tank_equipment = {
-					build_cost_ic = -0.1 instant = yes
-				}
-				heavy_tank_equipment = {
-					build_cost_ic = -0.1 instant = yes
-				}	
+
 				artillery_equipment = {
 					build_cost_ic = -0.1 instant = yes
 				}	

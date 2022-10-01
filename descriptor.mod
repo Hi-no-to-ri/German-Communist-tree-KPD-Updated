@@ -1,9 +1,9 @@
-version="KPD2.1.1"
+version="KPD2.1.2"
 tags={
 	"Alternative History"
 	"Events"
 	"National Focuses"
 }
 name="German Communist tree (KPD) Updated"
-supported_version="1.11.*"
+supported_version="1.12.*"
 remote_file_id="2717003326"
