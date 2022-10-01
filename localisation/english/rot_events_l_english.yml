@@ -42,7 +42,7 @@
  rot_news.8.t:1 "Austrian Government Rejected the German Ultimatum"
  rot_news.8.d:2 "Yesterday, the government of [AUS.GetNameDef] refused a German ultimatum that demanded the transfer of power in Austria to the hands of the Austrian Communist Party.\nIn response, the Austrian Communists started the civil war, and German troops pulled to the border. The invasion of German troops is about to begin." # Removed line break at the beginning of the line in KPD2.0alpha5 update
  rot_news.8.a:0 "We will conquer them!"
- rot_news.8.b:1 "Austria doesn't stand a chance"
+ rot_news.8.b:2 "Austria doesn't stand a chance."
  rot_news.8.c:1 "Our new ally against the communists."
  rot_news.8.e:0 "Will Austria survive?"
  rot_news.9.t:1 "Polish Government Resigns"
