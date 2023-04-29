@@ -2009,8 +2009,11 @@ country_event = {
 			# 	}
 			# 	promote_leader = yes
 			# }
+			# custom_effect_tooltip = "§Y$SOV_natalia_sedova$§!が§Y$communism$§!政党の指導者になる。\n "
+			# show_ideas_tooltip = devoted_trotskyist
 			create_country_leader = { #It was necessary to exclude SOV-related files from the mod for better modularity, and Ms. Sedova was therefore detached from the new character system.
-				name = SOV_natalia_sedova
+#				name = SOV_natalia_sedova
+				name = "Natalia Sedova"
 				desc = "POLITICS_NATALIA_SEDOVA_DESC"
 				picture = GFX_portrait_SOV_natalia_sedova
 				expire = "1965.1.1"
