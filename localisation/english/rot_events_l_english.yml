@@ -12,7 +12,7 @@
  rot_news.2.c:0 "Another victim of Nazi regime."
  rot_news.2.e:0 "It's barbaric."
  rot_news.3.t:1 "Ernst Thalmann Has Been Killed"
- rot_news.3.d:4 "Recently, from secret sources, it became known that [GER.GetAdjective] government decided to execute the leader of the German Communists, Ernst Thalmann in the Buchenwald concentration camp.\nAfter 1933, Ernst Thalmann was held in solitary confinement in Moabit prison. After the failure of the Dimitrov case, the Nazis were afraid to begin trials of the Communists. Now, however, [GetTheyOrTheGovernment] have eliminated their leader. German workers across the country went to large-scale meetings, and production throughout the country stopped. Workers demand the overthrow of the Nazi regime. The situation in Germany is getting out of control." # Removed line break at the beginning of the line in KPD2.0alpha5 update
+ rot_news.3.d:5 "Recently, from secret sources, it became known that [GER.GetAdjective] government decided to execute the leader of the German Communists, Ernst Thalmann in the Buchenwald concentration camp.\nAfter 1933, Ernst Thalmann was held in solitary confinement in Moabit prison. After the failure of the Dimitrov case, the Nazis were afraid to begin trials of the Communists. Now, however, [GetTheyOrTheGovernment] have eliminated their leader. German workers across the country went to large-scale meetings, and production throughout the country stopped. Workers demand the overthrow of the [GetCurrentGermanRegime]. The situation in Germany is getting out of control." # Removed line break at the beginning of the line in KPD2.0alpha5 update
  rot_news.3.a:0 "Traitors!"
  rot_news.3.b:0 "The German working class has awoken! Workers of all countries, unite!"
  rot_news.3.c:0 "Interesting."
@@ -270,3 +270,6 @@
  rot_germany.32.desc:0 "$political.22.d$" #will be replaced later
  rot_germany.32.a:0 "$political.22.a$"
  rot_germany.32.b:0 "$political.22.b$"
+ GER_GetCurrentGermanRegime_nazis:0 "Nazi regime"
+ GER_GetCurrentGermanRegime_provisional:0 "military junta"
+ GER_GetCurrentGermanRegime_other:0 "current regime"

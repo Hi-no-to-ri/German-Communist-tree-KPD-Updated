@@ -1946,6 +1946,10 @@ country_event = {
 			base = 100
 		}
 		SOV = {
+			set_portraits = {
+				character = SOV_mikhail_kalinin
+				civilian = { large ="GFX_portrait_SOV_mikhail_kalinin" }
+			}
 			kill_country_leader = yes
 			add_country_leader_role = {
 				character = SOV_mikhail_kalinin
@@ -1993,17 +1997,30 @@ country_event = {
 		}	
 		SOV = {	
 			kill_country_leader = yes
-			add_country_leader_role = { 
-				character = SOV_natalia_sedova
-				country_leader = {
-					ideology = leninism
-					traits = {
-						devoted_trotskyist
-					}
-					expire = "1965.1.1"
-					id = -1
+			# add_country_leader_role = { 
+			# 	character = SOV_natalia_sedova
+			# 	country_leader = {
+			# 		ideology = leninism
+			# 		traits = {
+			# 			devoted_trotskyist
+			# 		}
+			# 		expire = "1965.1.1"
+			# 		id = -1
+			# 	}
+			# 	promote_leader = yes
+			# }
+			# custom_effect_tooltip = "§Y$SOV_natalia_sedova$§!が§Y$communism$§!政党の指導者になる。\n "
+			# show_ideas_tooltip = devoted_trotskyist
+			create_country_leader = { #It was necessary to exclude SOV-related files from the mod for better modularity, and Ms. Sedova was therefore detached from the new character system.
+#				name = SOV_natalia_sedova
+				name = "Natalia Sedova"
+				desc = "POLITICS_NATALIA_SEDOVA_DESC"
+				picture = GFX_portrait_SOV_natalia_sedova
+				expire = "1965.1.1"
+				ideology = leninism
+				traits = {
+					devoted_trotskyist
 				}
-				promote_leader = yes
 			}
 		}
 	}

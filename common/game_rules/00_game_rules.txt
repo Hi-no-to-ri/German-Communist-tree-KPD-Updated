@@ -638,11 +638,6 @@ SOV_ai_behavior = {
 		allow_achievements = yes
 	}
 	option = {
-		name = ALTERNATE
-		text = "RULE_OPTION_ALTERNATE"
-		desc = "RULE_OPTION_ALTERNATE_SOV_AI_DESC"
-	}
-	option = {
 		name = LEFT_OPPOSITION
 		text = "RULE_OPTION_LEFT_OPPOSITION"
 		desc = "RULE_OPTION_LEFT_OPPOSITION_SOV_AI_DESC"
@@ -2220,7 +2215,6 @@ ita_fragmentation_status = {
 
 obsolete_focus_branches_visibility = {
 	name = "OBSOLETE_FOCUS_BRANCHES_VISIBILITY"
-	required_dlc = "No Step Back"
 	group = "RULE_GROUP_GENERAL_UI"
 	default = {
 		name = HIDE

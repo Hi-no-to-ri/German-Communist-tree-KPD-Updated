@@ -25,6 +25,7 @@ country_event = {
 	option = {
 		name = wtt_britain.24.a
 #		recruit_character = SOV_ivan_konev
+		set_global_flag = flag_trotsky_dead
 	}
 	option = {
 		name = news.332.a

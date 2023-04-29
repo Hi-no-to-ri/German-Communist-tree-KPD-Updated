@@ -34,3 +34,22 @@ defined_text = {
 		localization_key = GER_GetTheyOrTheGovernment_government
 	}
 }
+
+defined_text = {
+	name = GetCurrentGermanRegime
+	text = {
+		trigger = {
+			GER = { has_government = fascism }
+		}
+		localization_key = GER_GetCurrentGermanRegime_nazis
+	}
+	text = {
+		trigger = {
+			GER = { has_cosmetic_tag = GER_provisional_gvt }
+		}
+		localization_key = GER_GetCurrentGermanRegime_provisional
+	}
+	text = {
+		localization_key = GER_GetCurrentGermanRegime_other
+	}
+}

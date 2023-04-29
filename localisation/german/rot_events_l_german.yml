@@ -12,7 +12,7 @@
  rot_news.2.c:0 "Ein weiteres Opfer des Naziregimes."
  rot_news.2.e:0 "Das ist barbarisch."
  rot_news.3.t:0 "Ernst Thälmann wurde ermordet"
- rot_news.3.d:2 "Kürzlich wurde aus geheimen Quellen bekannt, dass die [GER.GetAdjective]-Regierung beschlossen hat, den Führer der deutschen Kommunisten, Ernst Thälmann, im Konzentrationslager Buchenwald hinzurichten.\nNach 1933 wurde Ernst Thälmann in der Justizvollzugsanstalt Moabit in Einzelhaft gehalten. Nach dem Scheitern des Falls Dimitrov hatten die Nazis Angst, Prozesse gegen die Kommunisten einzuleiten. Jetzt jedoch haben sie ihren Anführer eliminiert. Deutsche Arbeiter im ganzen Land gingen zu großen Versammlungen, die Produktion im ganzen Land wurde eingestellt. Arbeiter fordern den Sturz des NS-Regimes. Die Lage in Deutschland gerät außer Kontrolle."
+ rot_news.3.d:3 "Kürzlich wurde aus geheimen Quellen bekannt, dass die [GER.GetAdjective]-Regierung beschlossen hat, den Führer der deutschen Kommunisten, Ernst Thälmann, im Konzentrationslager Buchenwald hinzurichten.\nNach 1933 wurde Ernst Thälmann in der Justizvollzugsanstalt Moabit in Einzelhaft gehalten. Nach dem Scheitern des Falls Dimitrov hatten die Nazis Angst, Prozesse gegen die Kommunisten einzuleiten. Jetzt jedoch haben sie ihren Anführer eliminiert. Deutsche Arbeiter im ganzen Land gingen zu großen Versammlungen, die Produktion im ganzen Land wurde eingestellt. Arbeiter fordern den Sturz des [GetCurrentGermanRegime]. Die Lage in Deutschland gerät außer Kontrolle."
  rot_news.3.a:0 "Verräter!"
  rot_news.3.b:0 "Die deutsche Arbeiterklasse ist erwacht! Arbeiter aller Länder, vereinigt euch!"
  rot_news.3.c:0 "Interessant."
@@ -270,3 +270,6 @@
  rot_germany.32.desc:0 "$political.22.d$" #will be replaced later
  rot_germany.32.a:0 "$political.22.a$"
  rot_germany.32.b:0 "$political.22.b$"
+ GER_GetCurrentGermanRegime_nazis:0 "NS-Regimes"
+ GER_GetCurrentGermanRegime_provisional:0 "Militärjunta"
+ GER_GetCurrentGermanRegime_other:0 "aktuelles Regime" #Google Translation
