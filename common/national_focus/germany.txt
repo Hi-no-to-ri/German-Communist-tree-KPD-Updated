@@ -9492,8 +9492,9 @@ focus_tree = {
 				}
 			}
 		}
-		x = 67
+		x = 20
 		y = 2
+		relative_position_id = GER_oppose_hitler
 		cost = 10
 		ai_will_do = {
 			factor = 3
@@ -9529,8 +9530,9 @@ focus_tree = {
 		available = {
 
 		}
-		x = 62
-		y = 3
+		x = -5
+		y = 1
+		relative_position_id = GER_reds_amnesty
 
 		cost = 10
 		ai_will_do = {
@@ -9596,9 +9598,9 @@ focus_tree = {
 		available = {
 
 		}
-		x = 59
-		y = 5
-#		relative_position_id = GER_second_civil_war
+		x = -3
+		y = 1
+		relative_position_id = GER_second_civil_war
 
 		cost = 5
 		ai_will_do = {
@@ -9752,9 +9754,9 @@ focus_tree = {
 		available = {
 
 		}
-		x = 63
-		y = 5
-#		relative_position_id = GER_second_civil_war
+		x = 1
+		y = 1
+		relative_position_id = GER_second_civil_war
 
 		cost = 5
 		ai_will_do = {
@@ -9775,9 +9777,9 @@ focus_tree = {
 		available = {
 
 		}
-		x = -2
-		y = 0
-		relative_position_id = GER_nationalisation
+		x = -1
+		y = 1
+		relative_position_id = GER_second_civil_war
 
 		cost = 5
 		ai_will_do = {
@@ -9858,8 +9860,9 @@ focus_tree = {
 				}
 			}
 		}
-		x = 65
-		y = 6
+		x = -1
+		y = 1
+		relative_position_id = GER_expand_the_revolution
 
 		cost = 10
 		ai_will_do = {
@@ -9985,8 +9988,9 @@ focus_tree = {
 		available = {
 			NOT = { has_civil_war = yes }
 		}
-		x = 66
-		y = 5
+		x = 4
+		y = 1
+		relative_position_id = GER_second_civil_war
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		cost = 10
@@ -10038,8 +10042,9 @@ focus_tree = {
 			}
 		}
 		mutually_exclusive = { focus = GER_eurocommunism focus = GER_join_fourth_internationale focus = GER_establish_fifth_internationale }
-		x = 69
-		y = 6
+		x = 3
+		y = 1
+		relative_position_id = GER_expand_the_revolution
 
 		cost = 10
 		ai_will_do = {
@@ -10742,8 +10747,9 @@ focus_tree = {
 			}
 			has_completed_focus = GER_second_civil_war
 		}
-		x = 93
-		y = 3
+		x = 26
+		y = 1
+		relative_position_id = GER_reds_amnesty
 
 		cost = 5
 		ai_will_do = {
@@ -10943,8 +10949,8 @@ focus_tree = {
 		}
 		mutually_exclusive = { focus = GER_enter_comintern focus = GER_join_fourth_internationale focus = GER_establish_fifth_internationale }
 		x = 0
-		y = 3
-		relative_position_id = GER_right_wing
+		y = 1
+		relative_position_id = GER_foreign_capital
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		cost = 10
 		ai_will_do = {
@@ -12248,8 +12254,9 @@ focus_tree = {
 
 			has_completed_focus = GER_second_civil_war
 		}
-		x = 80
-		y = 3
+		x = 13
+		y = 1
+		relative_position_id = GER_reds_amnesty
 
 		cost = 5
 		ai_will_do = {
@@ -13412,8 +13419,9 @@ focus_tree = {
 				is_in_faction_with = SOV
 			}
 		}
-		x = 75
-		y = 5
+		x = -5
+		y = 1
+		relative_position_id = GER_support_trotsky_coup
 
 		cost = 10
 		ai_will_do = {
