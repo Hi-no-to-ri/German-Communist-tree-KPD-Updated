@@ -9471,7 +9471,7 @@ focus_tree = {
 		}
 
 		offset = {
-#			x = -67
+			x = -20
 			y = 0
 			trigger = {
 				has_game_rule = {
