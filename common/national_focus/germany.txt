@@ -6182,11 +6182,30 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	focus = { #Edited (hidden条件関連)
 		id = GER_secure_the_new_state
 		icon = GFX_focus_generic_support_the_left_right
 		prerequisite = { focus = GER_oppose_hitler }
 		mutually_exclusive = { focus = GER_reds_amnesty }
+
+		allow_branch = {
+			has_dlc = "Waking the Tiger"
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {
+					OR = {
+						has_completed_focus = GER_rhineland
+						has_completed_focus = GER_reds_amnesty
+					}
+				}
+			}
+		}
+
 		available = {
 			is_subject = no
 			has_war = no
@@ -6211,6 +6230,17 @@ focus_tree = {
 			add_timed_idea = {
 				idea = GER_clamp_down_on_fascism
 				days = 720
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = obsolete_focus_branches_visibility
+							option = HIDE
+						}
+					}
+					mark_focus_tree_layout_dirty = yes
+				}
 			}
 		}
 	}
@@ -9425,6 +9455,33 @@ focus_tree = {
 		prerequisite = { focus = GER_oppose_hitler }
 		mutually_exclusive = { focus = GER_secure_the_new_state }
 		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		allow_branch = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {
+					has_completed_focus = GER_secure_the_new_state
+				}
+			}
+		}
+
+		offset = {
+#			x = -67
+			y = 0
+			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+				has_completed_focus = GER_reds_amnesty
+			}
+		}
+	
 		available = {
 			is_subject = no
 			has_war = no
@@ -9451,6 +9508,17 @@ focus_tree = {
 			show_ideas_tooltip = walter_ulbricht
 			show_ideas_tooltip = karl_artelt
 			show_ideas_tooltip = erich_weinert
+			hidden_effect = {
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = obsolete_focus_branches_visibility
+							option = HIDE
+						}
+					}
+					mark_focus_tree_layout_dirty = yes
+				}
+			}
 		}
 	}
 	focus = {
