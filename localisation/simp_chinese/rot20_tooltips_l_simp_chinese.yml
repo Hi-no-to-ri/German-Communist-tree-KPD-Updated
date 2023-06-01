@@ -1,0 +1,5 @@
+﻿l_simp_chinese:
+ GER_second_civil_war_tt:0 "§R将会引发第二次内战！§!\n"
+ GER_no_thalmann_for_wings_tt:0 "\n如果你想走第四国际或欧洲共产主义路线，你需要在"$GER_reds_amnesty$"完成前处决台尔曼。"
+ GER_thalmann_will_be_removed_tt:0 "§Y$ernst_thalmann$§! 将会被处决。"
+ GER_danger_alert_for_removing_thalmann_tt:0 "§R如果共产主义在政府的支持度还不够低，我们将会承担某些后果！§!"
