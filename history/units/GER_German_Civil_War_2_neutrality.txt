@@ -159,21 +159,21 @@ units = {
 		location = 6389
 		division_template = "Intervent's division"
 	}
-	division = {
-		name = "Polish Intervents 1."
-		location = 11343
-		division_template = "Intervent's division"
-	}
-	division = {
-		name = "Polish Intervents 2."
-		location = 11316
-		division_template = "Intervent's division"
-	}
-	division = {
-		name = "Polish Intervents 3."
-		location = 11288
-		division_template = "Intervent's division"
-	}
+	# division = {
+	# 	name = "Polish Intervents 1."
+	# 	location = 11343
+	# 	division_template = "Intervent's division"
+	# }
+	# division = {
+	# 	name = "Polish Intervents 2."
+	# 	location = 11316
+	# 	division_template = "Intervent's division"
+	# }
+	# division = {
+	# 	name = "Polish Intervents 3."
+	# 	location = 11288
+	# 	division_template = "Intervent's division"
+	# }
 	division = {
 		name = "Polish Intervents 4."
 		location = 6375
@@ -204,11 +204,11 @@ units = {
 		location = 9327
 		division_template = "Intervent's division"
 	}
-	division = {
-		name = "Polish Intervents 10."
-		location = 11372
-		division_template = "Intervent's division"
-	}
+	# division = {
+	# 	name = "Polish Intervents 10."
+	# 	location = 11372
+	# 	division_template = "Intervent's division"
+	# }
 	division = {
 		name = "Polish Intervents 11."
 		location = 9511
