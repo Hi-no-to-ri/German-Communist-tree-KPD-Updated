@@ -158,9 +158,9 @@ country_event = {
 					original_tag = GER
 					has_government = neutrality
 				}
-				POL = {
-					give_military_access = PREV
-				}
+				# POL = {
+				# 	give_military_access = PREV
+				# }
 				set_country_flag = GER_civil_war_fired
 				load_oob = GER_German_Civil_War_2_neutrality
 			}
