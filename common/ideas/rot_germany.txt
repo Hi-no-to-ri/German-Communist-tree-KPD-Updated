@@ -893,6 +893,20 @@ ideas = {
 				communism_acceptance = 85
 			}
 		}
+		
+		GER_expand_the_red_navy_spirit = {
+			allowed = {
+				original_tag = GER
+			}
+
+			picture = generic_navy_bonus
+
+			modifier = {
+				production_speed_dockyard_factor = 0.1
+				repair_speed_factor = 0.10
+			}
+
+		}
 
 	}
 }
