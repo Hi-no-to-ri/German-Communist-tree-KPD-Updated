@@ -148,4 +148,9 @@
  GER_strike_at_the_heart_of_capitalism:1 "Strike at the Heart of Capitalism" #Edited in KPD2.1 (Title case)
  GER_strike_at_the_heart_of_capitalism_desc:0 "We will do our best to support the Communists in the United States of America. It's time to hit right in the heart of the capitalist system!"
  # KPD2 new focuses:
- GER_expand_the_red_navy:0 ""
+ GER_expand_the_red_navy:0 "Expand the Red Navy"
+ GER_expand_the_red_navy_desc:0 "During the frequent civil wars, our navy was repeatedly divided, attacking each other, and our shipbuilding plans were significantly delayed. In order to maintain and expand our revolution, we must once again make the Red Navy formidable."
+ GER_subbotnik_for_national_reconstruction:0 "Subbotnik for National Reconstruction"
+ GER_subbotnik_for_national_reconstruction_desc:0 "In order to rebuild the country devastated by the revolution, we must employ revolutionary methods. Following the example of the Soviet Union, workers who voluntarily engage in holiday labor service, known as 'Subbotnik,' will swiftly heal the wounded nation."
+ GER_communist_youth_organisation:0 "Communist Youth Organisation"
+ GER_communist_youth_organisation_desc:0 "The Communist Youth League is an organization that spreads communist ideology among young people, promotes political activism, and also functions as a training institution for spies and informers. The youth undergo political education and engage in communist propaganda activities, while also monitoring and reporting acts of misconduct and corruption. Their mission is to pass on the ideals of communism to the next generation while maintaining social justice and transparency in society."

@@ -3,3 +3,6 @@
  GER_align_hungary_communism:0 "$GER_align_hungary_democratic$"
  GER_align_romania_communism:0 "$GER_align_romania_democratic$"
  GER_expand_the_red_navy_spirit:0 "$GER_expand_the_red_navy$"
+ GER_communist_youth_organisation_spirit:0 "$GER_communist_youth_organisation$"
+ GER_communist_youth_organisation_spirit_desc:0 "$GER_communist_youth_organisation_desc$"
+ GER_subbotnik_spirit:0 "スボートニク"
