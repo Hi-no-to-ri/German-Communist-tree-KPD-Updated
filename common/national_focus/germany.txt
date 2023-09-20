@@ -12323,6 +12323,10 @@ focus_tree = {
 		bypass = {
 	
 		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+
 		completion_reward = {
 			add_political_power = -100
 			add_equipment_to_stockpile = {
@@ -12521,6 +12525,10 @@ focus_tree = {
 		bypass = {
 			
 		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+
 		completion_reward = {
 			add_political_power = -150
 			every_other_country = {
@@ -12664,6 +12672,10 @@ focus_tree = {
 		bypass = {
 			
 		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+
 		completion_reward = {
 			add_political_power = -150
 			every_other_country = {
@@ -12879,6 +12891,10 @@ focus_tree = {
 		bypass = {
 			
 		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+
 		completion_reward = {
 			add_political_power = -100
 			every_other_country = {
@@ -12962,6 +12978,10 @@ focus_tree = {
 				ENG = { has_capitulated = yes }
 			}
 		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+
 		completion_reward = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
@@ -13126,6 +13146,10 @@ focus_tree = {
 		bypass = {
 			
 		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+
 		completion_reward = {
 			every_other_country = {
 				limit = {
@@ -13383,6 +13407,10 @@ focus_tree = {
 				has_government = communism
 			}
 		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+
 		completion_reward = {
 			random_other_country = {
 				limit = {
