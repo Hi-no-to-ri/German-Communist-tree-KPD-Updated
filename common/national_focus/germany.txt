@@ -9462,6 +9462,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		allow_branch = {
+			has_dlc = "Waking the Tiger"
 			if = {
 				limit = {
 					has_game_rule = {
