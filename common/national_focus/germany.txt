@@ -10038,6 +10038,10 @@ focus_tree = {
 		
 		available_if_capitulated = yes
 
+		available = {
+			NOT = { has_civil_war = yes }
+		}
+
 		completion_reward = {
 			add_ideas = {
 				GER_subbotnik_spirit
@@ -10067,7 +10071,6 @@ focus_tree = {
 			# 	is_coastal = yes
 			# 	is_controlled_by = ROOT
 			# }
-			NOT = { has_civil_war = yes }
 		}
 
 		complete_tooltip = {
