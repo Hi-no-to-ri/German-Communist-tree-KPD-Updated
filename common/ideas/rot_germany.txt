@@ -917,6 +917,7 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = -0.05
 				state_production_speed_infrastructure_factor = 0.10
+				state_production_speed_rail_way_factor = 0.10
 				state_production_speed_industrial_complex_factor = 0.10
 			}
 
