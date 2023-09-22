@@ -10039,7 +10039,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		available = {
-			NOT = { has_civil_war = yes }
+			# NOT = { has_civil_war = yes }
 		}
 
 		completion_reward = {
