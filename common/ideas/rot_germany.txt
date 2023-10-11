@@ -117,7 +117,7 @@ ideas = {
 			picture = generic_morale_bonus
 			
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 			}
 		}
 
@@ -199,7 +199,7 @@ ideas = {
 				production_speed_buildings_factor = -0.5
 				industrial_capacity_factory = -0.5
 				industrial_capacity_dockyard = -0.6
-				consumer_goods_factor = 0.10
+				consumer_goods_factor = 0.25
 			}
 		}
 
@@ -619,7 +619,7 @@ ideas = {
 			picture = generic_agrarian_reform
 			
 			modifier = {
-				consumer_goods_factor = 0.10	
+				consumer_goods_factor = 0.20 #check 25にすべきか?	
 				stability_weekly = 0.005
 				political_power_gain = 0.25	
 			}
@@ -642,7 +642,7 @@ ideas = {
 				production_speed_infrastructure_factor = 0.075
 				production_speed_industrial_complex_factor = 0.075
 				global_building_slots_factor = 0.10
-				consumer_goods_factor = -0.04			
+				consumer_goods_factor = -0.12			
 			}
 		}
 
@@ -663,7 +663,7 @@ ideas = {
 				production_speed_infrastructure_factor = 0.15
 				production_speed_industrial_complex_factor = 0.15
 				global_building_slots_factor = 0.20
-				consumer_goods_factor = -0.08			
+				consumer_goods_factor = -0.20			
 			}
 		}
 		GER_antifa = {
@@ -851,7 +851,7 @@ ideas = {
 			picture = SPR_relocate_the_gold_reserves
 			
 			modifier = {
-				consumer_goods_factor = 0.30	
+				consumer_goods_factor = 0.75	
 				political_power_gain = -0.25									
 			}
 		}
@@ -893,6 +893,58 @@ ideas = {
 				communism_acceptance = 85
 			}
 		}
+		
+		GER_expand_the_red_navy_spirit = {
+			allowed = {
+				original_tag = GER
+			}
+
+			picture = generic_navy_bonus
+
+			modifier = {
+				production_speed_dockyard_factor = 0.1
+				repair_speed_factor = 0.10
+			}
+
+		}
+		GER_subbotnik_spirit = {
+			allowed = {
+				original_tag = GER
+			}
+
+			picture = GFX_idea_generic_industrial_concern_1
+
+			modifier = {
+				consumer_goods_factor = -0.15
+				state_production_speed_infrastructure_factor = 0.10
+				state_production_speed_rail_way_factor = 0.10
+				state_production_speed_industrial_complex_factor = 0.10
+			}
+
+		}
+		GER_communist_youth_organisation_spirit = {
+			
+			
+			allowed = {
+				always = no
+			}
+		
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+	
+			modifier = {
+				# conscription = 0.01
+				stability_factor = 0.1
+				war_support_factor = 0.05
+				training_time_army_factor = -0.05
+				# weekly_casualties_war_support = 0.001
+				drift_defence_factor = 0.5
+				enemy_operative_capture_chance_factor = 0.05
+				# civilian_intel_to_others = -5		
+			}
+		}
+	
 
 	}
 }
