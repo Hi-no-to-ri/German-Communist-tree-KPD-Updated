@@ -163,13 +163,6 @@ set_convoys = 200
 set_stability = 0.75 
 set_war_support = 0.3
 
-#Trade
-create_import = {
-		resource = steel
-		factories = 2
-		exporter = SWE
-}
-
 1939.1.1 = {
 	add_named_threat = { threat = 40 name = 1939_bookmark_threat }
 	set_war_support = 0.7
@@ -487,6 +480,7 @@ recruit_character = GER_august_von_mackensen
 
 recruit_character = GER_alexander_von_falkenhausen #Not visible unless recalled from China
 
+#KPD2
 recruit_character = GER_erich_mielke
 recruit_character = GER_otto_korfes
 recruit_character = GER_hans_gunter_van_hooven
@@ -1022,7 +1016,7 @@ if = {
 		design_team = mio:GER_dornier_organization
 		modules = {
 			fixed_main_weapon_slot = torpedo_mounting
-			engine_type_slot = engine_1_1x
+			engine_type_slot = engine_2_1x
 			special_type_slot_1 = lmg_defense_turret
 			special_type_slot_2 = floats
 		}
