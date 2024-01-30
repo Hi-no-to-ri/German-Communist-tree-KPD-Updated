@@ -2211,12 +2211,26 @@ focus_tree = {
 				uses = 2
 				category = battlefield_support_tree
 			}
-			add_tech_bonus = {
-				name = bomber_bonus
-				bonus = 1.0
-				uses = 1
-				category = tactical_bomber
-				category = cas_bomber			
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				add_tech_bonus = {
+					name = bomber_bonus
+					bonus = 1.0
+					uses = 1
+					category = medium_air
+					category = light_air			
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = bomber_bonus
+					bonus = 1.0
+					uses = 1
+					category = tactical_bomber
+					category = cas_bomber			
+				}
 			}
 		}
 	}
@@ -2236,11 +2250,24 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			add_tech_bonus = {
-				name = GER_long_range_escorts
-				bonus = 1.0
-				uses = 2
-				category = cat_heavy_fighter
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				add_tech_bonus = {
+					name = GER_long_range_escorts
+					bonus = 1.0
+					uses = 2
+					category = medium_air		
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = GER_long_range_escorts
+					bonus = 1.0
+					uses = 2
+					category = cat_heavy_fighter
+				}
 			}
 		}
 	}
@@ -2262,11 +2289,31 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			add_tech_bonus = {
-				name = nav_bomber_bonus
-				bonus = 1.0
-				uses = 2
-				category = naval_bomber
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				add_tech_bonus = {
+					name = nav_bomber_bonus
+					bonus = 1.0
+					uses = 1
+					category = light_air
+				}
+				add_tech_bonus = {
+					name = nav_bomber_bonus
+					bonus = 1.5
+					uses = 1
+					technology = air_torpedoe_2
+					technology = air_torpedoe_3
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = nav_bomber_bonus
+					bonus = 1.0
+					uses = 2
+					category = naval_bomber
+				}
 			}
 		}
 	}
@@ -2294,11 +2341,24 @@ focus_tree = {
 				uses = 2
 				category = battlefield_support_tree
 			}
-			add_tech_bonus = {
-				name = bomber_bonus
-				bonus = 1.0
-				uses = 1
-				category = cat_strategic_bomber
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				add_tech_bonus = {
+					name = bomber_bonus
+					bonus = 1.0
+					uses = 1
+					category = heavy_air
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = bomber_bonus
+					bonus = 1.0
+					uses = 1
+					category = cat_strategic_bomber
+				}
 			}
 		}
 	}
@@ -3101,6 +3161,7 @@ focus_tree = {
 						OR = {
 							original_tag = DEN
 							original_tag = NOR
+							original_tag = LUX
 							AND = {
 								original_tag = HOL
 								FRA = {

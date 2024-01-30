@@ -1,0 +1,5 @@
+﻿l_french:
+ GER_second_civil_war_tt:0 "§RLa deuxième guerre civile va commencer§!\n"
+ GER_no_thalmann_for_wings_tt:0 "\nPour descendre dans l'arbre des focus de la Quatrième Internationale ou de l'Eurocommunisme, il faut supprimer Thälmann avant de compléter le focus \"$GER_reds_amnesty$\"."
+ GER_thalmann_will_be_removed_tt:0 "§Y$ernst_thalmann$§! sera retiré."
+ GER_danger_alert_for_removing_thalmann_tt:0 "§RSi la popularité du parti communiste n'est pas si faible que cela, nous risquons d'en subir les conséquences !§!"

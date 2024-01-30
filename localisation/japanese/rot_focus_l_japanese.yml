@@ -105,7 +105,7 @@
  GER_weltrepublic:0 "世界社会主義共和国"
  GER_weltrepublic_desc:1 "世界の先進資本主義国は全て破壊された。そして今、社会主義が世界においてついにその地位を固めたとき、我々は、我々によって解放された領土に基づいて、世界共和国への統一を始めることができるのである。同志諸君、共産主義の始まりの瞬間は近づいている！"
  GER_NVA:0 "国家人民軍"
- GER_NVA_desc:1 "Recent conspiracies in the army, showed us that is necessary to reform the army, to create 'Nationale Volksarmee' (National people's army), in which we will provide the opportunity for loyal generals to get to higher ranks."
+ GER_NVA_desc:1 "先だっての軍における陰謀は、我々に軍の改革と、忠実な将軍により高い階級へ就く機会をもたらす「国家人民軍（Nationale Volksarmee）」の創設が必要であることを示した。"
  GER_exile_fascism_tt:1 "§Yヨーロッパの全ファシズム国家§!に対して戦争目標を得る。"
  GER_collectivisation:0 "集団化"
  GER_collectivisation_desc:0 "The Soviet leadership carried out collectivization and managed to increase the total yield and the influx of funds into the treasury. We need to do this in order to be able to support the ongoing industrialization. Moreover, this will help to make more rational use of existing lands, although it is possible that the prosperous peasantry will not support this."
@@ -147,7 +147,6 @@
  GER_influence_on_America_desc:1 "We must help spread the world revolution to the American continent by any means necessary."
  GER_strike_at_the_heart_of_capitalism:1 "資本主義の中枢を断つ"
  GER_strike_at_the_heart_of_capitalism_desc:0 "We will do our best to support the Communists in the United States of America. It's time to hit right in the heart of the capitalist system!"
- # KPD2 new focuses:
  GER_expand_the_red_navy:0 "赤色海軍の再建"
  GER_expand_the_red_navy_desc:0 "度重なる内戦のさなか、我らが海軍は何度も分割されて互いを攻撃し合い、また造船計画は著しく遅滞した。我々の革命の維持と拡散のためには、赤色海軍を再び威容のあるものとしなければならない。"
  GER_subbotnik_for_national_reconstruction:0 "国土再建のためのスボートニク"
