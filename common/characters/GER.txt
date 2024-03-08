@@ -1362,7 +1362,7 @@ characters={
 			}
 			cost = 100
 			ai_will_do = {
-				factor = 2.000
+				factor = 1.05
 			}
 		}
 	}
@@ -1388,7 +1388,7 @@ characters={
 			}
 			cost = 100
 			ai_will_do = {
-				factor = 0.500
+				factor = 0.250
 			}
 		}
 	}
@@ -2078,7 +2078,7 @@ characters={
 				}
 			}
 			ai_will_do = {
-				factor = 30.000
+				factor = 201.000
 			}
 			traits = {
 				silent_workhorse 

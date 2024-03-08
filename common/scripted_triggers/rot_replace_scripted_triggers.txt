@@ -46,4 +46,10 @@ check_has_focus_tree_to_switch_to_communism = {
 			has_dlc = "La Resistance"
 		}
 	}
+	NOT = {
+		AND = {
+			original_tag = ARG
+			has_dlc =  "Trial of Allegiance"
+		}
+	}
 }
