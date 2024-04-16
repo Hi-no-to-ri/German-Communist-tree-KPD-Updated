@@ -9645,7 +9645,6 @@ focus_tree = {
 			}
 		}
 	}
-#}
 
 # KPD FOCUSES
 
@@ -10266,6 +10265,7 @@ focus_tree = {
 			# 	is_coastal = yes
 			# 	is_controlled_by = ROOT
 			# }
+			has_completed_focus = GER_naval_rearmament
 		}
 
 		complete_tooltip = {
