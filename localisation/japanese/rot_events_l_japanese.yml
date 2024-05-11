@@ -174,6 +174,7 @@
  rot_germany.22.a:0 "カリーニンだ"
  rot_germany.22.b:0 "トロツキーを呼び戻そう"
  rot_germany.22.c:0 "トロツキーは亡くなった。彼の妻にソ連を率いてもらうべきだ。"
+ rot_germany.22.d:0 "集団指導体制が最良の選択肢だ"
  rot_germany.23.t:2 "[SOV.GetNameDef]が降伏"
  rot_germany.23.desc:0 "[SOV.GetNameDef]の国家指導者は、第五インターナショナルに対する戦争の無意味さを完全に理解し、降伏した。[SOV.GetLeader]は今朝、部下により拘束された。ソ連政府は我々の支配下に置かれることとなった。"
  rot_germany.23.a:0 "ようやくだ！"

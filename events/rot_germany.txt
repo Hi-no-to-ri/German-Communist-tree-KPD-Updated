@@ -2012,7 +2012,7 @@ country_event = {
 			# custom_effect_tooltip = "§Y$SOV_natalia_sedova$§!が§Y$communism$§!政党の指導者になる。\n "
 			# show_ideas_tooltip = devoted_trotskyist
 			create_country_leader = { #It was necessary to exclude SOV-related files from the mod for better modularity, and Ms. Sedova was therefore detached from the new character system.
-#				name = SOV_natalia_sedova
+				# name = SOV_natalia_sedova
 				name = "Natalia Sedova"
 				desc = "POLITICS_NATALIA_SEDOVA_DESC"
 				picture = GFX_portrait_SOV_natalia_sedova
@@ -2021,6 +2021,24 @@ country_event = {
 				traits = {
 					devoted_trotskyist
 				}
+			}
+		}
+	}
+	option = {  #Supreme Soviet
+		name = rot_germany.22.d
+		ai_chance = {
+			base = 100
+		}
+		SOV = {	
+			retire_country_leader = yes
+			add_country_leader_role = {
+				character = "SOV_supreme_soviet"
+				country_leader = {
+					ideology = marxism
+					traits = { strong_party_discipline }
+					expire = "1965.3.1.1"
+				}
+				promote_leader = yes 
 			}
 		}
 	}
