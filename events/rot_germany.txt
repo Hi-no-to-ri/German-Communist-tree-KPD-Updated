@@ -1950,7 +1950,7 @@ country_event = {
 				character = SOV_mikhail_kalinin
 				civilian = { large ="GFX_portrait_SOV_mikhail_kalinin" }
 			}
-			kill_country_leader = yes
+			retire_country_leader = yes
 			add_country_leader_role = {
 				character = SOV_mikhail_kalinin
 				country_leader = {
@@ -1973,7 +1973,7 @@ country_event = {
 			base = 100
 		}
 		SOV = {	
-			kill_country_leader = yes
+			retire_country_leader = yes
 			add_country_leader_role = { #Temporary #TODO: Consider changing traits, etc. to match NSB's Trotsky
 				character = SOV_lev_trotsky
 				country_leader = {
@@ -1996,7 +1996,7 @@ country_event = {
 			base = 100
 		}	
 		SOV = {	
-			kill_country_leader = yes
+			retire_country_leader = yes
 			# add_country_leader_role = { 
 			# 	character = SOV_natalia_sedova
 			# 	country_leader = {
