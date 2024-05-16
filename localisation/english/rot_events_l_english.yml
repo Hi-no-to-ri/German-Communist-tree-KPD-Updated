@@ -175,6 +175,7 @@
  rot_germany.22.a:0 "Kalinin."
  rot_germany.22.b:0 "We will return Trotsky."
  rot_germany.22.c:0 "Trotsky is dead. We should ask his wife to lead the USSR."
+ rot_germany.22.d:0 "A collective leadership system is the best option."
  rot_germany.23.t:2 "[SOV.GetNameDef] Capitulates" # Removed the period in KPD2.0alpha5 update
  rot_germany.23.desc:0 "Country leaders of [SOV.GetNameDef], realizing all the senselessness of the war against the Fifth International, capitulated. [SOV.GetLeader] was arrested this morning by his subordinates. The government of the USSR has become under our control."
  rot_germany.23.a:0 "Finally!"

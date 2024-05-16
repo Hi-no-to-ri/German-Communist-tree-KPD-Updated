@@ -175,6 +175,7 @@
  rot_germany.22.a:0 "让加里宁上位"
  rot_germany.22.b:0 "我们会让托洛茨基回归"
  rot_germany.22.c:0 "托洛茨基已经死了。我们会让他的妻子就任。"
+ rot_germany.22.d:0 "集体领导体制是最好的选择。"
  rot_germany.23.t:0 "[SOV.GetNameDef] 屈服了."
  rot_germany.23.desc:0 "[SOV.GetNameDef]领导人已经意识到对第五国际的战争是毫无意义的,并选择了妥协。 [SOV.GetLeader] 今晨被他的下属逮捕。苏联领导层已接受我们的控制。"
  rot_germany.23.a:0 "终于！"

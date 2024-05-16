@@ -174,6 +174,7 @@
  rot_germany.22.a:0 "Kalinin."
  rot_germany.22.b:0 "Nous ramènerons Trotsky."
  rot_germany.22.c:0 "Trotsky est mort. Nous devrions demander à sa femme de diriger l'URSS."
+ rot_germany.22.d:0 "Un système de leadership collectif est la meilleure option."
  rot_germany.23.t:2 "[SOV.GetNameDef] capitule"
  rot_germany.23.desc:0 "Les chefs de pays de [SOV.GetNameDef], réalisant l'absurdité de la guerre contre la Cinquième Internationale, ont capitulé. [SOV.GetLeader] a été arrêté ce matin par ses subordonnés. Le gouvernement de l'URSS est passé sous notre contrôle."
  rot_germany.23.a:0 "Enfin !"
