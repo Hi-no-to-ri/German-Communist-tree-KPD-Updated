@@ -2252,7 +2252,29 @@ country_event = {
 				}
 			}
 			hidden_effect = {
-				IF = { # 将来右派ルートで適用することを想定した記述
+				IF = {
+					limit = {
+						has_completed_focus = GER_support_trotsky_coup
+					}
+					random_list = {
+						20 = {
+							SOV = { add_country_leader_trait = stout_defender }
+						}
+						20 = {
+							SOV = { add_country_leader_trait = devoted_trotskyist }
+						}
+						20 = {
+							SOV = { add_country_leader_trait = cornered_fox }
+						}
+						20 = {
+							SOV = { add_country_leader_trait = permanent_revolutionary }
+						}
+						20 = {
+							SOV = { add_country_leader_trait = indecisive }
+						}
+					}
+				}
+				ELSE_IF = { # 将来右派ルートで適用することを想定した記述
 					limit = {
 						has_completed_focus = GER_right_wing # TODO:ブハーリンとの連携NFを実装したらそちらに置き換える
 					}
@@ -2280,19 +2302,18 @@ country_event = {
 							SOV = { add_country_leader_trait = stout_defender }
 						}
 						20 = {
-							SOV = { add_country_leader_trait = devoted_trotskyist }
-						}
-						20 = {
 							SOV = { add_country_leader_trait = cornered_fox }
 						}
 						20 = {
-							SOV = { add_country_leader_trait = permanent_revolutionary }
+							SOV = { add_country_leader_trait = empire_builder }
+						}
+						20 = {
+							SOV = { add_country_leader_trait = railroad_enthusiast }
 						}
 						20 = {
 							SOV = { add_country_leader_trait = indecisive }
 						}
 					}
-		
 				}
 			}
 		}
