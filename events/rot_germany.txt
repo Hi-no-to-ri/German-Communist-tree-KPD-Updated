@@ -3043,11 +3043,11 @@ country_event = { #TODO: This is a modified copy of old (pre-NSB) event of Trots
 #				permanent_revolutionary
 #			}
 #		}
-		add_country_leader_role = { #Temporary #TODO: Consider changing traits, etc. to match NSB's Trotsky / NSB no Torotsuki- ni awase te tokusei nado wo henkou suru koto wo kentou
+		add_country_leader_role = { #Temporary #TODO: Consider changing traits, etc. to match NSB's Trotsky / NSB no Torotsuki- ni awase te tokusei nado wo henkou suru koto wo kentou -> DONE
 			character = SOV_lev_trotsky
 			country_leader = {
 				expire = "1965.1.1"
-				ideology = leninism
+				ideology = marxism
 				traits = {
 					permanent_revolutionary
 				}
