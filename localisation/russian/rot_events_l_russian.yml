@@ -175,6 +175,13 @@
  rot_germany.22.a:0 "Калинин."
  rot_germany.22.b:0 "Вернём Троцкого."
  rot_germany.22.c:0 "Троцкий мёртв. Попросим его жену возглавить СССР."
+ rot_germany.22.d:0 "Коллективная система руководства является лучшим вариантом."
+ rot_germany.22.e:0 "Троцкист, но не Троцкий."
+ rot_germany.22.f:0 "$NSB_soviet_communist_civil_war.002.a$"
+ rot_germany.22.g:0 "$NSB_soviet_communist_civil_war.002.b$"
+ rot_germany.22.h:0 "$NSB_soviet_communist_civil_war.002.d$"
+ rot_germany.22.i:0 "$NSB_soviet_communist_civil_war.002.e$"
+ rot_germany.22.j:0 "$NSB_soviet_communist_civil_war.002.c$"
  rot_germany.23.t:0 "[SOV.GetNameDef] капитулирует" # Removed the period in KPD2.0alpha5 update
  rot_germany.23.desc:0 "Руководство страны [SOV.GetNameDef], поняв всю бессмыссленность войны против Пятого Интернационала, капитулировало. [SOV.GetLeader] был арестован сегодня утром своими же подчинёнными. Правительство СССР стало подконтрольным нам."
  rot_germany.23.a:0 "Наконец-то!"
