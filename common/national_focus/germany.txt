@@ -12620,11 +12620,11 @@ focus_tree = {
 #			}
 			IF = {
 				limit = {
-					country_exists = SOV
+					country_exists = SOV #I think it's better not to change here to SOU
 				}
 				create_wargoal = {
 					type = annex_everything
-					target = SOV
+					target = SOU #Changed from SOV
 				}
 			}
 		}
