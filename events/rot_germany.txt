@@ -1925,6 +1925,7 @@ country_event = {
 }
 
 #New leader of USSR
+# NSB_soviet_communist_civil_war.001-003を参考に編集する
 country_event = { 
 	id = rot_germany.22
 	title = rot_germany.22.t
@@ -1933,7 +1934,7 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 		GER = {
-			has_completed_focus = GER_betrayed_october
+			has_completed_focus = GER_betrayed_october # 現状、第五インターナショナルルートでのソ連打倒時にしか発生しない
 		}
 		SOV = {
 			is_puppet_of = GER
@@ -1942,6 +1943,11 @@ country_event = {
 
 	option = {  #Kalinin
 		name = rot_germany.22.a
+		trigger = { 
+			SOV = {
+				has_character = SOV_mikhail_kalinin
+			}
+		}
 		ai_chance = {
 			base = 100
 		}
@@ -1967,6 +1973,7 @@ country_event = {
 	option = {  #Trotsky
 		name = rot_germany.22.b
 		trigger = { 
+			NOT = { has_completed_focus = GER_right_wing } # TODO:ブハーリンとの連携NFを実装したらそちらに置き換える？
 			NOT = { has_global_flag = flag_trotsky_dead }
 		}
 		ai_chance = {
@@ -1974,22 +1981,43 @@ country_event = {
 		}
 		SOV = {	
 			retire_country_leader = yes
-			add_country_leader_role = { #Temporary #TODO: Consider changing traits, etc. to match NSB's Trotsky
-				character = SOV_lev_trotsky
-				country_leader = {
-					expire = "1965.1.1"
-					ideology = leninism
-					traits = {
-						permanent_revolutionary
-					}
+			# add_country_leader_role = { #Temporary #TODO: Consider changing traits, etc. to match NSB's Trotsky
+			# 	character = SOV_lev_trotsky
+			# 	country_leader = {
+			# 		expire = "1965.1.1"
+			# 		ideology = leninism
+			# 		traits = {
+			# 			permanent_revolutionary
+			# 		}
+			# 	}
+			# 	promote_leader = yes
+			# }
+			SOV_promote_to_country_leader_trotsky = yes	
+		}
+		hidden_effect = {
+			# Return Trotsky from Mexico
+			if = {
+				limit = {
+					has_global_flag = AAT_trotsky_in_mexico
 				}
-				promote_leader = yes
+				set_global_flag = flag_trotsky_returning_to_ussr_from_mexico
+				MEX = { country_event = { id = mexico.22 hours = 1} }	
 			}
+			else_if = {
+				limit = {
+					has_global_flag = NOR_trotsky_in_norway
+				}
+				set_global_flag = flag_trotsky_returning_to_ussr_from_norway
+				set_global_flag = NOR_trotsky_in_soviet
+				clr_global_flag = NOR_trotsky_in_norway
+				NOR = { country_event = { id = mexico.22 hours = 1} }
+			}			
 		}
 	}
 	option = {  #Trotky's wife
 		name = rot_germany.22.c
 		trigger = { 
+			NOT = { has_completed_focus = GER_right_wing } # TODO:ブハーリンとの連携NFを実装したらそちらに置き換える？
 			has_global_flag = flag_trotsky_dead
 		}
 		ai_chance = {
@@ -2024,8 +2052,58 @@ country_event = {
 			}
 		}
 	}
+	option = { #Smirnov # 適切なテキストがない・Traitが傀儡らしくない気がする
+		name = rot_germany.22.e
+		trigger = {
+			NOT = { has_completed_focus = GER_right_wing } # TODO:ブハーリンとの連携NFを実装したらそちらに置き換える？
+			# has_completed_focus = GER_support_trotsky_coup
+			SOV = {
+				has_character = SOV_ivan_smirnov
+				# has_completed_focus = SOV_integrate_smirnovs_bloc	
+			}
+		}
+		ai_chance = {
+			base = 50
+		}
+		SOV = {
+			retire_country_leader = yes
+			SOV_promote_to_country_leader_smirnov = yes	
+		}
+	}
+	option = { #Bukharin # 将来右派ルートで適用することを想定した記述・イベントテキストの差し替えも要する
+		name = rot_germany.22.f
+		trigger = { 
+			has_completed_focus = GER_right_wing # TODO:ブハーリンとの連携NFを実装したらそちらに置き換える？
+			SOV = {
+				has_character = SOV_nikolay_bukharin
+			}
+		}
+		ai_chance = {
+			base = 100
+		}
+		SOV = {	
+			retire_country_leader = yes
+			SOV_promote_to_country_leader_bukharin = yes
+		}
+	}
+	option = { #Rykov # 将来右派ルートで適用することを想定した記述・イベントテキストの差し替えも要する
+		name = rot_germany.22.g
+		trigger = { 
+			has_completed_focus = GER_right_wing # TODO:ブハーリンとの連携NFを実装したらそちらに置き換える？
+			SOV = {
+				has_character = SOV_aleksey_rykov
+			}
+		}
+		ai_chance = {
+			base = 50
+		}
+		SOV = {	
+			retire_country_leader = yes
+			SOV_promote_to_country_leader_rykov = yes
+		}
+	}
 	option = {  #Supreme Soviet
-		name = rot_germany.22.d
+		name = rot_germany.22.d # 並び順変えた
 		ai_chance = {
 			base = 100
 		}
@@ -2039,6 +2117,204 @@ country_event = {
 					expire = "1965.3.1.1"
 				}
 				promote_leader = yes 
+			}
+		}
+	}
+	# option = { # Zinovyev # バニラでの扱いやTraitが傀儡らしくない気がする
+	# 	name = rot_germany.22.h
+	# 	trigger = { 
+	# 		SOV = {
+	# 			has_character = SOV_grigory_zinovyev
+	# 		}
+	# 	}
+	# 	ai_chance = {
+	# 		base = 50
+	# 	}
+	# 	SOV = {	
+	# 		retire_country_leader = yes
+	# 		SOV_promote_to_country_leader_zinovyev = yes
+	# 	}
+	# }
+	option = { # Kamenev
+		name = rot_germany.22.i
+		trigger = { 
+			SOV = {
+				has_character = SOV_lev_kamenev
+				NOT = { has_character = SOV_mikhail_kalinin	}
+			}
+		}
+		ai_chance = {
+			base = 50
+		}
+		SOV = {	
+			retire_country_leader = yes
+			SOV_promote_to_country_leader_kamenev = yes
+		}
+	}
+	option = { # Unit leader
+		name = rot_germany.22.j
+		trigger = { 
+			OR = {
+				AND = {
+					NOT = { has_completed_focus = GER_right_wing } # TODO:ブハーリンとの連携NFを実装したらそちらに置き換える？
+					SOV = {
+						AND = {
+							# NOT = { has_character = SOV_mikhail_kalinin }
+							NOT = { has_character = SOV_lev_trotsky }
+							NOT = { has_character = SOV_ivan_smirnov }
+							# NOT = { has_character = SOV_grigory_zinovyev }
+							# NOT = { has_character = SOV_lev_kamenev }
+						}
+					}		
+				}
+				AND = {
+					has_completed_focus = GER_right_wing # TODO:ブハーリンとの連携NFを実装したらそちらに置き換える？
+					SOV = {
+						AND = {
+							# NOT = { has_character = SOV_mikhail_kalinin }
+							NOT = { has_character = SOV_nikolay_bukharin }
+							NOT = { has_character = SOV_aleksey_rykov }
+							# NOT = { has_character = SOV_grigory_zinovyev }
+							# NOT = { has_character = SOV_lev_kamenev }
+						}
+					}		
+				}
+			}
+		}
+		ai_chance = {
+			base = 10
+		}
+		SOV = {	
+			retire_country_leader = yes
+			IF = {
+				limit = { 
+					AND = {
+						has_completed_focus = GER_support_trotsky_coup
+						SOV = { any_unit_leader = { has_trait = trait_SOV_trotskyist } }
+					}
+				}
+				ROOT = {
+					random_unit_leader = {
+						limit = { 
+							has_trait = trait_SOV_trotskyist
+						}
+						add_country_leader_role = {
+							country_leader = {
+								ideology = marxism
+								traits = { }
+								expire = "1965.1.1.1"
+							}
+							promote_leader = yes 
+						}
+						
+					}
+				}
+			}
+			ELSE_IF = { # 将来右派ルートで適用することを想定した記述
+				limit = { 
+					AND = {
+						has_completed_focus = GER_right_wing # TODO:ブハーリンとの連携NFを実装したらそちらに置き換える
+						SOV = { any_unit_leader = { has_trait = trait_SOV_bukharinist } }
+					}
+				}
+				ROOT = {
+					random_unit_leader = {
+						limit = { 
+							has_trait = trait_SOV_bukharinist
+						}
+						add_country_leader_role = {
+							country_leader = {
+								ideology = marxism
+								traits = { }
+								expire = "1965.1.1.1"
+							}
+							promote_leader = yes 
+						}
+						
+					}
+				}
+			}	
+			ELSE = {
+				ROOT = {
+					random_unit_leader = {
+						limit = { 
+							NOT = { has_trait = trait_SOV_stalinist }
+						}
+						add_country_leader_role = {
+							country_leader = {
+								ideology = marxism
+								traits = { }
+								expire = "1965.1.1.1"
+							}
+							promote_leader = yes 
+						}
+					}
+				}
+			}
+			hidden_effect = {
+				IF = {
+					limit = {
+						has_completed_focus = GER_support_trotsky_coup
+					}
+					random_list = {
+						20 = {
+							SOV = { add_country_leader_trait = stout_defender }
+						}
+						20 = {
+							SOV = { add_country_leader_trait = devoted_trotskyist }
+						}
+						20 = {
+							SOV = { add_country_leader_trait = cornered_fox }
+						}
+						20 = {
+							SOV = { add_country_leader_trait = permanent_revolutionary }
+						}
+						20 = {
+							SOV = { add_country_leader_trait = indecisive }
+						}
+					}
+				}
+				ELSE_IF = { # 将来右派ルートで適用することを想定した記述
+					limit = {
+						has_completed_focus = GER_right_wing # TODO:ブハーリンとの連携NFを実装したらそちらに置き換える
+					}
+					random_list = {
+						20 = {
+							SOV = { add_country_leader_trait = stout_defender }
+						}
+						20 = {
+							SOV = { add_country_leader_trait = empire_builder }
+						}
+						20 = {
+							SOV = { add_country_leader_trait = railroad_enthusiast }
+						}
+						20 = {
+							SOV = { add_country_leader_trait = rearmer }
+						}
+						20 = {
+							SOV = { add_country_leader_trait = indecisive }
+						}
+					}
+				}
+				ELSE = {
+					random_list = {
+						20 = {
+							SOV = { add_country_leader_trait = stout_defender }
+						}
+						20 = {
+							SOV = { add_country_leader_trait = cornered_fox }
+						}
+						20 = {
+							SOV = { add_country_leader_trait = empire_builder }
+						}
+						20 = {
+							SOV = { add_country_leader_trait = railroad_enthusiast }
+						}
+						20 = {
+							SOV = { add_country_leader_trait = indecisive }
+						}
+					}
+				}
 			}
 		}
 	}
