@@ -12576,7 +12576,7 @@ focus_tree = {
 		available = {
 			OR = {
 				any_country = {
- 					original_tag = SOV
+ 					original_tag = SOV #Don't change here
 					has_government = communism
 				}
 #				any_country = {
@@ -12585,17 +12585,17 @@ focus_tree = {
 #				}
 			}
 		}
-		will_lead_to_war_with = SOV
+		will_lead_to_war_with = SOU #Changed from SOV
 #		will_lead_to_war_with = RUS
 
 		cancel = {
-			NOT = { country_exists = SOV }
+			NOT = { country_exists = SOV } #I think it's better not to change here
 #			NOT = { country_exists = RUS }
 		}
 
 		bypass = {
 #			OR = {
-				has_war_with = SOV
+				has_war_with = SOU #Changed from SOV
 #				has_war_with = RUS
 #			}
 		}
@@ -12620,11 +12620,11 @@ focus_tree = {
 #			}
 			IF = {
 				limit = {
-					country_exists = SOV
+					country_exists = SOV #I think it's better not to change here to SOU
 				}
 				create_wargoal = {
 					type = annex_everything
-					target = SOV
+					target = SOU #Changed from SOV
 				}
 			}
 		}
@@ -14329,7 +14329,7 @@ focus_tree = {
 		id = GER_betrayed_october
 		icon = GFX_focus_attack_soviet
 		prerequisite = { focus = GER_red_eastern_europe }
-		will_lead_to_war_with = SOV
+		will_lead_to_war_with = SOU #Changed from SOV
 #		will_lead_to_war_with = RUS
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		available = {
@@ -14350,11 +14350,11 @@ focus_tree = {
 		completion_reward = {
 				IF = {
 					limit = {
-						country_exists = SOV
+						country_exists = SOV #I think it's better not to change here to SOU
 					}
 					create_wargoal = {
 						type = puppet_wargoal_focus
-						target = SOV
+						target = SOU #Changed from SOV
 					}	
 				}
 #				IF = {
@@ -14435,4 +14435,102 @@ focus_tree = {
 			add_threat = 15
 		}
 	}
+
+	focus = {
+		id = GER_save_the_soviet_union
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = GER_expand_the_revolution }
+		# search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }		
+		available = {
+			OR = {
+				any_country = {
+					original_tag = SOV #Don't change here
+					NOT = { has_government = communism }
+				}
+				AND = {
+					NOT = { has_completed_focus = GER_right_wing }
+					country_exists = SOB
+				}
+				AND = {
+					NOT = { has_completed_focus = GER_support_trotsky_coup }
+					country_exists = SOT
+				}
+			}
+			SOV = {
+					has_global_flag = SOV_soviet_civil_war
+			}
+			NOT = {
+				SOV = { has_global_flag = SOV_soviet_civil_war_over }
+			}
+		}
+		x = 34
+		y = 1
+		relative_position_id = GER_expand_the_revolution
+
+		cost = 1
+		ai_will_do = {
+			factor = 2
+		}
+		
+		bypass = {
+		}
+		completion_reward = {
+			add_war_support = 0.2
+			add_political_power = 120
+			IF = {
+				limit = {
+					any_country = {
+						original_tag = SOV #Don't change here
+						NOT = { has_government = communism }
+					}			
+				}
+				create_wargoal = {
+					type = topple_government
+					target = SOP
+				}
+			}
+			ELSE_IF = {
+				limit = {
+					NOT = { has_completed_focus = GER_right_wing }
+					country_exists = SOB
+				}
+				create_wargoal = {
+					type = topple_government
+					target = SOB
+				}
+			}	
+			ELSE_IF = {
+				limit = {
+					NOT = { has_completed_focus = GER_support_trotsky_coup }
+					country_exists = SOT
+				}
+				create_wargoal = {
+					type = topple_government
+					target = SOT
+				}
+			}	
+			# ELSE_IF = {
+			# 	limit = {
+			# 		has_completed_focus = GER_establish_fifth_internationale
+			# 		NOT = { has_completed_focus = GER_support_trotsky_coup }
+			# 	}
+			# 	create_wargoal = {
+			# 		type = topple_government
+			# 		target = SOU
+			# 	}
+			# 	create_wargoal = {
+			# 		type = topple_government
+			# 		target = SOV
+			# 	}
+			# }
+			ELSE = {
+				create_wargoal = {
+					type = topple_government
+					target = SOV
+				}
+			}
+		}
+	}
+
+
 }
