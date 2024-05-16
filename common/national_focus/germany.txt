@@ -12576,7 +12576,7 @@ focus_tree = {
 		available = {
 			OR = {
 				any_country = {
- 					original_tag = SOV
+ 					original_tag = SOV #Don't change here
 					has_government = communism
 				}
 #				any_country = {
@@ -12585,17 +12585,17 @@ focus_tree = {
 #				}
 			}
 		}
-		will_lead_to_war_with = SOV
+		will_lead_to_war_with = SOU #Changed from SOV
 #		will_lead_to_war_with = RUS
 
 		cancel = {
-			NOT = { country_exists = SOV }
+			NOT = { country_exists = SOV } #I think it's better not to change here
 #			NOT = { country_exists = RUS }
 		}
 
 		bypass = {
 #			OR = {
-				has_war_with = SOV
+				has_war_with = SOU #Changed from SOV
 #				has_war_with = RUS
 #			}
 		}
@@ -14329,7 +14329,7 @@ focus_tree = {
 		id = GER_betrayed_october
 		icon = GFX_focus_attack_soviet
 		prerequisite = { focus = GER_red_eastern_europe }
-		will_lead_to_war_with = SOV
+		will_lead_to_war_with = SOU #Changed from SOV
 #		will_lead_to_war_with = RUS
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		available = {
@@ -14350,11 +14350,11 @@ focus_tree = {
 		completion_reward = {
 				IF = {
 					limit = {
-						country_exists = SOV
+						country_exists = SOV #I think it's better not to change here to SOU
 					}
 					create_wargoal = {
 						type = puppet_wargoal_focus
-						target = SOV
+						target = SOU #Changed from SOV
 					}	
 				}
 #				IF = {
