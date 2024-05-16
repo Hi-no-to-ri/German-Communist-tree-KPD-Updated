@@ -2052,7 +2052,7 @@ country_event = {
 			}
 		}
 	}
-	option = { #Smirnov # 適切なテキストがない・Traitが傀儡らしくない気がする
+	option = { #Smirnov # 適切なテキストがない・Traitが傀儡らしくない気がする→テキストの件は自作して解決した
 		name = rot_germany.22.e
 		trigger = {
 			NOT = { has_completed_focus = GER_right_wing } # TODO:ブハーリンとの連携NFを実装したらそちらに置き換える？

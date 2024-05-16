@@ -175,7 +175,7 @@
  rot_germany.22.b:0 "トロツキーを呼び戻そう"
  rot_germany.22.c:0 "トロツキーは亡くなった。彼の妻にソ連を率いてもらうべきだ。"
  rot_germany.22.d:0 "集団指導体制が最良の選択肢だ"
- rot_germany.22.e:0 "$NSB_soviet_communist_civil_war.001.b$"
+ rot_germany.22.e:0 "トロツキスト、ただしトロツキー以外で"
  rot_germany.22.f:0 "$NSB_soviet_communist_civil_war.002.a$"
  rot_germany.22.g:0 "$NSB_soviet_communist_civil_war.002.b$"
  rot_germany.22.h:0 "$NSB_soviet_communist_civil_war.002.d$"
