@@ -594,7 +594,7 @@ if = {
 	## 1936 Start ##
 	# Light Cruisers #
 	create_equipment_variant = {
-		name = "Königsberg Class"
+		name = "Königsberg"
 		type = light_cruiser_1
 		parent_version = 0
 		upgrades = {
@@ -607,7 +607,7 @@ if = {
 	}
 	# Heavy Cruisers #
 	create_equipment_variant = {
-		name = "Deutschland Class"
+		name = "Deutschland"
 		type = heavy_cruiser_1
 		parent_version = 0
 		upgrades = {
@@ -700,11 +700,30 @@ if = {
 		}
 		icon = "GFX_GER_improved_light_tank_medium"
 	}
+	create_equipment_variant = {
+		name = "Panzer II"
+		type = light_tank_chassis_2
+		design_team = mio:GER_daimler_benz_organization
+		parent_version = 1
+		modules = {
+			main_armament_slot = tank_auto_cannon
+			turret_type_slot = tank_light_two_man_tank_turret
+			suspension_type_slot = tank_christie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_1
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 3
+			tank_nsb_armor_upgrade = 3
+		}
+		icon = "GFX_GER_improved_light_tank_medium"
+	}
 }
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	create_equipment_variant = {
-		name = "Deutschland Class"
+		name = "Deutschland"
 		type = ship_hull_cruiser_panzerschiff
 		name_group = GER_CA_HISTORICAL
 		parent_version = 0
@@ -720,7 +739,7 @@ if = {
     	}
 	}
 	create_equipment_variant = {
-		name = "Type 24 Class"
+		name = "Type 24"
 		type = ship_hull_light_1
 		name_group = GER_TB_HISTORICAL
 		parent_version = 0
@@ -736,7 +755,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Zerstörer 1934 Class"
+		name = "Zerstörer 1934"
 		type = ship_hull_light_2
 		name_group = GER_DD_HISTORICAL
 		parent_version = 0
@@ -753,7 +772,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Zerstörer 1934A Class"
+		name = "Zerstörer 1934A"
 		type = ship_hull_light_2
 		name_group = GER_DD_HISTORICAL
 		parent_version = 0
@@ -769,7 +788,7 @@ if = {
 		}
 	}
 	create_equipment_variant = {
-		name = "Type II Class"
+		name = "Type II"
 		type = ship_hull_submarine_1
 		name_group = GER_SS_HISTORICAL
 		parent_version = 0
@@ -781,7 +800,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Type VII Class"
+		name = "Type VII"
 		type = ship_hull_submarine_2
 		name_group = GER_SS_HISTORICAL
 		parent_version = 0
@@ -792,7 +811,7 @@ if = {
 		}
 	}
 	create_equipment_variant = {
-		name = "Königsberg Class"
+		name = "Königsberg"
 		type = ship_hull_cruiser_2
 		name_group = GER_CL_HISTORICAL
 		parent_version = 0
@@ -810,7 +829,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Emden Class"
+		name = "Emden"
 		type = ship_hull_cruiser_1
 		name_group = GER_CL_HISTORICAL
 		parent_version = 0
@@ -828,7 +847,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Bremse Class"
+		name = "Bremse"
 		type = ship_hull_cruiser_1
 		name_group = GER_CL_HISTORICAL
 		parent_version = 0
@@ -845,7 +864,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Leipzig Class"
+		name = "Leipzig"
 		type = ship_hull_cruiser_2
 		name_group = GER_CL_HISTORICAL
 		parent_version = 0
@@ -863,7 +882,7 @@ if = {
 		}
 	}
 	create_equipment_variant = {
-		name = "Admiral Hipper Class"
+		name = "Admiral Hipper"
 		type = ship_hull_cruiser_2
 		name_group = GER_CA_HISTORICAL
 		parent_version = 0
@@ -881,7 +900,7 @@ if = {
 		}
 	}
 	create_equipment_variant = {
-		name = "Scharnhorst Class"
+		name = "Scharnhorst"
 		type = ship_hull_heavy_2
 		name_group = GER_BB_HISTORICAL
 		parent_version = 0
@@ -900,7 +919,7 @@ if = {
 		}
 	}
 	create_equipment_variant = {
-		name = "Deutschland Class"
+		name = "Deutschland"
 		type = ship_hull_pre_dreadnought
 		name_group = GER_BB_HISTORICAL
 		parent_version = 0
@@ -1110,7 +1129,7 @@ if = {
 			has_dlc = "Man the Guns"
 		}
 		create_equipment_variant = {
-			name = "Zerstörer 1936 Class"
+			name = "Zerstörer 1936"
 			type = ship_hull_light_2
 			name_group = GER_DD_HISTORICAL
 			parent_version = 0
@@ -1125,7 +1144,7 @@ if = {
 			}
 		}
 		create_equipment_variant = {
-			name = "Bismarck Class"
+			name = "Bismarck"
 			type = ship_hull_heavy_2
 			name_group = GER_BB_HISTORICAL
 			parent_version = 0
@@ -1144,7 +1163,7 @@ if = {
 			}
 		}
 		create_equipment_variant = {
-			name = "Graf Zeppelin Class"
+			name = "Graf Zeppelin"
 			type = ship_hull_carrier_1
 			name_group = GER_CV_HISTORICAL
 			parent_version = 0
@@ -1313,7 +1332,7 @@ if = {
 	}
 	# Heavy Cruisers #
 	#create_equipment_variant = {
-	#	name = "Deutschland Class"
+	#	name = "Deutschland"
 	#	type = heavy_cruiser_1
 	#	parent_version = 0
 	#	upgrades = {
